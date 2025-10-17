@@ -68,27 +68,27 @@ const WhyChoose = () => {
           {/* Reasons con contenido original */}
           <motion.div 
             variants={itemVariants}
-            className="grid lg:grid-cols-3 gap-8"
+            className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
           >
             {reasons.map((reason, index) => (
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 border border-gray-100"
+                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 sm:p-8 border border-gray-100"
               >
-                <div className={`inline-flex p-4 rounded-lg bg-gradient-to-r ${reason.color} mb-6`}>
-                  <reason.icon className="h-8 w-8 text-white" />
+                <div className={`inline-flex p-3 sm:p-4 rounded-lg bg-gradient-to-r ${reason.color} mb-4 sm:mb-6`}>
+                  <reason.icon className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
                 </div>
                 
-                <h3 className="text-xl font-bebas-neue text-gray-900 mb-2">
+                <h3 className="text-lg sm:text-xl font-bebas-neue text-gray-900 mb-2">
                   {reason.title}
                 </h3>
                 
-                <h4 className="text-lg font-medium text-primary-600 mb-4">
+                <h4 className="text-base sm:text-lg font-medium text-primary-600 mb-3 sm:mb-4">
                   {reason.subtitle}
                 </h4>
                 
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                   {reason.description}
                 </p>
               </motion.div>

@@ -65,31 +65,31 @@ const Footer = () => {
               <span className="text-4xl font-bebas-neue">Estudio Citera</span>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              <div className="flex items-center justify-center space-x-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto">
+              <div className="flex items-center justify-center sm:justify-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary-400 flex-shrink-0" />
-                <span className="text-gray-300">CABA y Provincia de Buenos Aires</span>
+                <span className="text-gray-300 text-sm sm:text-base">CABA y Provincia de Buenos Aires</span>
               </div>
-              <div className="flex items-center justify-center space-x-3">
+              <div className="flex items-center justify-center sm:justify-start space-x-3">
                 <Phone className="h-5 w-5 text-primary-400 flex-shrink-0" />
-                <span className="text-gray-300">+54 9 11 5318-9897</span>
+                <span className="text-gray-300 text-sm sm:text-base">+54 9 11 5318-9897</span>
               </div>
-              <div className="flex items-center justify-center space-x-3">
+              <div className="flex items-center justify-center sm:justify-start space-x-3 sm:col-span-2 lg:col-span-1">
                 <Mail className="h-5 w-5 text-primary-400 flex-shrink-0" />
-                <span className="text-gray-300">info@estudiocitera.com</span>
+                <span className="text-gray-300 text-sm sm:text-base">info@estudiocitera.com</span>
               </div>
             </div>
             
-            <div className="flex justify-center space-x-4 mt-8">
+            <div className="flex justify-center space-x-3 sm:space-x-4 mt-6 sm:mt-8">
               {socialLinks.map((social, index) => (
                 <a
                   key={index}
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 bg-gray-800 hover:bg-primary-600 rounded-xl transition-all duration-300 hover:scale-110 group"
+                  className="p-2 sm:p-3 bg-gray-800 hover:bg-primary-600 rounded-xl transition-all duration-300 hover:scale-110 group"
                 >
-                  <social.icon className="h-6 w-6 text-gray-400 group-hover:text-white transition-colors duration-300" />
+                  <social.icon className="h-5 w-5 sm:h-6 sm:w-6 text-gray-400 group-hover:text-white transition-colors duration-300" />
                 </a>
               ))}
             </div>
@@ -105,18 +105,18 @@ const Footer = () => {
           >
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <div className="text-gray-400 text-center md:text-left">
-                <p className="text-sm">
+                <p className="text-xs sm:text-sm">
                   © 2024 Estudio Citera. Todos los derechos reservados.
                 </p>
                 <p className="text-xs mt-1 text-gray-500">
                   Defendiendo tus derechos desde 1999
                 </p>
               </div>
-              <div className="flex items-center space-x-6 text-sm text-gray-400">
+              <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 lg:space-x-6 text-xs sm:text-sm text-gray-400">
                 <span>Especialistas en Derecho Laboral</span>
-                <div className="w-1 h-1 bg-gray-600 rounded-full"></div>
+                <div className="hidden sm:block w-1 h-1 bg-gray-600 rounded-full"></div>
                 <span>25+ Años de Experiencia</span>
-                <div className="w-1 h-1 bg-gray-600 rounded-full"></div>
+                <div className="hidden sm:block w-1 h-1 bg-gray-600 rounded-full"></div>
                 <span>Atención Personalizada</span>
               </div>
             </div>
