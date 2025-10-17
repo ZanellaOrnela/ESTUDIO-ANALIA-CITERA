@@ -23,9 +23,14 @@ export const metadata: Metadata = {
   description: 'Estudio jurídico especializado en reclamos ante accidentes/enfermedades de trabajo, defensas laborales y siniestros de tránsito. Más de 25 años de experiencia defendiendo los derechos de los trabajadores.',
   keywords: 'abogados, accidentes trabajo, ART, reclamos laborales, siniestros tránsito, derecho laboral, Buenos Aires',
   authors: [{ name: 'Estudio Citera' }],
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
   openGraph: {
     title: 'Estudio Citera - Abogados Especialistas en Accidentes de Trabajo',
-    description: 'Más de 25 años defendiendo los derechos de los trabajadores. Consulta gratuita.',
+    description: 'Más de 25 años defendiendo los derechos de los trabajadores. Asesoramiento profesional.',
     type: 'website',
     locale: 'es_AR',
   },
