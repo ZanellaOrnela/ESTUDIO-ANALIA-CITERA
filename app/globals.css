@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap') layer(fonts);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 text-white font-semibold py-3 px-6 rounded-3xl transition-all duration-300 transform hover:scale-105 relative overflow-hidden;
+    box-shadow: 
+      15px 15px 30px #bebebe,
+      -15px -15px 30px #ffffff;
+  }
+  
+  .btn-primary:hover {
+    box-shadow: 
+      20px 20px 40px #bebebe,
+      -20px -20px 40px #ffffff;
+  }
+  
+  .btn-primary:active {
+    box-shadow: 
+      inset 15px 15px 30px #bebebe,
+      inset -15px -15px 30px #ffffff;
+  }
+  
+  
+  .btn-secondary {
+    @apply bg-white text-primary-600 font-semibold py-3 px-6 rounded-3xl border-2 border-primary-600 transition-all duration-300 transform hover:scale-105 relative overflow-hidden;
+    box-shadow: 
+      15px 15px 30px #bebebe,
+      -15px -15px 30px #ffffff;
+  }
+  
+  .btn-secondary:hover {
+    box-shadow: 
+      20px 20px 40px #bebebe,
+      -20px -20px 40px #ffffff;
+  }
+  
+  .btn-secondary:active {
+    box-shadow: 
+      inset 15px 15px 30px #bebebe,
+      inset -15px -15px 30px #ffffff;
+  }
+  
+  .btn-3d {
+    @apply bg-primary-600 text-white font-bold py-4 px-8 rounded-3xl transition-all duration-300 transform hover:scale-110 relative overflow-hidden;
+    box-shadow: 
+      20px 20px 40px #bebebe,
+      -20px -20px 40px #ffffff;
+  }
+  
+  .btn-3d:hover {
+    box-shadow: 
+      25px 25px 50px #bebebe,
+      -25px -25px 50px #ffffff;
+  }
+  
+  .btn-3d:active {
+    box-shadow: 
+      inset 20px 20px 40px #bebebe,
+      inset -20px -20px 40px #ffffff;
+  }
+  
+  
+  
+  .section-padding {
+    @apply py-24 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section-bg-alt {
+    @apply bg-gradient-to-br from-gray-50 to-gray-100;
+  }
+  
+  .section-bg-white {
+    @apply bg-white;
+  }
+  
+  .section-bg-primary {
+    @apply bg-gradient-to-br from-primary-50 to-white;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary-600 to-primary-700 bg-clip-text text-transparent;
+  }
+  
+  .section-title {
+    @apply text-4xl md:text-5xl font-bebas-neue text-gray-900 mb-6 relative;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-subtitle {
+    @apply text-xl text-gray-600 max-w-3xl mx-auto mb-16;
+    line-height: 1.6;
+  }
+  
+  .card-3d {
+    @apply transform transition-all duration-300 hover:scale-105 relative overflow-hidden;
+    box-shadow: 
+      0 8px 25px rgba(0, 0, 0, 0.15),
+      0 4px 10px rgba(0, 0, 0, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-3d::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+  }
+  
+  .card-3d:hover::before {
+    left: 100%;
+  }
+  
+  /* Efecto 3D espectacular */
+  .parent-3d {
+    width: 100%;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .card-3d-spectacular {
+    height: 100%;
+    border-radius: 30px;
+    transition: all 0.5s ease-in-out;
+    transform-style: preserve-3d;
+    box-shadow: 
+      rgba(0, 0, 0, 0.1) 0px 25px 25px -5px,
+      rgba(0, 0, 0, 0.05) 40px 50px 25px -40px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .glass-effect {
+    transform-style: preserve-3d;
+    position: absolute;
+    inset: 8px;
+    border-radius: 25px;
+    border-top-right-radius: 50%;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.4) 100%);
+    transform: translate3d(0px, 0px, 25px);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .content-3d {
+    padding: 30px;
+    transform: translate3d(0, 0, 26px);
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  
+  .logo-3d {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-style: preserve-3d;
+    z-index: 1;
+  }
+  
+  .circle-3d {
+    display: block;
+    position: absolute;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) -10px 10px 20px 0px;
+    backdrop-filter: blur(5px);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .circle-3d-1 {
+    width: 120px;
+    transform: translate3d(0, 0, 20px);
+    top: 8px;
+    right: 8px;
+  }
+  
+  .circle-3d-2 {
+    width: 90px;
+    transform: translate3d(0, 0, 40px);
+    top: 15px;
+    right: 15px;
+    transition-delay: 0.2s;
+  }
+  
+  .circle-3d-3 {
+    width: 50px;
+    transform: translate3d(0, 0, 60px);
+    top: 20px;
+    right: 20px;
+    transition-delay: 0.4s;
+  }
+  
+  .parent-3d:hover .card-3d-spectacular {
+    transform: rotate3d(1, 1, 0, 15deg);
+    box-shadow: 
+      rgba(0, 0, 0, 0.15) 30px 50px 25px -40px, 
+      rgba(0, 0, 0, 0.1) 0px 25px 30px 0px;
+  }
+  
+  .parent-3d:hover .circle-3d-2 {
+    transform: translate3d(0, 0, 60px);
+  }
+  
+  .parent-3d:hover .circle-3d-3 {
+    transform: translate3d(0, 0, 80px);
+  }
+  
+  /* Flip Cards para Áreas de Práctica */
+  .flip-card {
+    width: 100%;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flip-card-front {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .flip-card-back {
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    color: white;
+    transform: rotateY(180deg);
+    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3);
+  }
+  
+  .flip-card-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    color: #0ea5e9;
+  }
+  
+  .flip-card-back .flip-card-icon {
+    color: white;
+  }
+  
+  .flip-card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #1e293b;
+  }
+  
+  .flip-card-back .flip-card-title {
+    color: white;
+  }
+  
+  .flip-card-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #64748b;
+    text-align: center;
+  }
+  
+  .flip-card-back .flip-card-description {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .flip-card-badge {
+    background: #0ea5e9;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .flip-card-back .flip-card-badge {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
