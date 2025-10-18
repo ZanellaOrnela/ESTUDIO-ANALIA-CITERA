@@ -1,0 +1,8 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#f8fafc"/>
+  <rect x="50" y="50" width="300" height="300" rx="20" fill="#0ea5e9" opacity="0.1"/>
+  <rect x="100" y="100" width="200" height="200" rx="10" fill="#0ea5e9" opacity="0.2"/>
+  <circle cx="200" cy="200" r="50" fill="#0ea5e9" opacity="0.3"/>
+  <text x="200" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0ea5e9">ESTUDIO</text>
+  <text x="200" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#64748b">Analia Citera</text>
+</svg>

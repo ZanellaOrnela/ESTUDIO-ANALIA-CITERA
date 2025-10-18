@@ -29,6 +29,7 @@ const Header = () => {
     { name: 'Quiénes Somos', href: 'about' },
     { name: 'Servicios', href: 'services' },
     { name: 'Por Qué Elegirnos', href: 'why-choose' },
+    { name: 'Galería', href: 'gallery' },
     { name: 'Testimonios', href: 'testimonials' },
     { name: 'Contacto', href: 'contact' },
   ];
