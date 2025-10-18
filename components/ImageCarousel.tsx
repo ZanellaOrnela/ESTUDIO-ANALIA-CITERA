@@ -17,23 +17,10 @@ interface ImageCarouselProps {
 
 const ImageCarousel = ({ 
   media, 
-  autoPlay = true, 
+  autoPlay = false, 
   autoPlayInterval = 5000 
 }: ImageCarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Auto-play functionality
-  useEffect(() => {
-    if (!autoPlay) return;
-
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => 
-        prevIndex === media.length - 1 ? 0 : prevIndex + 1
-      );
-    }, autoPlayInterval);
-
-    return () => clearInterval(interval);
-  }, [autoPlay, autoPlayInterval, media.length]);
 
   const goToPrevious = () => {
     setCurrentIndex(currentIndex === 0 ? media.length - 1 : currentIndex - 1);
@@ -48,9 +35,9 @@ const ImageCarousel = ({
   };
 
   return (
-    <div className="relative w-full max-w-sm mx-auto">
-      {/* Main carousel container */}
-      <div className="relative aspect-square overflow-hidden rounded-2xl bg-gray-100 shadow-lg">
+    <div className="relative w-full max-w-md mx-auto">
+      {/* Main carousel container - 16:9 aspect ratio for videos */}
+      <div className="relative aspect-video overflow-hidden rounded-2xl bg-gray-100 shadow-lg">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
@@ -67,6 +54,7 @@ const ImageCarousel = ({
                 allow="autoplay; encrypted-media"
                 allowFullScreen
                 title={media[currentIndex].alt}
+                style={{ aspectRatio: '16/9' }}
               />
             ) : (
               <img

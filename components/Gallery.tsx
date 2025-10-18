@@ -83,8 +83,7 @@ const Gallery = () => {
           <motion.div variants={itemVariants} className="flex justify-center">
             <ImageCarousel 
               media={media}
-              autoPlay={true}
-              autoPlayInterval={6000}
+              autoPlay={false}
             />
           </motion.div>
 
