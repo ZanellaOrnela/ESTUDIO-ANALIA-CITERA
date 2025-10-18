@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Menu, X, Scale } from 'lucide-react';
+import { Menu, X, Scale, ArrowRight } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -61,9 +61,10 @@ const Header = () => {
             ))}
             <button
               onClick={() => scrollToSection('contact')}
-              className="btn-3d text-xs px-3 py-1.5"
+              className="btn-3d text-sm px-4 py-2 flex items-center space-x-2"
             >
-              Contactar
+              <span>Contactar</span>
+              <ArrowRight className="h-4 w-4" />
             </button>
           </div>
 
@@ -91,9 +92,10 @@ const Header = () => {
               ))}
               <button
                 onClick={() => scrollToSection('contact')}
-                className="btn-3d w-full text-xs px-3 py-1.5"
+                className="btn-3d w-full text-sm px-4 py-2 flex items-center justify-center space-x-2"
               >
-                Contactar
+                <span>Contactar</span>
+                <ArrowRight className="h-4 w-4" />
               </button>
             </div>
           </div>
