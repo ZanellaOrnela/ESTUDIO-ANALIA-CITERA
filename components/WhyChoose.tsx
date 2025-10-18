@@ -7,24 +7,27 @@ const WhyChoose = () => {
   const reasons = [
     {
       icon: MessageCircle,
-      title: "Hablamos claro y estamos presentes",
-      subtitle: "Claridad y Comunicación",
-      description: "Te explicamos cada paso en lenguaje simple: qué presentar, cuándo y para qué. Atención personalizada: la Dra. Citera se encarga personalmente de cada tema, con seguimiento por WhatsApp/email y reuniones virtuales sin traslados.",
+      title: "Comunicación directa",
+      subtitle: "Hablás siempre con la Dra. Citera. Te explica en lenguaje simple qué hacer y qué esperar.",
       color: "from-blue-500 to-blue-600"
     },
     {
       icon: GraduationCap,
-      title: "25+ años, maestrías y actualización constante",
-      subtitle: "Especialización y Trayectoria",
-      description: "Combinamos experiencia, práctica con formación académica de posgrado en Derecho Laboral y Civil. Egresada con medalla de honor y dos maestrías, la Dra. Citera integra doctrina, jurisprudencia y pericias para fortalecer tu caso desde el inicio.",
+      title: "Estrategia que gana",
+      subtitle: "Pericias, evidencia médica y negociación firme para maximizar tu cobro.",
       color: "from-green-500 to-green-600"
     },
     {
       icon: DollarSign,
-      title: "Honorarios alineados a tu resultado",
-      subtitle: "Estrategia y Tarifas",
-      description: "No cobramos honorarios por adelantado. Las consultas son gratuitas y virtuales. Avanzamos cuando existe una estrategia con alta probabilidad de éxito, reduciendo tiempos y costos innecesarios.",
+      title: "Sin adelantos",
+      subtitle: "Consultas virtuales sin cargo. No pagás honorarios por adelantado.",
       color: "from-purple-500 to-purple-600"
+    },
+    {
+      icon: MessageCircle,
+      title: "CABA y Provincia",
+      subtitle: "Te defendemos en CABA y en la Provincia de Buenos Aires.",
+      color: "from-red-500 to-red-600"
     }
   ];
 
@@ -57,10 +60,10 @@ const WhyChoose = () => {
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center max-w-4xl mx-auto">
             <h2 className="section-title">
-              POR QUÉ ELEGIRNOS
+              RAZONES PARA ELEGIRNOS
             </h2>
             <p className="section-subtitle">
-              Resultados, claridad y trato humano
+              Tu problema, resuelto con estrategia y claridad
             </p>
           </motion.div>
 
@@ -84,12 +87,8 @@ const WhyChoose = () => {
                   {reason.title}
                 </h3>
                 
-                <h4 className="text-base sm:text-lg font-medium text-primary-600 mb-3 sm:mb-4">
-                  {reason.subtitle}
-                </h4>
-                
                 <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                  {reason.description}
+                  {reason.subtitle}
                 </p>
               </motion.div>
             ))}

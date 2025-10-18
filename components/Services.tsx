@@ -7,21 +7,33 @@ const Services = () => {
   const services = [
     {
       icon: Briefcase,
-      title: "Accidentes y enfermedades de trabajo (ART)",
-      description: "Asesoramiento y gestión integral del reclamo ante la ART: denuncias, turnos médicos, alta/recidiva, juntas médicas y cálculo de incapacidad. Si sufriste un accidente de trabajo y no le querés reclamar nada a tu empleador, no te preocupes, solo se le reclama a la ART. No aceptes ofertas apresuradas ni firmes documentos sin consultarnos previamente.",
+      title: "Demora o negativa de ART",
+      description: "La ART no te autoriza estudios, traslados o tratamientos. Intervenimos para exigir cobertura, controlar el alta y calcular la incapacidad.",
       color: "from-blue-500 to-blue-600"
     },
     {
       icon: FileText,
-      title: "Reclamos laborales en general",
-      description: "Despidos con o sin causa, diferencias salariales, trabajo en negro, acoso y violencia laboral, registración, horas extra, licencias y maternidad/paternidad. Análisis documental y cálculo de indemnizaciones para negociar con solidez.",
+      title: "Alta apresurada",
+      description: "Te dieron el alta sin estar bien. Pedimos reevaluación, pericias y reclamamos la indemnización que corresponde.",
       color: "from-green-500 to-green-600"
     },
     {
       icon: Car,
-      title: "Siniestros de tránsito",
-      description: "Accidentes de auto, moto, peatón, bici, transporte público, etc., incluidos accidentes \"in itinere\". Gestión de reclamos a aseguradoras: daños físicos, incapacidad, reparación del vehículo, tratamientos y gastos. Logrando maximizar el resultado. Revisión de ofertas de ART/aseguradoras. Te orientamos para decidir con información completa antes de aceptar una oferta.",
+      title: "Accidente \"in itinere\"",
+      description: "Sufriste un siniestro camino al trabajo. Documentamos, probamos el nexo y reclamamos a la ART y terceros si corresponde.",
       color: "from-purple-500 to-purple-600"
+    },
+    {
+      icon: Shield,
+      title: "Secuelas e incapacidad",
+      description: "Tenés dolor, limitaciones o pérdida de fuerza. Cuantificamos la incapacidad con peritos y maximizamos el monto a cobrar.",
+      color: "from-red-500 to-red-600"
+    },
+    {
+      icon: Scale,
+      title: "Empleador incumplidor",
+      description: "Falta de registración, diferencias salariales o despido tras el accidente. Accionamos con intimaciones y demanda.",
+      color: "from-orange-500 to-orange-600"
     }
   ];
 
@@ -53,17 +65,17 @@ const Services = () => {
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center">
             <h2 className="section-title">
-              ÁREAS DE PRÁCTICA
+              TE DEFENDEMOS EN TODOS LOS SINIESTROS DE ART
             </h2>
             <p className="section-subtitle">
-              Nuestros servicios legales principales
+              Accidentes y enfermedades laborales
             </p>
           </motion.div>
 
           {/* Services Grid */}
           <motion.div 
             variants={itemVariants}
-            className="grid lg:grid-cols-3 gap-8"
+            className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8"
           >
             {services.map((service, index) => (
               <motion.div

@@ -29,17 +29,18 @@ const About = () => {
           viewport={{ once: true, amount: 0.3 }}
           className="space-y-16"
         >
-          {/* Quiénes Somos */}
+          {/* Sobre Nosotros */}
           <motion.div variants={itemVariants} className="text-center max-w-4xl mx-auto">
             <h2 className="section-title">
-              QUIÉNES SOMOS
+              SOBRE NOSOTROS
             </h2>
+            <h3 className="text-2xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Poppins', fontWeight: 700 }}>
+              Cobrá la indemnización que te corresponde
+            </h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Somos un estudio con más de 25 años de experiencia defendiendo tus derechos. 
-              Nos especializamos en reclamos por accidentes y enfermedades de trabajo, 
-              reclamos laborales en general, como así también, siniestros de tránsito, y todo lo relacionado. 
-              Cientos de causas ganadas a lo largo de tantos años, como la opinión de nuestros clientes 
-              que nos respaldan, nos vuelven a elegir y nos recomiendan, es el mejor aval de nuestro servicio.
+              Somos un Estudio Jurídico, con más de 25 años de experiencia defendiendo tus derechos. 
+              Nos especializamos en reclamos por accidentes y enfermedades de trabajo, reclamos laborales en general, 
+              como así también, siniestros de tránsito, y todo lo relacionado.
             </p>
           </motion.div>
 

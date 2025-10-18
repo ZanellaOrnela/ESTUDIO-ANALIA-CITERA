@@ -6,24 +6,20 @@ import { Quote, Star } from 'lucide-react';
 const Testimonials = () => {
   const testimonials = [
     {
-      text: "Super recomendable. Confiable, y sobre todo buena persona.",
-      author: "Adriana Alejandra Marcela Bustos"
+      text: "Encontré a la Dra. Citera buscando en Google y fue la mejor decisión. Desde el primer día me atendió ella misma, con honestidad, calidez y profesionalismo. Gracias a su ayuda pude resolver mi reclamo con la ART y hoy mi vida cambió para mejor. Eternamente agradecida.",
+      author: "⭐ Adriana G."
     },
     {
-      text: "Un lujo Analia, muy correcta en todo. Muy recomendable.",
-      author: "Fernando Fole"
+      text: "Excelente atención, muy buena profesional asesorando en todo el caso y acompañando cada paso. Explica con claridad y siempre está disponible. Súper recomendable.",
+      author: "⭐ Alex B."
     },
     {
-      text: "Excelente profesional, súper recomendable.",
-      author: "Sol"
+      text: "Recurri dos veces con la Dra. Citera por distintos casos y en ambos obtuvimos excelentes resultados. Es confiable, clara y muy dedicada. Sin dudas la volvería a elegir.",
+      author: "⭐ Iván R."
     },
     {
-      text: "Siempre estaré agradecida... segura de sí misma y, sobre todo, tan honesta y leal... su gran ayuda cambió mi vida; mi realidad hoy se llama gracias a Analía Citera.",
-      author: "Ada Gavilan Samaniego"
-    },
-    {
-      text: "Yo a usted le confío mi vida... gran persona Dra. Citera.",
-      author: "Guillermo López"
+      text: "Muchas felicidades Analia que este años nuevos que comienza la encuentre con salud igual que a su hija y que siempre triunfe en su trabajo que lo caracteriza como segura de sí misma y sobre todo tan honesta y leal cuando toma un caso como fue el mío. Siempre estaré agradecida a Dios y a la VIRGEN que al azar con mi hijo entramos a Google y vi tu nombre Abogada Analia y le dije a mi hijo: ella. Y como no me equivoqué con usted, mil gracias x ser como hay poco como usted, tan leal, tan sincera y sobre todo sincera. Hoy su gran ayuda mi navidad y mi años nuevos y mi vida cambió y mi realidad hoy se llama gracias a Analia Citera ❤❤😘😘",
+      author: "⭐ Whatsapp"
     }
   ];
 
@@ -58,7 +54,7 @@ const Testimonials = () => {
               TESTIMONIOS
             </h2>
             <p className="section-subtitle">
-              Lo que dicen nuestros clientes
+              Historias reales, resultados reales
             </p>
           </motion.div>
 
@@ -97,11 +93,10 @@ const Testimonials = () => {
             className="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-8 text-center text-white"
           >
             <h3 className="text-2xl font-bebas-neue mb-4">
-              Más de 25 años defendiendo al trabajador nos respaldan
+              Empezá tu reclamo hoy
             </h3>
             <p className="text-lg opacity-90 max-w-3xl mx-auto mb-6">
-              Cientos de acuerdos y sentencias favorables a lo largo de la trayectoria del Estudio. 
-              No dudes en consultarnos, estamos para ayudarte.
+              Contanos qué te pasó y recibí una evaluación inicial sin cargo. Te guiamos para no perder plazos ni dinero.
             </p>
             <button
               onClick={() => {
@@ -112,7 +107,7 @@ const Testimonials = () => {
               }}
               className="bg-white text-primary-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors duration-300"
             >
-              Contactar
+              Iniciar mi Consulta
             </button>
           </motion.div>
         </motion.div>

@@ -4,42 +4,36 @@ import { motion } from 'framer-motion';
 import ImageCarousel from './ImageCarousel';
 
 const Gallery = () => {
-  // Videos de la galería con enlaces directos a Google Drive
+  // Videos de Instagram con información sobre ART
   const media = [
     {
-      src: "https://drive.google.com/file/d/1w738IRwPmMjxm7uP8RYFhxz8kNSz23GO/view?usp=sharing",
-      alt: "Video 1 - Estudio Analia Citera",
-      caption: "Nuestro estudio jurídico",
+      src: "https://www.instagram.com/reel/C40WOhjA-xL/?igsh=ZjNxMHMwaTBicnox",
+      alt: "¿A quién se reclama…?",
+      caption: "¿A quién se reclama frente a un accidente de trabajo?",
       type: 'video' as const
     },
     {
-      src: "https://drive.google.com/file/d/1QjmZZHkvGK_z1ZF9iFnrihKGghnIvrYI/view?usp=sharing",
-      alt: "Video 2 - Especialistas en derecho laboral",
-      caption: "Especialistas en derecho laboral",
+      src: "https://www.instagram.com/reel/C5n0DkbAsfZ/?igsh=MWxnMGs5cXVlZTB6YQ%3D%3D",
+      alt: "Alta sin incapacidad",
+      caption: "Alta laboral sin incapacidad, ¿se puede reclamar a la ART?",
       type: 'video' as const
     },
     {
-      src: "https://drive.google.com/file/d/1TiNC2MBZJkSdEajoLxLusNjqX3tUM29V/view?usp=sharing",
-      alt: "Video 3 - Más de 25 años de experiencia",
-      caption: "Más de 25 años defendiendo trabajadores",
+      src: "https://www.instagram.com/reel/C4Y2Y6EPL0s/?igsh=MXBjOG9yYmk3cmdkZQ%3D%3D",
+      alt: "Trayecto al trabajo",
+      caption: "Mito o realidad, ¿existe un límite de tiempo que las ART tienen para cubrirte en el trayecto al trabajo?",
       type: 'video' as const
     },
     {
-      src: "https://drive.google.com/file/d/1hLCVHgab7n6odLjC5QWUtB8PuenBDnPj/view?usp=sharing",
-      alt: "Video 4 - Defensas laborales",
-      caption: "Defensas laborales especializadas",
+      src: "https://www.instagram.com/reel/C3z0S1ugQBN/?igsh=YWJkbWk1ejNtZzUx",
+      alt: "Criterios de indemnización",
+      caption: "¿Qué datos tiene en cuenta la A.R.T. para indemnizarte?",
       type: 'video' as const
     },
     {
-      src: "https://drive.google.com/file/d/1ak3n-XAbUXl0mDjm6jx08pZuSWMdk7Et/view?usp=sharing",
-      alt: "Video 5 - Siniestros de tránsito",
-      caption: "Siniestros de tránsito",
-      type: 'video' as const
-    },
-    {
-      src: "https://drive.google.com/file/d/15aVmxSZ9pFEQO6ma-a7wuaniknc5KDwE/view?usp=sharing",
-      alt: "Video 6 - Consultas y asesoramiento",
-      caption: "Consultas y asesoramiento",
+      src: "https://www.instagram.com/reel/C3Q8YQ9Pzm2/?igsh=ZWwwdTEzc3o4OHN0",
+      alt: "Plazos",
+      caption: "¿Cuánto tiempo tenés para reclamar por un accidente de trabajo?",
       type: 'video' as const
     }
   ];
@@ -72,10 +66,10 @@ const Gallery = () => {
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center">
             <h2 className="section-title">
-              NUESTROS VIDEOS
+              VIDEOS
             </h2>
             <p className="section-subtitle">
-              Conoce más sobre nuestro trabajo y servicios
+              Respondemos tus dudas clave de ART
             </p>
           </motion.div>
 
@@ -93,9 +87,9 @@ const Gallery = () => {
             className="text-center max-w-2xl mx-auto"
           >
             <p className="text-gray-600 leading-relaxed">
-              Descubre más sobre nuestros servicios a través de estos videos informativos. 
-              Conoce nuestro enfoque profesional y la experiencia que nos respalda 
-              en cada caso que manejamos.
+              Encuentra respuestas a las preguntas más frecuentes sobre accidentes de trabajo, 
+              enfermedades laborales y reclamos ante ART. Nuestros videos te explican paso a paso 
+              qué hacer en cada situación.
             </p>
           </motion.div>
         </motion.div>
