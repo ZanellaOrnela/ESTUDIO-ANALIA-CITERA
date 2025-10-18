@@ -4,40 +4,40 @@ import { motion } from 'framer-motion';
 import ImageCarousel from './ImageCarousel';
 
 const Gallery = () => {
-  // Videos de la galería (enlaces de Google Drive)
+  // Videos de la galería con enlaces directos a Google Drive
   const media = [
     {
-      src: "https://drive.google.com/uc?export=download&id=1w738IRwPmMjxm7uP8RYFhxz8kNSz23GO",
+      src: "https://drive.google.com/file/d/1w738IRwPmMjxm7uP8RYFhxz8kNSz23GO/view?usp=sharing",
       alt: "Video 1 - Estudio Analia Citera",
       caption: "Nuestro estudio jurídico",
       type: 'video' as const
     },
     {
-      src: "https://drive.google.com/uc?export=download&id=1QjmZZHkvGK_z1ZF9iFnrihKGghnIvrYI",
+      src: "https://drive.google.com/file/d/1QjmZZHkvGK_z1ZF9iFnrihKGghnIvrYI/view?usp=sharing",
       alt: "Video 2 - Especialistas en derecho laboral",
       caption: "Especialistas en derecho laboral",
       type: 'video' as const
     },
     {
-      src: "https://drive.google.com/uc?export=download&id=1TiNC2MBZJkSdEajoLxLusNjqX3tUM29V",
+      src: "https://drive.google.com/file/d/1TiNC2MBZJkSdEajoLxLusNjqX3tUM29V/view?usp=sharing",
       alt: "Video 3 - Más de 25 años de experiencia",
       caption: "Más de 25 años defendiendo trabajadores",
       type: 'video' as const
     },
     {
-      src: "https://drive.google.com/uc?export=download&id=1hLCVHgab7n6odLjC5QWUtB8PuenBDnPj",
+      src: "https://drive.google.com/file/d/1hLCVHgab7n6odLjC5QWUtB8PuenBDnPj/view?usp=sharing",
       alt: "Video 4 - Defensas laborales",
       caption: "Defensas laborales especializadas",
       type: 'video' as const
     },
     {
-      src: "https://drive.google.com/uc?export=download&id=1ak3n-XAbUXl0mDjm6jx08pZuSWMdk7Et",
+      src: "https://drive.google.com/file/d/1ak3n-XAbUXl0mDjm6jx08pZuSWMdk7Et/view?usp=sharing",
       alt: "Video 5 - Siniestros de tránsito",
       caption: "Siniestros de tránsito",
       type: 'video' as const
     },
     {
-      src: "https://drive.google.com/uc?export=download&id=15aVmxSZ9pFEQO6ma-a7wuaniknc5KDwE",
+      src: "https://drive.google.com/file/d/15aVmxSZ9pFEQO6ma-a7wuaniknc5KDwE/view?usp=sharing",
       alt: "Video 6 - Consultas y asesoramiento",
       caption: "Consultas y asesoramiento",
       type: 'video' as const

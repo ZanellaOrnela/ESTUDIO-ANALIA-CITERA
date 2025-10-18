@@ -1,7 +1,7 @@
 'use client';
 
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Play } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 interface ImageCarouselProps {
@@ -61,14 +61,25 @@ const ImageCarousel = ({
             className="absolute inset-0"
           >
             {media[currentIndex].type === 'video' ? (
-              <video
-                src={media[currentIndex].src}
-                className="w-full h-full object-cover"
-                controls
-                muted
-                loop
-                playsInline
-              />
+              <div className="relative w-full h-full bg-gray-900 flex items-center justify-center">
+                {/* Video placeholder */}
+                <div className="text-center text-white">
+                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                    <Play className="h-8 w-8 text-white ml-1" />
+                  </div>
+                  <p className="text-sm font-medium">Ver Video</p>
+                </div>
+                
+                {/* Play button overlay */}
+                <button
+                  onClick={() => window.open(media[currentIndex].src, '_blank')}
+                  className="absolute inset-0 bg-black/20 hover:bg-black/30 transition-all duration-200 flex items-center justify-center group"
+                >
+                  <div className="bg-white/90 hover:bg-white rounded-full p-4 group-hover:scale-110 transition-transform duration-200">
+                    <Play className="h-8 w-8 text-gray-800 ml-1" />
+                  </div>
+                </button>
+              </div>
             ) : (
               <img
                 src={media[currentIndex].src}
