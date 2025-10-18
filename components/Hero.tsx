@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
-import Image from 'next/image';
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -13,25 +12,25 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center bg-gray-100">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+    <section id="hero" className="relative min-h-screen flex items-center section-bg-primary">
+      <div className="container-custom section-padding">
+        <div className="max-w-4xl mx-auto text-center">
           {/* Contenido */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="space-y-8"
           >
-            <div className="space-y-6">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
-                Protegiendo Sus Derechos En El Campo De{' '}
-                <span className="text-blue-600">
-                  Derecho Laboral
+            <div className="space-y-4">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bebas-neue text-gray-900 leading-tight">
+                ESTUDIO JURIDICO ESPECIALIZADO EN{' '}
+                <span className="text-gradient">
+                  RECLAMOS ANTE ACCIDENTES/ ENFERMEDADES DE TRABAJO, DEFENSAS LABORALES Y SINIESTROS DE TRÁNSITO
                 </span>
               </h1>
               
-              <p className="text-lg text-gray-600 leading-relaxed max-w-2xl">
+              <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
                 Abogados con más de 25 años de experiencia defendiendo los derechos de los trabajadores 
                 frente a accidentes/enfermedades de trabajo, como así también, reclamos en general. 
                 Dentro de nuestros servicios, otro de ellos es asesoramiento frente a siniestros de tránsito, etc.
@@ -41,51 +40,11 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={scrollToContact}
-                className="bg-white text-gray-900 px-8 py-4 rounded font-medium hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center space-x-2 border border-gray-300"
+                className="btn-3d text-lg flex items-center justify-center space-x-2"
               >
-                <span>RESERVAR CITA</span>
+                <span>Contactar ahora</span>
                 <ArrowRight className="h-5 w-5" />
               </button>
-            </div>
-          </motion.div>
-
-          {/* Imágenes */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative"
-          >
-            <div className="grid grid-cols-3 gap-4">
-              {/* Imagen 1 - Abogada en escritorio */}
-              <div className="col-span-1">
-                <div className="relative h-80 bg-gray-200 rounded-lg overflow-hidden shadow-lg">
-                  <Image
-                    src="/images/hero-section.png"
-                    alt="Abogada en escritorio"
-                    fill
-                    className="object-cover grayscale"
-                  />
-                </div>
-              </div>
-              
-              {/* Imagen 2 - Escala de justicia */}
-              <div className="col-span-1">
-                <div className="relative h-80 bg-gray-200 rounded-lg overflow-hidden shadow-lg">
-                  <div className="absolute inset-0 bg-gray-300 flex items-center justify-center">
-                    <div className="text-6xl">⚖️</div>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Imagen 3 - Estatua de justicia */}
-              <div className="col-span-1">
-                <div className="relative h-80 bg-gray-200 rounded-lg overflow-hidden shadow-lg">
-                  <div className="absolute inset-0 bg-gray-300 flex items-center justify-center">
-                    <div className="text-6xl">🏛️</div>
-                  </div>
-                </div>
-              </div>
             </div>
           </motion.div>
         </div>
