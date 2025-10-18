@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import Image from 'next/image';
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -46,6 +47,47 @@ const Hero = () => {
                 <ArrowRight className="h-5 w-5" />
               </button>
             </div>
+
+            {/* 4 imágenes verticales */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="grid grid-cols-4 gap-4 mt-12"
+            >
+              <div className="relative h-32 w-full">
+                <Image
+                  src="/images/hero-section.png"
+                  alt="Imagen 1"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+              <div className="relative h-32 w-full">
+                <Image
+                  src="/images/hero-section.png"
+                  alt="Imagen 2"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+              <div className="relative h-32 w-full">
+                <Image
+                  src="/images/hero-section.png"
+                  alt="Imagen 3"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+              <div className="relative h-32 w-full">
+                <Image
+                  src="/images/hero-section.png"
+                  alt="Imagen 4"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </motion.div>
           </motion.div>
         </div>
       </div>
