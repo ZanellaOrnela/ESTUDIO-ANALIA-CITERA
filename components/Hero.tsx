@@ -66,38 +66,38 @@ const Hero = () => {
           className="flex justify-start mt-16"
         >
           <div className="grid grid-cols-4 gap-4 max-w-2xl">
-          <div className="relative h-80 w-full border-2 border-gray-300 rounded-lg overflow-hidden">
-            <Image
-              src="/images/hero-section.png"
-              alt="Imagen 1"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="relative h-80 w-full border-2 border-gray-300 rounded-lg overflow-hidden">
-            <Image
-              src="/images/hero-section.png"
-              alt="Imagen 2"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="relative h-80 w-full border-2 border-gray-300 rounded-lg overflow-hidden">
-            <Image
-              src="/images/hero-section.png"
-              alt="Imagen 3"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="relative h-80 w-full border-2 border-gray-300 rounded-lg overflow-hidden">
-            <Image
-              src="/images/hero-section.png"
-              alt="Imagen 4"
-              fill
-              className="object-cover"
-            />
-          </div>
+            <div className="relative h-80 w-full border-2 border-gray-300 rounded-lg overflow-hidden">
+              <Image
+                src="/images/hero-section.png"
+                alt="Imagen 1"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative h-80 w-full border-2 border-gray-300 rounded-lg overflow-hidden">
+              <Image
+                src="/images/hero-section.png"
+                alt="Imagen 2"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative h-80 w-full border-2 border-gray-300 rounded-lg overflow-hidden">
+              <Image
+                src="/images/hero-section.png"
+                alt="Imagen 3"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative h-80 w-full border-2 border-gray-300 rounded-lg overflow-hidden">
+              <Image
+                src="/images/hero-section.png"
+                alt="Imagen 4"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
         </motion.div>
       </div>
