@@ -53,9 +53,9 @@ const Hero = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="grid grid-cols-4 gap-4 mt-12"
+              className="grid grid-cols-4 gap-8 mt-12"
             >
-              <div className="relative h-64 w-full border-2 border-gray-300 rounded-lg overflow-hidden">
+              <div className="relative h-80 w-full border-2 border-gray-300 rounded-lg overflow-hidden">
                 <Image
                   src="/images/hero-section.png"
                   alt="Imagen 1"
@@ -63,7 +63,7 @@ const Hero = () => {
                   className="object-cover"
                 />
               </div>
-              <div className="relative h-64 w-full border-2 border-gray-300 rounded-lg overflow-hidden">
+              <div className="relative h-80 w-full border-2 border-gray-300 rounded-lg overflow-hidden">
                 <Image
                   src="/images/hero-section.png"
                   alt="Imagen 2"
@@ -71,7 +71,7 @@ const Hero = () => {
                   className="object-cover"
                 />
               </div>
-              <div className="relative h-64 w-full border-2 border-gray-300 rounded-lg overflow-hidden">
+              <div className="relative h-80 w-full border-2 border-gray-300 rounded-lg overflow-hidden">
                 <Image
                   src="/images/hero-section.png"
                   alt="Imagen 3"
@@ -79,7 +79,7 @@ const Hero = () => {
                   className="object-cover"
                 />
               </div>
-              <div className="relative h-64 w-full border-2 border-gray-300 rounded-lg overflow-hidden">
+              <div className="relative h-80 w-full border-2 border-gray-300 rounded-lg overflow-hidden">
                 <Image
                   src="/images/hero-section.png"
                   alt="Imagen 4"
