@@ -58,12 +58,12 @@ const Hero = () => {
           </motion.div>
         </div>
 
-        {/* 4 imágenes verticales - Alineadas a la derecha */}
+        {/* 4 imágenes verticales - Alineadas a la izquierda */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="flex justify-end mt-16"
+          className="flex justify-start mt-16"
         >
           <div className="grid grid-cols-4 gap-4 max-w-2xl">
           <div className="relative h-80 w-full border-2 border-gray-300 rounded-lg overflow-hidden">
