@@ -55,7 +55,7 @@
   }
   
   .btn-3d {
-    @apply bg-primary-600 text-white font-bold py-4 px-8 rounded-3xl transition-all duration-300 transform hover:scale-110 relative overflow-hidden;
+    @apply bg-black text-white font-bold py-4 px-8 rounded-3xl transition-all duration-300 transform hover:scale-110 relative overflow-hidden;
     box-shadow: 
       20px 20px 40px #bebebe,
       -20px -20px 40px #ffffff;
