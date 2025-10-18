@@ -1,27 +1,27 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Briefcase, Car, Shield, FileText, Scale } from 'lucide-react';
+import { Briefcase, Car, Shield, FileText, Scale, ArrowRight } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
       icon: Briefcase,
-      title: "Accidentes y enfermedades de trabajo (ART)",
-      description: "Asesoramiento y gestión integral del reclamo ante la ART: denuncias, turnos médicos, alta/recidiva, juntas médicas y cálculo de incapacidad. Si sufriste un accidente de trabajo y no le querés reclamar nada a tu empleador, no te preocupes, solo se le reclama a la ART. No aceptes ofertas apresuradas ni firmes documentos sin consultarnos previamente.",
-      color: "from-blue-500 to-blue-600"
+      title: "Abogados Expertos",
+      description: "Asesoramiento y gestión integral del reclamo ante la ART: denuncias, turnos médicos, alta/recidiva, juntas médicas y cálculo de incapacidad.",
+      number: "01"
     },
     {
       icon: FileText,
-      title: "Reclamos laborales en general",
-      description: "Despidos con o sin causa, diferencias salariales, trabajo en negro, acoso y violencia laboral, registración, horas extra, licencias y maternidad/paternidad. Análisis documental y cálculo de indemnizaciones para negociar con solidez.",
-      color: "from-green-500 to-green-600"
+      title: "Análisis Financiero",
+      description: "Despidos con o sin causa, diferencias salariales, trabajo en negro, acoso y violencia laboral, registración, horas extra, licencias y maternidad/paternidad.",
+      number: "02"
     },
     {
       icon: Car,
-      title: "Siniestros de tránsito",
-      description: "Accidentes de auto, moto, peatón, bici, transporte público, etc., incluidos accidentes \"in itinere\". Gestión de reclamos a aseguradoras: daños físicos, incapacidad, reparación del vehículo, tratamientos y gastos. Logrando maximizar el resultado. Revisión de ofertas de ART/aseguradoras. Te orientamos para decidir con información completa antes de aceptar una oferta.",
-      color: "from-purple-500 to-purple-600"
+      title: "Altamente Recomendado",
+      description: "Accidentes de auto, moto, peatón, bici, transporte público, etc., incluidos accidentes \"in itinere\". Gestión de reclamos a aseguradoras.",
+      number: "03"
     }
   ];
 
@@ -41,8 +41,8 @@ const Services = () => {
   };
 
   return (
-    <section id="services" className="section-padding section-bg-alt">
-      <div className="container-custom">
+    <section id="services" className="py-20 bg-gray-900">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -51,16 +51,34 @@ const Services = () => {
           className="space-y-16"
         >
           {/* Header */}
-          <motion.div variants={itemVariants} className="text-center">
-            <h2 className="section-title">
-              ÁREAS DE PRÁCTICA
-            </h2>
-            <p className="section-subtitle">
-              Nuestros servicios legales principales
-            </p>
-          </motion.div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <motion.div variants={itemVariants} className="space-y-6">
+              <h2 className="text-4xl lg:text-5xl font-bold text-white leading-tight">
+                Estudio Jurídico De Confianza Y Servicio Completo Para Cada Cliente
+              </h2>
+              <p className="text-lg text-gray-300 leading-relaxed">
+                Abogados con más de 25 años de experiencia defendiendo los derechos de los trabajadores 
+                frente a accidentes/enfermedades de trabajo, como así también, reclamos en general.
+              </p>
+            </motion.div>
+            
+            <motion.div variants={itemVariants} className="flex justify-center lg:justify-end">
+              <button
+                onClick={() => {
+                  const element = document.getElementById('contact');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className="bg-gray-800 text-white px-8 py-4 rounded font-medium hover:bg-gray-700 transition-colors duration-200 flex items-center space-x-2"
+              >
+                <span>RESERVAR CITA</span>
+                <ArrowRight className="h-5 w-5" />
+              </button>
+            </motion.div>
+          </div>
 
-          {/* Services Grid */}
+          {/* Services Cards */}
           <motion.div 
             variants={itemVariants}
             className="grid lg:grid-cols-3 gap-8"
@@ -69,62 +87,19 @@ const Services = () => {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="flip-card"
+                className="bg-gray-800 p-8 rounded-lg hover:bg-gray-750 transition-colors duration-300"
               >
-                <div className="flip-card-inner">
-                  {/* Front */}
-                  <div className="flip-card-front">
-                    <service.icon className="flip-card-icon" />
-                    <h3 className="flip-card-title">
-                      {service.title}
-                    </h3>
-                    <div className="flip-card-badge">
-                      Área Legal
-                    </div>
-                  </div>
-                  
-                  {/* Back */}
-                  <div className="flip-card-back">
-                    <service.icon className="flip-card-icon" />
-                    <h3 className="flip-card-title">
-                      {service.title}
-                    </h3>
-                    <p className="flip-card-description">
-                      {service.description}
-                    </p>
-                    <div className="flip-card-badge">
-                      Contactar
-                    </div>
-                  </div>
+                <div className="text-6xl font-bold text-gray-400 mb-4">
+                  {service.number}
                 </div>
+                <h3 className="text-xl font-bold text-white mb-4">
+                  {service.title}
+                </h3>
+                <p className="text-gray-300 leading-relaxed">
+                  {service.description}
+                </p>
               </motion.div>
             ))}
-          </motion.div>
-
-          {/* CTA Section */}
-          <motion.div 
-            variants={itemVariants}
-            className="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-8 text-center text-white"
-          >
-            <Scale className="h-16 w-16 mx-auto mb-6" />
-            <h3 className="text-2xl font-bebas-neue mb-4">
-              ¿Necesitas asesoramiento legal?
-            </h3>
-            <p className="text-lg opacity-90 mb-6 max-w-2xl mx-auto">
-              No dudes en consultarnos. Evaluamos tu caso sin compromiso y te explicamos 
-              todas las opciones legales disponibles.
-            </p>
-            <button
-              onClick={() => {
-                const element = document.getElementById('contact');
-                if (element) {
-                  element.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
-              className="bg-white text-primary-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors duration-300"
-            >
-              Contactar
-            </button>
           </motion.div>
         </motion.div>
       </div>
