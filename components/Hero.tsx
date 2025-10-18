@@ -25,10 +25,7 @@ const Hero = () => {
           >
             <div className="space-y-4">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-900 leading-tight" style={{ fontFamily: 'Poppins', fontWeight: 700 }}>
-                ESTUDIO JURIDICO ESPECIALIZADO EN{' '}
-                <span className="text-gradient">
-                  RECLAMOS ANTE ACCIDENTES/ ENFERMEDADES DE TRABAJO, DEFENSAS LABORALES Y SINIESTROS DE TRÁNSITO
-                </span>
+                ESTUDIO JURIDICO DRA.CITERA
               </h1>
               
               <p className="text-lg sm:text-xl text-gray-600 leading-relaxed" style={{ fontFamily: 'Inter', fontWeight: 400 }}>
