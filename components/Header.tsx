@@ -49,19 +49,19 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-gray-700 hover:text-primary-600 font-medium transition-colors duration-200"
+                className="text-sm text-gray-700 hover:text-primary-600 font-medium transition-colors duration-200"
               >
                 {item.name}
               </button>
             ))}
             <button
               onClick={() => scrollToSection('contact')}
-              className="btn-3d text-sm"
+              className="btn-3d text-xs px-3 py-1.5"
             >
               Contactar
             </button>
@@ -91,7 +91,7 @@ const Header = () => {
               ))}
               <button
                 onClick={() => scrollToSection('contact')}
-                className="btn-3d w-full text-sm"
+                className="btn-3d w-full text-xs px-3 py-1.5"
               >
                 Contactar
               </button>
