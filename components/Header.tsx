@@ -45,7 +45,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <Scale className="h-8 w-8 text-primary-600" />
-            <span className="text-xl font-bebas-neue text-gray-900">Estudio Citera</span>
+            <span className="text-xl text-gray-900" style={{ fontFamily: 'Poppins', fontWeight: 700 }}>Estudio Citera</span>
           </div>
 
           {/* Desktop Navigation */}

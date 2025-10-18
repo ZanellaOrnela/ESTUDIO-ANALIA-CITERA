@@ -23,14 +23,14 @@ const Hero = () => {
             className="space-y-8"
           >
             <div className="space-y-4">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bebas-neue text-gray-900 leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-gray-900 leading-tight" style={{ fontFamily: 'Poppins', fontWeight: 700 }}>
                 ESTUDIO JURIDICO ESPECIALIZADO EN{' '}
                 <span className="text-gradient">
                   RECLAMOS ANTE ACCIDENTES/ ENFERMEDADES DE TRABAJO, DEFENSAS LABORALES Y SINIESTROS DE TRÁNSITO
                 </span>
               </h1>
               
-              <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
+              <p className="text-lg sm:text-xl text-gray-600 leading-relaxed" style={{ fontFamily: 'Inter', fontWeight: 400 }}>
                 Abogados con más de 25 años de experiencia defendiendo los derechos de los trabajadores 
                 frente a accidentes/enfermedades de trabajo, como así también, reclamos en general. 
                 Dentro de nuestros servicios, otro de ellos es asesoramiento frente a siniestros de tránsito, etc.
