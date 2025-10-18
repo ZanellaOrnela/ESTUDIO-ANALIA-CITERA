@@ -4,22 +4,43 @@ import { motion } from 'framer-motion';
 import ImageCarousel from './ImageCarousel';
 
 const Gallery = () => {
-  // Imágenes de la galería
-  const images = [
+  // Videos de la galería (enlaces de Google Drive)
+  const media = [
     {
-      src: "/images/gallery-1.svg",
-      alt: "Estudio Analia Citera - Oficina",
-      caption: "Nuestro estudio jurídico"
+      src: "https://drive.google.com/uc?export=download&id=1w738IRwPmMjxm7uP8RYFhxz8kNSz23GO",
+      alt: "Video 1 - Estudio Analia Citera",
+      caption: "Nuestro estudio jurídico",
+      type: 'video' as const
     },
     {
-      src: "/images/gallery-2.svg",
-      alt: "Especialistas en derecho laboral",
-      caption: "Especialistas en derecho laboral"
+      src: "https://drive.google.com/uc?export=download&id=1QjmZZHkvGK_z1ZF9iFnrihKGghnIvrYI",
+      alt: "Video 2 - Especialistas en derecho laboral",
+      caption: "Especialistas en derecho laboral",
+      type: 'video' as const
     },
     {
-      src: "/images/gallery-3.svg",
-      alt: "Más de 25 años de experiencia",
-      caption: "Más de 25 años defendiendo trabajadores"
+      src: "https://drive.google.com/uc?export=download&id=1TiNC2MBZJkSdEajoLxLusNjqX3tUM29V",
+      alt: "Video 3 - Más de 25 años de experiencia",
+      caption: "Más de 25 años defendiendo trabajadores",
+      type: 'video' as const
+    },
+    {
+      src: "https://drive.google.com/uc?export=download&id=1hLCVHgab7n6odLjC5QWUtB8PuenBDnPj",
+      alt: "Video 4 - Defensas laborales",
+      caption: "Defensas laborales especializadas",
+      type: 'video' as const
+    },
+    {
+      src: "https://drive.google.com/uc?export=download&id=1ak3n-XAbUXl0mDjm6jx08pZuSWMdk7Et",
+      alt: "Video 5 - Siniestros de tránsito",
+      caption: "Siniestros de tránsito",
+      type: 'video' as const
+    },
+    {
+      src: "https://drive.google.com/uc?export=download&id=15aVmxSZ9pFEQO6ma-a7wuaniknc5KDwE",
+      alt: "Video 6 - Consultas y asesoramiento",
+      caption: "Consultas y asesoramiento",
+      type: 'video' as const
     }
   ];
 
@@ -51,19 +72,19 @@ const Gallery = () => {
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center">
             <h2 className="section-title">
-              NUESTRO ESTUDIO
+              NUESTROS VIDEOS
             </h2>
             <p className="section-subtitle">
-              Conoce nuestro espacio de trabajo y equipo
+              Conoce más sobre nuestro trabajo y servicios
             </p>
           </motion.div>
 
           {/* Carousel */}
           <motion.div variants={itemVariants} className="flex justify-center">
             <ImageCarousel 
-              images={images}
+              media={media}
               autoPlay={true}
-              autoPlayInterval={4000}
+              autoPlayInterval={6000}
             />
           </motion.div>
 
@@ -73,9 +94,9 @@ const Gallery = () => {
             className="text-center max-w-2xl mx-auto"
           >
             <p className="text-gray-600 leading-relaxed">
-              Nuestro estudio cuenta con instalaciones modernas y un equipo profesional 
-              dedicado a brindar la mejor atención a nuestros clientes. 
-              Más de 25 años de experiencia nos respaldan.
+              Descubre más sobre nuestros servicios a través de estos videos informativos. 
+              Conoce nuestro enfoque profesional y la experiencia que nos respalda 
+              en cada caso que manejamos.
             </p>
           </motion.div>
         </motion.div>

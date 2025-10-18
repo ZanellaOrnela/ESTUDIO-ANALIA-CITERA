@@ -5,17 +5,18 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 interface ImageCarouselProps {
-  images: {
+  media: {
     src: string;
     alt: string;
     caption?: string;
+    type: 'image' | 'video';
   }[];
   autoPlay?: boolean;
   autoPlayInterval?: number;
 }
 
 const ImageCarousel = ({ 
-  images, 
+  media, 
   autoPlay = true, 
   autoPlayInterval = 5000 
 }: ImageCarouselProps) => {
@@ -27,19 +28,19 @@ const ImageCarousel = ({
 
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => 
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        prevIndex === media.length - 1 ? 0 : prevIndex + 1
       );
     }, autoPlayInterval);
 
     return () => clearInterval(interval);
-  }, [autoPlay, autoPlayInterval, images.length]);
+  }, [autoPlay, autoPlayInterval, media.length]);
 
   const goToPrevious = () => {
-    setCurrentIndex(currentIndex === 0 ? images.length - 1 : currentIndex - 1);
+    setCurrentIndex(currentIndex === 0 ? media.length - 1 : currentIndex - 1);
   };
 
   const goToNext = () => {
-    setCurrentIndex(currentIndex === images.length - 1 ? 0 : currentIndex + 1);
+    setCurrentIndex(currentIndex === media.length - 1 ? 0 : currentIndex + 1);
   };
 
   const goToSlide = (index: number) => {
@@ -59,15 +60,26 @@ const ImageCarousel = ({
             transition={{ duration: 0.5, ease: "easeInOut" }}
             className="absolute inset-0"
           >
-            <img
-              src={images[currentIndex].src}
-              alt={images[currentIndex].alt}
-              className="w-full h-full object-cover"
-            />
-            {images[currentIndex].caption && (
+            {media[currentIndex].type === 'video' ? (
+              <video
+                src={media[currentIndex].src}
+                className="w-full h-full object-cover"
+                controls
+                muted
+                loop
+                playsInline
+              />
+            ) : (
+              <img
+                src={media[currentIndex].src}
+                alt={media[currentIndex].alt}
+                className="w-full h-full object-cover"
+              />
+            )}
+            {media[currentIndex].caption && (
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                 <p className="text-white text-sm font-medium">
-                  {images[currentIndex].caption}
+                  {media[currentIndex].caption}
                 </p>
               </div>
             )}
@@ -93,9 +105,9 @@ const ImageCarousel = ({
       </div>
 
       {/* Dots indicator */}
-      {images.length > 1 && (
+      {media.length > 1 && (
         <div className="flex justify-center space-x-2 mt-4">
-          {images.map((_, index) => (
+          {media.map((_, index) => (
             <button
               key={index}
               onClick={() => goToSlide(index)}
@@ -104,17 +116,17 @@ const ImageCarousel = ({
                   ? 'bg-primary-600 scale-125'
                   : 'bg-gray-300 hover:bg-gray-400'
               }`}
-              aria-label={`Ir a imagen ${index + 1}`}
+              aria-label={`Ir a ${media[index].type === 'video' ? 'video' : 'imagen'} ${index + 1}`}
             />
           ))}
         </div>
       )}
 
-      {/* Image counter */}
-      {images.length > 1 && (
+      {/* Media counter */}
+      {media.length > 1 && (
         <div className="text-center mt-2">
           <span className="text-xs text-gray-500">
-            {currentIndex + 1} de {images.length}
+            {currentIndex + 1} de {media.length}
           </span>
         </div>
       )}
