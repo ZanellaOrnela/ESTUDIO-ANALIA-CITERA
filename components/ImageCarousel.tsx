@@ -35,9 +35,9 @@ const ImageCarousel = ({
   };
 
   return (
-    <div className="relative w-full max-w-md mx-auto">
-      {/* Main carousel container - 16:9 aspect ratio for videos */}
-      <div className="relative aspect-video overflow-hidden rounded-2xl bg-gray-100 shadow-lg">
+    <div className="relative w-full max-w-sm mx-auto">
+      {/* Main carousel container - 9:16 aspect ratio for vertical videos */}
+      <div className="relative aspect-[9/16] overflow-hidden rounded-2xl bg-gray-100 shadow-lg">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
@@ -54,7 +54,7 @@ const ImageCarousel = ({
                 allow="autoplay; encrypted-media"
                 allowFullScreen
                 title={media[currentIndex].alt}
-                style={{ aspectRatio: '16/9' }}
+                style={{ aspectRatio: '9/16' }}
               />
             ) : (
               <img
