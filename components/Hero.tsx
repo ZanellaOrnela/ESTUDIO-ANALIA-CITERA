@@ -23,7 +23,7 @@ const Hero = () => {
             className="space-y-8"
           >
             <div className="space-y-4">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-gray-900 leading-tight" style={{ fontFamily: 'Poppins', fontWeight: 700 }}>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-900 leading-tight" style={{ fontFamily: 'Poppins', fontWeight: 700 }}>
                 ESTUDIO JURIDICO ESPECIALIZADO EN{' '}
                 <span className="text-gradient">
                   RECLAMOS ANTE ACCIDENTES/ ENFERMEDADES DE TRABAJO, DEFENSAS LABORALES Y SINIESTROS DE TRÁNSITO
