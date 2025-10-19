@@ -59,10 +59,10 @@ const Services = () => {
         >
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-cinzel" style={{ color: '#143259' }}>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-cinzel" style={{ color: '#0F2D49' }}>
               Te defendemos en todos los siniestros de ART
             </h2>
-            <p className="text-lg leading-relaxed font-montserrat font-semibold" style={{ color: '#143259' }}>
+            <p className="text-lg leading-relaxed font-montserrat font-semibold" style={{ color: '#0F2D49' }}>
               Accidentes y enfermedades laborales
             </p>
           </motion.div>
@@ -79,16 +79,16 @@ const Services = () => {
                 className="bg-white rounded-2xl p-4 sm:p-5 shadow-lg border border-gray-100"
               >
                 {/* Icono */}
-                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-[#143259] rounded-xl flex items-center justify-center mb-4">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-[#0F2D49] rounded-xl flex items-center justify-center mb-4">
                   <service.icon className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
                 </div>
                 
                 {/* Contenido */}
                 <div className="space-y-3">
-                  <h3 className="text-base sm:text-lg font-bold text-[#143259] font-cinzel">
+                  <h3 className="text-base sm:text-lg font-bold text-[#0F2D49] font-cinzel">
                     {service.title}
                   </h3>
-                  <p className="text-sm sm:text-base text-[#143259] leading-relaxed font-montserrat font-semibold">
+                  <p className="text-sm sm:text-base text-[#0F2D49] leading-relaxed font-montserrat font-semibold">
                     {service.description}
                   </p>
                 </div>

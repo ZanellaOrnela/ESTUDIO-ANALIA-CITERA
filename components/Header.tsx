@@ -35,21 +35,20 @@ const Header = () => {
   ];
 
   return (
-    <header className={`fixed top-4 left-0 right-0 z-50 transition-all duration-300 ${
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
         ? 'bg-white shadow-lg backdrop-blur-md bg-white/95' 
         : 'bg-transparent'
     }`}>
       <nav className="container-custom">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <div className="flex items-center justify-center">
-            <div className="w-40 h-20 rounded overflow-hidden flex items-center justify-center">
+            <div className="w-64 h-24 rounded flex items-center justify-center">
               <img 
-                src="/images/ChatGPT Image 18 oct 2025, 09_31_50 p.m..png" 
+                src="/images/WhatsApp Image 2025-10-06 at 16.22.05_28e5fbe4.jpg" 
                 alt="Logo Estudio Citera" 
-                className="w-full h-full object-cover object-center"
-                style={{ objectPosition: 'center 50%' }}
+                className="max-w-full max-h-full object-contain"
               />
             </div>
           </div>
@@ -62,7 +61,7 @@ const Header = () => {
                 onClick={() => scrollToSection(item.href)}
                 className={`text-xs font-montserrat font-semibold transition-colors duration-200 ${
                   isScrolled 
-                    ? 'text-[#143259] hover:text-[#D9C896]' 
+                    ? 'text-[#0F2D49] hover:text-[#D9C896]' 
                     : 'text-white hover:text-[#D9C896]'
                 }`}
               >
@@ -73,8 +72,8 @@ const Header = () => {
               onClick={() => scrollToSection('contact')}
               className={`text-sm px-4 py-2 flex items-center space-x-2 font-montserrat font-semibold rounded-3xl transition-all duration-300 transform hover:scale-105 ${
                 isScrolled 
-                  ? 'bg-[#143259] text-white hover:bg-[#0F2440]' 
-                  : 'bg-[#D9C896] text-[#143259] hover:bg-[#C4B082]'
+                  ? 'bg-[#0F2D49] text-white hover:bg-[#0F2440]' 
+                  : 'bg-[#D9C896] text-[#0F2D49] hover:bg-[#C4B082]'
               }`}
             >
               <span>Contactar</span>
@@ -87,7 +86,7 @@ const Header = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className={`md:hidden p-2 rounded-lg transition-colors duration-200 ${
               isScrolled 
-                ? 'text-[#143259] hover:bg-[#F2F2F2]' 
+                ? 'text-[#0F2D49] hover:bg-[#F2F2F2]' 
                 : 'text-white hover:bg-white/20'
             }`}
           >
@@ -100,7 +99,7 @@ const Header = () => {
           <div className={`md:hidden border-t transition-colors duration-200 ${
             isScrolled 
               ? 'bg-white border-[#F2F2F2]' 
-              : 'bg-[#143259] border-white/20'
+              : 'bg-[#0F2D49] border-white/20'
           }`}>
             <div className="px-4 py-4 space-y-4">
               {navItems.map((item) => (
@@ -109,7 +108,7 @@ const Header = () => {
                   onClick={() => scrollToSection(item.href)}
                   className={`block w-full text-left font-montserrat font-semibold py-2 transition-colors duration-200 ${
                     isScrolled 
-                      ? 'text-[#143259] hover:text-[#D9C896]' 
+                      ? 'text-[#0F2D49] hover:text-[#D9C896]' 
                       : 'text-white hover:text-[#D9C896]'
                   }`}
                 >
@@ -120,8 +119,8 @@ const Header = () => {
                 onClick={() => scrollToSection('contact')}
                 className={`w-full text-sm px-4 py-2 flex items-center justify-center space-x-2 font-montserrat font-semibold rounded-3xl transition-all duration-300 transform hover:scale-105 ${
                   isScrolled 
-                    ? 'bg-[#143259] text-white hover:bg-[#0F2440]' 
-                    : 'bg-[#D9C896] text-[#143259] hover:bg-[#C4B082]'
+                    ? 'bg-[#0F2D49] text-white hover:bg-[#0F2440]' 
+                    : 'bg-[#D9C896] text-[#0F2D49] hover:bg-[#C4B082]'
                 }`}
               >
                 <span>Contactar</span>

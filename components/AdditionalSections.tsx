@@ -23,7 +23,7 @@ const AdditionalSections = () => {
   return (
     <>
       {/* Transformamos tu reclamo en resultados concretos */}
-      <section className="section-padding" style={{ backgroundColor: '#143259' }}>
+      <section className="section-padding" style={{ backgroundColor: '#0F2D49' }}>
         <div className="container-custom" style={{ paddingLeft: '0.5rem', paddingRight: '0.5rem' }}>
           <motion.div
             variants={containerVariants}
@@ -86,38 +86,38 @@ const AdditionalSections = () => {
             className="space-y-16"
           >
             <motion.div variants={itemVariants} className="text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 relative font-cinzel font-bold" style={{ color: '#143259' }}>
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 relative font-cinzel font-bold" style={{ color: '#0F2D49' }}>
                 Proceso simple en 3 pasos
               </h2>
             </motion.div>
             
             <motion.div variants={itemVariants} className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="bg-[#143259] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="bg-[#0F2D49] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold" style={{ color: '#D9C896' }}>1</span>
                 </div>
-                <h4 className="text-lg font-bold mb-3 font-cinzel font-bold" style={{ color: '#143259' }}>Paso 1</h4>
-                <p className="text-sm font-montserrat font-semibold" style={{ color: '#143259' }}>
+                <h4 className="text-lg font-bold mb-3 font-cinzel font-bold" style={{ color: '#0F2D49' }}>Paso 1</h4>
+                <p className="text-sm font-montserrat font-semibold" style={{ color: '#0F2D49' }}>
                   Contanos qué te pasó (videollamada o WhatsApp). Revisamos viabilidad y próximos pasos, sin costo.
                 </p>
               </div>
               
               <div className="text-center">
-                <div className="bg-[#143259] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="bg-[#0F2D49] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold" style={{ color: '#D9C896' }}>2</span>
                 </div>
-                <h4 className="text-lg font-bold mb-3 font-cinzel font-bold" style={{ color: '#143259' }}>Paso 2</h4>
-                <p className="text-sm font-montserrat font-semibold" style={{ color: '#143259' }}>
+                <h4 className="text-lg font-bold mb-3 font-cinzel font-bold" style={{ color: '#0F2D49' }}>Paso 2</h4>
+                <p className="text-sm font-montserrat font-semibold" style={{ color: '#0F2D49' }}>
                   Reunimos estudios y pruebas. Presentamos reclamos ante ART y, si hace falta, iniciamos acción judicial.
                 </p>
               </div>
               
               <div className="text-center">
-                <div className="bg-[#143259] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="bg-[#0F2D49] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold" style={{ color: '#D9C896' }}>3</span>
                 </div>
-                <h4 className="text-lg font-bold mb-3 font-cinzel font-bold" style={{ color: '#143259' }}>Paso 3</h4>
-                <p className="text-sm font-montserrat font-semibold" style={{ color: '#143259' }}>
+                <h4 className="text-lg font-bold mb-3 font-cinzel font-bold" style={{ color: '#0F2D49' }}>Paso 3</h4>
+                <p className="text-sm font-montserrat font-semibold" style={{ color: '#0F2D49' }}>
                   Negociamos y cobramos. Te informamos cada avance y cerramos con el mejor resultado posible.
                 </p>
               </div>
@@ -140,10 +140,10 @@ const AdditionalSections = () => {
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 {/* Contenido de texto */}
                 <div className="text-center lg:text-left">
-                  <h2 className="text-3xl md:text-4xl font-bold mb-6 relative font-cinzel font-bold" style={{ color: '#143259' }}>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-6 relative font-cinzel font-bold" style={{ color: '#0F2D49' }}>
                     Dra. Citera Analía — Titular del Estudio
                   </h2>
-                  <p className="text-lg leading-relaxed font-montserrat font-semibold" style={{ color: '#143259' }}>
+                  <p className="text-lg leading-relaxed font-montserrat font-semibold" style={{ color: '#0F2D49' }}>
                     Dra. Citera Analía, abogada, con 25 años de experiencia, siempre se ha destacado por su capacidad, 
                     habiendo egresado con medalla de honor, actualizándose permanentemente, cuenta en su haber con dos maestrías, 
                     tanto en el Derecho Laboral, como Civil, a los efectos de brindarle la mejor y eficiente defensa a sus clientes. 

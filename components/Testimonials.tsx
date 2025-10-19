@@ -50,7 +50,7 @@ const Testimonials = () => {
         >
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-cinzel" style={{ color: '#143259' }}>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-cinzel" style={{ color: '#0F2D49' }}>
               Historias reales, resultados reales
             </h2>
           </motion.div>
@@ -64,7 +64,7 @@ const Testimonials = () => {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="bg-[#143259] rounded-xl shadow-lg p-8 relative"
+                className="bg-[#0F2D49] rounded-xl shadow-lg p-8 relative"
               >
                 <Quote className="h-8 w-8 text-white mb-4" />
                 <p className="text-white leading-relaxed mb-6 italic font-montserrat font-semibold">
@@ -87,7 +87,7 @@ const Testimonials = () => {
           {/* Bottom section */}
           <motion.div 
             variants={itemVariants}
-            className="bg-[#143259] rounded-2xl p-8 text-center"
+            className="bg-[#0F2D49] rounded-2xl p-8 text-center"
             style={{ color: '#D9C896' }}
           >
             <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Poppins', fontWeight: 700 }}>
@@ -103,7 +103,7 @@ const Testimonials = () => {
                   element.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
-              className="bg-[#D9C896] text-[#143259] font-semibold py-3 px-8 rounded-3xl"
+              className="bg-[#D9C896] text-[#0F2D49] font-semibold py-3 px-8 rounded-3xl"
             >
               Iniciar mi Consulta
             </button>

@@ -25,11 +25,11 @@ export const metadata: Metadata = {
   authors: [{ name: 'Estudio Citera' }],
   icons: {
     icon: [
-      { url: '/images/ChatGPT Image 18 oct 2025, 09_31_50 p.m..png', sizes: '32x32', type: 'image/png' },
-      { url: '/images/ChatGPT Image 18 oct 2025, 09_31_50 p.m..png', sizes: '16x16', type: 'image/png' },
+      { url: '/images/WhatsApp Image 2025-10-06 at 16.22.05_28e5fbe4.jpg', sizes: '32x32', type: 'image/jpeg' },
+      { url: '/images/WhatsApp Image 2025-10-06 at 16.22.05_28e5fbe4.jpg', sizes: '16x16', type: 'image/jpeg' },
     ],
-    shortcut: '/images/ChatGPT Image 18 oct 2025, 09_31_50 p.m..png',
-    apple: '/images/ChatGPT Image 18 oct 2025, 09_31_50 p.m..png',
+    shortcut: '/images/WhatsApp Image 2025-10-06 at 16.22.05_28e5fbe4.jpg',
+    apple: '/images/WhatsApp Image 2025-10-06 at 16.22.05_28e5fbe4.jpg',
   },
   openGraph: {
     title: 'Estudio Citera - Abogados Especialistas en Accidentes de Trabajo',
@@ -51,9 +51,9 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${cinzel.variable} ${montserrat.variable}`}>
       <head>
-        <link rel="icon" href="/images/ChatGPT Image 18 oct 2025, 09_31_50 p.m..png" type="image/png" />
-        <link rel="shortcut icon" href="/images/ChatGPT Image 18 oct 2025, 09_31_50 p.m..png" type="image/png" />
-        <link rel="apple-touch-icon" href="/images/ChatGPT Image 18 oct 2025, 09_31_50 p.m..png" />
+        <link rel="icon" href="/images/WhatsApp Image 2025-10-06 at 16.22.05_28e5fbe4.jpg" type="image/jpeg" />
+        <link rel="shortcut icon" href="/images/WhatsApp Image 2025-10-06 at 16.22.05_28e5fbe4.jpg" type="image/jpeg" />
+        <link rel="apple-touch-icon" href="/images/WhatsApp Image 2025-10-06 at 16.22.05_28e5fbe4.jpg" />
       </head>
       <body className="font-montserrat antialiased">
         {children}

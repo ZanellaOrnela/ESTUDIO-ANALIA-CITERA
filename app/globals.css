@@ -25,7 +25,7 @@
   }
   
   .btn-primary:hover {
-    background-color: #143259;
+    background-color: #0F2D49;
   }
   
   .btn-primary:active {
@@ -47,7 +47,7 @@
   
   .btn-3d {
     @apply text-white font-bold py-4 px-8 rounded-3xl transition-all duration-300 transform hover:scale-110 relative overflow-hidden;
-    background-color: #143259;
+    background-color: #0F2D49;
     box-shadow: 
       20px 20px 40px #bebebe,
       -20px -20px 40px #ffffff;
@@ -68,22 +68,22 @@
   .btn-3d-navbar {
     @apply text-white font-bold py-4 px-8 rounded-3xl transition-all duration-300 transform hover:scale-110 relative overflow-hidden;
     background-color: #D9C896;
-    color: #143259;
+    color: #0F2D49;
   }
   
   .btn-3d-navbar:hover {
     background-color: #C4B082;
-    color: #143259;
+    color: #0F2D49;
   }
   
   .btn-3d-navbar:active {
     background-color: #B09A6E;
-    color: #143259;
+    color: #0F2D49;
   }
 
   .btn-simple {
     @apply text-white font-bold py-2 px-4 rounded-3xl transition-all duration-300 transform hover:scale-105 relative overflow-hidden;
-    background-color: #143259;
+    background-color: #0F2D49;
   }
   
   .btn-simple:hover {
@@ -101,12 +101,12 @@
   
   .btn-outline:hover {
     background-color: #D9C896;
-    color: #143259;
+    color: #0F2D49;
   }
   
   .btn-outline:active {
     background-color: #C4B082;
-    color: #143259;
+    color: #0F2D49;
   }
   
   
@@ -124,7 +124,7 @@
   }
   
   .section-bg-primary {
-    @apply bg-[#143259];
+    @apply bg-[#0F2D49];
   }
   
   .container-custom {
@@ -288,7 +288,7 @@
   }
   
   .flip-card-back {
-    background: #143259;
+    background: #0F2D49;
     color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
@@ -297,7 +297,7 @@
     width: 60px;
     height: 60px;
     margin-bottom: 20px;
-    color: #143259;
+    color: #0F2D49;
   }
   
   .flip-card-back .flip-card-icon {
@@ -327,7 +327,7 @@
   }
   
   .flip-card-badge {
-    background: #143259;
+    background: #0F2D49;
     color: white;
     padding: 4px 12px;
     border-radius: 20px;

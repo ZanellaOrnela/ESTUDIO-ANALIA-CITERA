@@ -48,7 +48,7 @@ const WhyChoose = () => {
   };
 
   return (
-    <section id="why-choose" className="section-padding" style={{ backgroundColor: '#143259' }}>
+    <section id="why-choose" className="section-padding" style={{ backgroundColor: '#0F2D49' }}>
       <div className="container-custom" style={{ paddingLeft: '0.5rem', paddingRight: '0.5rem' }}>
         <motion.div
           variants={containerVariants}
@@ -77,15 +77,15 @@ const WhyChoose = () => {
                 className="relative bg-[#D9C896] rounded-3xl p-8 text-center overflow-hidden"
               >
                 {/* Icono decorativo */}
-                <div className="w-16 h-16 mx-auto mb-6 bg-[#143259] rounded-full flex items-center justify-center">
+                <div className="w-16 h-16 mx-auto mb-6 bg-[#0F2D49] rounded-full flex items-center justify-center">
                   <reason.icon className="h-8 w-8 text-[#D9C896]" />
                 </div>
                 
-                <h3 className="text-xl font-bold text-[#143259] mb-4 font-cinzel">
+                <h3 className="text-xl font-bold text-[#0F2D49] mb-4 font-cinzel">
                   {reason.title}
                 </h3>
                 
-                <p className="text-base text-[#143259] leading-relaxed font-montserrat font-semibold">
+                <p className="text-base text-[#0F2D49] leading-relaxed font-montserrat font-semibold">
                   {reason.subtitle}
                 </p>
               </motion.div>
