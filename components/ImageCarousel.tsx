@@ -65,7 +65,7 @@ const ImageCarousel = ({
             )}
             {media[currentIndex].caption && (
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-                <p className="text-white text-sm font-medium">
+                <p className="text-white text-sm font-medium font-montserrat">
                   {media[currentIndex].caption}
                 </p>
               </div>
@@ -112,7 +112,7 @@ const ImageCarousel = ({
       {/* Media counter */}
       {media.length > 1 && (
         <div className="text-center mt-2">
-          <span className="text-xs text-gray-500">
+          <span className="text-xs text-gray-500 font-montserrat font-semibold">
             {currentIndex + 1} de {media.length}
           </span>
         </div>
