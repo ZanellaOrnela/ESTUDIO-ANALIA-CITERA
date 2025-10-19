@@ -15,8 +15,8 @@ const Hero = () => {
       {/* Imagen de fondo */}
       <div className="absolute inset-0">
         <img
-          src="/images/person-at-desk-wrist-discomfort-1024x683.jpg"
-          alt="Persona en escritorio con molestia en muñeca"
+          src="https://centraloregonlawfirm.com/wp-content/uploads/2021/10/worker-injured-on-the-job-1080x675.jpg"
+          alt="Trabajador lesionado en el trabajo"
           className="object-cover w-full h-full"
         />
       </div>

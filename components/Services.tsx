@@ -8,31 +8,31 @@ const Services = () => {
   const services = [
     {
       icon: Briefcase,
-      image: "/images/demora o negativa de la art.jpg",
+      image: "https://media.licdn.com/dms/image/v2/C4E12AQEAQ89qIBMI7w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1648506371261?e=2147483647&v=beta&t=cL-XzG0mwEvKu8qmHJ2zz1XFdhYxf8cQKM1oLnVH4qk",
       title: "Demora o negativa de ART",
       description: "La ART no te autoriza estudios, traslados o tratamientos. Intervenimos para exigir cobertura, controlar el alta y calcular la incapacidad."
     },
     {
       icon: FileText,
-      image: "/images/alta apresurada.jpg",
+      image: "https://www.castillocastrillonabogados.es/wp-content/uploads/despido-indirecto-trabajador-1199x800.jpg",
       title: "Alta apresurada",
       description: "Te dieron el alta sin estar bien. Pedimos reevaluación, pericias y reclamamos la indemnización que corresponde."
     },
     {
       icon: Car,
-      image: "/images/accidente in itinere.jpg",
+      image: "https://garciaalonso.com.ar/wp-content/uploads/2022/05/accidente-in-itinere.jpg",
       title: "Accidente \"in itinere\"",
       description: "Sufriste un siniestro camino al trabajo. Documentamos, probamos el nexo y reclamamos a la ART y terceros si corresponde."
     },
     {
       icon: Shield,
-      image: "/images/secuelas o incapacidad.jpg",
+      image: "https://www.eluniversal.com.mx/resizer/v2/7TTYXIYPOBFYBFQRSBUK4ZI2OM.jpg?auth=08d882254f603e234abe8e0e4c00a6d2f9948d8332443ca717ddbbaf63498d78&smart=true&width=1100&height=666",
       title: "Secuelas e incapacidad",
       description: "Tenés dolor, limitaciones o pérdida de fuerza. Cuantificamos la incapacidad con peritos y maximizamos el monto a cobrar."
     },
     {
       icon: Scale,
-      image: "/images/empleador incumplidor.jpg",
+      image: "https://i0.wp.com/aldiaargentina.microjuris.com/wp-content/uploads/2024/10/jefe-j.jpg?fit=1899%2C1265&ssl=1",
       title: "Empleador incumplidor",
       description: "Falta de registración, diferencias salariales o despido tras el accidente. Accionamos con intimaciones y demanda."
     }
@@ -85,7 +85,7 @@ const Services = () => {
                 className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden"
               >
                 {/* Imagen */}
-                <div className="relative w-full h-32 sm:h-40">
+                <div className="relative w-full h-56 sm:h-64">
                   <Image
                     src={service.image}
                     alt={service.title}
