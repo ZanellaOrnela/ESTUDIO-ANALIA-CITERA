@@ -76,7 +76,7 @@ Datos del formulario:
         >
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-cinzel font-bold" style={{ color: '#D9C896' }}>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-montserrat font-bold" style={{ color: '#D9C896' }}>
               Estamos online y respondemos rápido
             </h2>
           </motion.div>
@@ -93,7 +93,7 @@ Datos del formulario:
                   <div className="flex items-start space-x-4">
                     <MapPin className="h-6 w-6 text-[#0F2D49] mt-1" />
                     <div>
-                      <h4 className="font-semibold text-[#0F2D49] font-cinzel font-bold">Ubicación y Horario</h4>
+                      <h4 className="font-semibold text-[#0F2D49] font-montserrat font-bold">Ubicación y Horario</h4>
                       <p className="text-[#0F2D49] font-montserrat font-semibold">
                         Atención virtual. Defendemos tanto en CABA, como en la provincia de Buenos Aires. 
                         Horario de contacto: lunes a viernes de 9 a 17 h.
@@ -104,7 +104,7 @@ Datos del formulario:
                   <div className="flex items-start space-x-4">
                     <Mail className="h-6 w-6 text-[#0F2D49] mt-1" />
                     <div>
-                      <h4 className="font-semibold text-[#0F2D49] font-cinzel font-bold">Email</h4>
+                      <h4 className="font-semibold text-[#0F2D49] font-montserrat font-bold">Email</h4>
                       <p className="text-[#0F2D49] font-montserrat font-semibold">analiacitera@yahoo.com.ar</p>
                     </div>
                   </div>
@@ -112,7 +112,7 @@ Datos del formulario:
                   <div className="flex items-start space-x-4">
                     <Phone className="h-6 w-6 text-[#0F2D49] mt-1" />
                     <div>
-                      <h4 className="font-semibold text-[#0F2D49] font-cinzel font-bold">Teléfono</h4>
+                      <h4 className="font-semibold text-[#0F2D49] font-montserrat font-bold">Teléfono</h4>
                       <p className="text-[#0F2D49] font-montserrat font-semibold">+54 9 11 5318-9897</p>
                     </div>
                   </div>
@@ -120,7 +120,7 @@ Datos del formulario:
                   <div className="flex items-start space-x-4">
                     <Clock className="h-6 w-6 text-[#0F2D49] mt-1" />
                     <div>
-                      <h4 className="font-semibold text-[#0F2D49] font-cinzel font-bold">Horario de Atención</h4>
+                      <h4 className="font-semibold text-[#0F2D49] font-montserrat font-bold">Horario de Atención</h4>
                       <p className="text-[#0F2D49] font-montserrat font-semibold">Lunes a Viernes: 9:00 - 17:00</p>
                     </div>
                   </div>
@@ -132,7 +132,7 @@ Datos del formulario:
             {/* Contact Form */}
             <motion.div variants={itemVariants}>
               <div className="bg-[#D9C896] border border-gray-300 rounded-xl shadow-lg p-8">
-                <h3 className="text-2xl font-bold mb-6 font-cinzel font-bold" style={{ color: '#0F2D49' }}>
+                <h3 className="text-2xl font-bold mb-6 font-montserrat font-bold" style={{ color: '#0F2D49' }}>
                   Contactar
                 </h3>
                 

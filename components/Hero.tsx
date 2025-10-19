@@ -30,7 +30,7 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="text-left"
           >
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white leading-relaxed text-left font-cinzel font-bold">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white leading-relaxed text-left font-montserrat font-bold">
               Estudio Juridico Dra. Citera
             </h1>
             <h2 className="text-lg sm:text-xl md:text-2xl text-[#D9C896] text-left mt-4 leading-relaxed font-montserrat font-semibold">
@@ -70,13 +70,13 @@ const Hero = () => {
         >
           {/* Mobile y Tablet: Una sola imagen */}
           <div className="block lg:hidden w-full">
-            <div className="relative w-full h-64 rounded-lg overflow-hidden">
+            <div className="relative w-full h-80 rounded-lg overflow-hidden">
               <Image
-                src="https://i.pinimg.com/1200x/58/8e/17/588e1747915c0986323a66dfb3635112.jpg"
+                src="/images/hero-image-2-3.jpg"
                 alt="Imagen principal"
                 fill
                 className="object-cover grayscale"
-                style={{ objectPosition: '85% center' }}
+                style={{ objectPosition: 'center top' }}
               />
             </div>
           </div>

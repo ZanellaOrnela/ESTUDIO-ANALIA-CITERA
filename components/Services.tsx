@@ -59,7 +59,7 @@ const Services = () => {
         >
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-cinzel" style={{ color: '#0F2D49' }}>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-montserrat" style={{ color: '#0F2D49' }}>
               Te defendemos en todos los siniestros de ART
             </h2>
             <p className="text-lg leading-relaxed font-montserrat font-semibold" style={{ color: '#0F2D49' }}>
@@ -85,7 +85,7 @@ const Services = () => {
                 
                 {/* Contenido */}
                 <div className="space-y-3">
-                  <h3 className="text-base sm:text-lg font-bold text-[#0F2D49] font-cinzel">
+                  <h3 className="text-base sm:text-lg font-bold text-[#0F2D49] font-montserrat">
                     {service.title}
                   </h3>
                   <p className="text-sm sm:text-base text-[#0F2D49] leading-relaxed font-montserrat font-semibold">

@@ -33,7 +33,7 @@ const AdditionalSections = () => {
             className="space-y-16"
           >
             <motion.div variants={itemVariants} className="text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-cinzel font-bold" style={{ color: '#D9C896' }}>
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-montserrat font-bold" style={{ color: '#D9C896' }}>
                 Transformamos tu reclamo en resultados concretos
               </h2>
             </motion.div>
@@ -41,7 +41,7 @@ const AdditionalSections = () => {
             <motion.div variants={itemVariants} className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="text-center">
                 <CheckCircle className="h-12 w-12 mx-auto mb-4" style={{ color: '#D9C896' }} />
-                <h4 className="text-lg font-bold mb-2 font-cinzel font-bold" style={{ color: '#D9C896' }}>Indemnización</h4>
+                <h4 className="text-lg font-bold mb-2 font-montserrat font-bold" style={{ color: '#D9C896' }}>Indemnización</h4>
                 <p className="text-sm font-montserrat font-semibold" style={{ color: '#D9C896' }}>
                   Buscamos el mayor monto posible según tu incapacidad, salarios y tablas vigentes.
                 </p>
@@ -49,7 +49,7 @@ const AdditionalSections = () => {
               
               <div className="text-center">
                 <CheckCircle className="h-12 w-12 mx-auto mb-4" style={{ color: '#D9C896' }} />
-                <h4 className="text-lg font-bold mb-2 font-cinzel font-bold" style={{ color: '#D9C896' }}>Cobertura médica</h4>
+                <h4 className="text-lg font-bold mb-2 font-montserrat font-bold" style={{ color: '#D9C896' }}>Cobertura médica</h4>
                 <p className="text-sm font-montserrat font-semibold" style={{ color: '#D9C896' }}>
                   Tratamientos, rehabilitación, medicación y traslados a cargo de la ART.
                 </p>
@@ -57,7 +57,7 @@ const AdditionalSections = () => {
               
               <div className="text-center">
                 <CheckCircle className="h-12 w-12 mx-auto mb-4" style={{ color: '#D9C896' }} />
-                <h4 className="text-lg font-bold mb-2 font-cinzel font-bold" style={{ color: '#D9C896' }}>Acompañamiento</h4>
+                <h4 className="text-lg font-bold mb-2 font-montserrat font-bold" style={{ color: '#D9C896' }}>Acompañamiento</h4>
                 <p className="text-sm font-montserrat font-semibold" style={{ color: '#D9C896' }}>
                   Te guiamos paso a paso: qué papeles juntar, qué decir y qué evitar.
                 </p>
@@ -65,7 +65,7 @@ const AdditionalSections = () => {
               
               <div className="text-center">
                 <CheckCircle className="h-12 w-12 mx-auto mb-4" style={{ color: '#D9C896' }} />
-                <h4 className="text-lg font-bold mb-2 font-cinzel font-bold" style={{ color: '#D9C896' }}>Costos y tiempos</h4>
+                <h4 className="text-lg font-bold mb-2 font-montserrat font-bold" style={{ color: '#D9C896' }}>Costos y tiempos</h4>
                 <p className="text-sm font-montserrat font-semibold" style={{ color: '#D9C896' }}>
                   Consultas SIN CARGO, sin adelantar honorarios y con actualización frecuente del estado del caso.
                 </p>
@@ -86,7 +86,7 @@ const AdditionalSections = () => {
             className="space-y-16"
           >
             <motion.div variants={itemVariants} className="text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 relative font-cinzel font-bold" style={{ color: '#0F2D49' }}>
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 relative font-montserrat font-bold" style={{ color: '#0F2D49' }}>
                 Proceso simple en 3 pasos
               </h2>
             </motion.div>
@@ -96,7 +96,7 @@ const AdditionalSections = () => {
                 <div className="bg-[#0F2D49] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold" style={{ color: '#D9C896' }}>1</span>
                 </div>
-                <h4 className="text-lg font-bold mb-3 font-cinzel font-bold" style={{ color: '#0F2D49' }}>Paso 1</h4>
+                <h4 className="text-lg font-bold mb-3 font-montserrat font-bold" style={{ color: '#0F2D49' }}>Paso 1</h4>
                 <p className="text-sm font-montserrat font-semibold" style={{ color: '#0F2D49' }}>
                   Contanos qué te pasó (videollamada o WhatsApp). Revisamos viabilidad y próximos pasos, sin costo.
                 </p>
@@ -106,7 +106,7 @@ const AdditionalSections = () => {
                 <div className="bg-[#0F2D49] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold" style={{ color: '#D9C896' }}>2</span>
                 </div>
-                <h4 className="text-lg font-bold mb-3 font-cinzel font-bold" style={{ color: '#0F2D49' }}>Paso 2</h4>
+                <h4 className="text-lg font-bold mb-3 font-montserrat font-bold" style={{ color: '#0F2D49' }}>Paso 2</h4>
                 <p className="text-sm font-montserrat font-semibold" style={{ color: '#0F2D49' }}>
                   Reunimos estudios y pruebas. Presentamos reclamos ante ART y, si hace falta, iniciamos acción judicial.
                 </p>
@@ -116,7 +116,7 @@ const AdditionalSections = () => {
                 <div className="bg-[#0F2D49] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold" style={{ color: '#D9C896' }}>3</span>
                 </div>
-                <h4 className="text-lg font-bold mb-3 font-cinzel font-bold" style={{ color: '#0F2D49' }}>Paso 3</h4>
+                <h4 className="text-lg font-bold mb-3 font-montserrat font-bold" style={{ color: '#0F2D49' }}>Paso 3</h4>
                 <p className="text-sm font-montserrat font-semibold" style={{ color: '#0F2D49' }}>
                   Negociamos y cobramos. Te informamos cada avance y cerramos con el mejor resultado posible.
                 </p>
@@ -140,7 +140,7 @@ const AdditionalSections = () => {
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 {/* Contenido de texto */}
                 <div className="text-center lg:text-left">
-                  <h2 className="text-3xl md:text-4xl font-bold mb-6 relative font-cinzel font-bold" style={{ color: '#0F2D49' }}>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-6 relative font-montserrat font-bold" style={{ color: '#0F2D49' }}>
                     Dra. Citera Analía — Titular del Estudio
                   </h2>
                   <p className="text-lg leading-relaxed font-montserrat font-semibold" style={{ color: '#0F2D49' }}>

@@ -39,7 +39,7 @@ const About = () => {
         >
           {/* Sobre Nosotros */}
           <motion.div variants={itemVariants} className="text-center max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-cinzel font-bold" style={{ color: '#0F2D49' }}>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-montserrat font-bold" style={{ color: '#0F2D49' }}>
               Cobrá la indemnización que te corresponde
             </h2>
             <p className="text-lg leading-relaxed font-montserrat font-semibold" style={{ color: '#0F2D49' }}>

@@ -1,9 +1,12 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Quote, Star } from 'lucide-react';
+import { Quote, Star, ChevronDown, ChevronUp } from 'lucide-react';
+import { useState } from 'react';
 
 const Testimonials = () => {
+  const [expandedTestimonial, setExpandedTestimonial] = useState<number | null>(null);
+
   const testimonials = [
     {
       text: "Encontré a la Dra. Citera buscando en Google y fue la mejor decisión. Desde el primer día me atendió ella misma, con honestidad, calidez y profesionalismo. Gracias a su ayuda pude resolver mi reclamo con la ART y hoy mi vida cambió para mejor. Eternamente agradecida.",
@@ -50,7 +53,7 @@ const Testimonials = () => {
         >
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-cinzel" style={{ color: '#0F2D49' }}>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-montserrat" style={{ color: '#0F2D49' }}>
               Historias reales, resultados reales
             </h2>
           </motion.div>
@@ -58,30 +61,56 @@ const Testimonials = () => {
           {/* Testimonials Grid */}
           <motion.div 
             variants={itemVariants}
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 gap-8"
           >
-            {testimonials.map((testimonial, index) => (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                className="bg-[#0F2D49] rounded-xl shadow-lg p-8 relative"
-              >
-                <Quote className="h-8 w-8 text-white mb-4" />
-                <p className="text-white leading-relaxed mb-6 italic font-montserrat font-semibold">
-                  &ldquo;{testimonial.text}&rdquo;
-                </p>
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="font-semibold text-white font-montserrat">{testimonial.author}</p>
-                    <div className="flex space-x-1 mt-1">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
-                      ))}
+            {testimonials.map((testimonial, index) => {
+              const isLong = testimonial.text.length > 150;
+              const isExpanded = expandedTestimonial === index;
+              const displayText = isLong && !isExpanded 
+                ? testimonial.text.substring(0, 150) + '...' 
+                : testimonial.text;
+
+              return (
+                <motion.div
+                  key={index}
+                  variants={itemVariants}
+                  className="bg-[#0F2D49] rounded-xl shadow-lg p-8 relative"
+                >
+                  <Quote className="h-8 w-8 text-white mb-4" />
+                  <p className="text-white leading-relaxed mb-6 italic font-montserrat font-semibold">
+                    &ldquo;{displayText}&rdquo;
+                  </p>
+                  {isLong && (
+                    <button
+                      onClick={() => setExpandedTestimonial(isExpanded ? null : index)}
+                      className="flex items-center text-[#D9C896] hover:text-white transition-colors duration-200 mb-4"
+                    >
+                      {isExpanded ? (
+                        <>
+                          <span className="text-sm font-montserrat">Ver menos</span>
+                          <ChevronUp className="h-4 w-4 ml-1" />
+                        </>
+                      ) : (
+                        <>
+                          <span className="text-sm font-montserrat">Ver más</span>
+                          <ChevronDown className="h-4 w-4 ml-1" />
+                        </>
+                      )}
+                    </button>
+                  )}
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="font-semibold text-white font-montserrat">{testimonial.author}</p>
+                      <div className="flex space-x-1 mt-1">
+                        {[...Array(5)].map((_, i) => (
+                          <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
+                        ))}
+                      </div>
                     </div>
                   </div>
-                </div>
-              </motion.div>
-            ))}
+                </motion.div>
+              );
+            })}
           </motion.div>
 
           {/* Bottom section */}
@@ -90,7 +119,7 @@ const Testimonials = () => {
             className="bg-[#0F2D49] rounded-2xl p-8 text-center"
             style={{ color: '#D9C896' }}
           >
-            <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Poppins', fontWeight: 700 }}>
+            <h3 className="text-2xl font-bold mb-4 font-montserrat">
               Empezá tu reclamo hoy
             </h3>
             <p className="text-lg max-w-3xl mx-auto mb-6" style={{ color: '#D9C896' }}>

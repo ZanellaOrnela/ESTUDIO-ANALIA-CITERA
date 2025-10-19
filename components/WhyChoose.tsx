@@ -59,7 +59,7 @@ const WhyChoose = () => {
         >
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-cinzel" style={{ color: '#D9C896' }}>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-montserrat" style={{ color: '#D9C896' }}>
               Tu problema, resuelto con estrategia y claridad
             </h2>
           </motion.div>
@@ -81,7 +81,7 @@ const WhyChoose = () => {
                   <reason.icon className="h-8 w-8 text-[#D9C896]" />
                 </div>
                 
-                <h3 className="text-xl font-bold text-[#0F2D49] mb-4 font-cinzel">
+                <h3 className="text-xl font-bold text-[#0F2D49] mb-4 font-montserrat">
                   {reason.title}
                 </h3>
                 
