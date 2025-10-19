@@ -49,7 +49,7 @@ const Header = () => {
                 src="/images/ChatGPT Image 18 oct 2025, 09_31_50 p.m..png" 
                 alt="Logo Estudio Citera" 
                 className="w-full h-full object-cover object-center"
-                style={{ objectPosition: 'center 50%', filter: 'brightness(0)' }}
+                style={{ objectPosition: 'center 50%' }}
               />
             </div>
           </div>
@@ -60,14 +60,22 @@ const Header = () => {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-xs text-gray-700 hover:text-primary-600 font-montserrat font-semibold transition-colors duration-200"
+                className={`text-xs font-montserrat font-semibold transition-colors duration-200 ${
+                  isScrolled 
+                    ? 'text-[#143259] hover:text-[#D9C896]' 
+                    : 'text-white hover:text-[#D9C896]'
+                }`}
               >
                 {item.name}
               </button>
             ))}
             <button
               onClick={() => scrollToSection('contact')}
-              className="btn-3d-navbar text-sm px-4 py-2 flex items-center space-x-2 font-montserrat font-semibold"
+              className={`text-sm px-4 py-2 flex items-center space-x-2 font-montserrat font-semibold rounded-3xl transition-all duration-300 transform hover:scale-105 ${
+                isScrolled 
+                  ? 'bg-[#143259] text-white hover:bg-[#0F2440]' 
+                  : 'bg-[#D9C896] text-[#143259] hover:bg-[#C4B082]'
+              }`}
             >
               <span>Contactar</span>
               <ArrowRight className="h-4 w-4" />
@@ -77,7 +85,11 @@ const Header = () => {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100"
+            className={`md:hidden p-2 rounded-lg transition-colors duration-200 ${
+              isScrolled 
+                ? 'text-[#143259] hover:bg-[#F2F2F2]' 
+                : 'text-white hover:bg-white/20'
+            }`}
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -85,20 +97,32 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white border-t border-gray-200">
+          <div className={`md:hidden border-t transition-colors duration-200 ${
+            isScrolled 
+              ? 'bg-white border-[#F2F2F2]' 
+              : 'bg-[#143259] border-white/20'
+          }`}>
             <div className="px-4 py-4 space-y-4">
               {navItems.map((item) => (
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left text-gray-700 hover:text-primary-600 font-montserrat font-semibold py-2 transition-colors duration-200"
+                  className={`block w-full text-left font-montserrat font-semibold py-2 transition-colors duration-200 ${
+                    isScrolled 
+                      ? 'text-[#143259] hover:text-[#D9C896]' 
+                      : 'text-white hover:text-[#D9C896]'
+                  }`}
                 >
                   {item.name}
                 </button>
               ))}
               <button
                 onClick={() => scrollToSection('contact')}
-                className="btn-3d-navbar w-full text-sm px-4 py-2 flex items-center justify-center space-x-2 font-montserrat font-semibold"
+                className={`w-full text-sm px-4 py-2 flex items-center justify-center space-x-2 font-montserrat font-semibold rounded-3xl transition-all duration-300 transform hover:scale-105 ${
+                  isScrolled 
+                    ? 'bg-[#143259] text-white hover:bg-[#0F2440]' 
+                    : 'bg-[#D9C896] text-[#143259] hover:bg-[#C4B082]'
+                }`}
               >
                 <span>Contactar</span>
                 <ArrowRight className="h-4 w-4" />

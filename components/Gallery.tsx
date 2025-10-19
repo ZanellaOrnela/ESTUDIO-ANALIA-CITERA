@@ -65,7 +65,7 @@ const Gallery = () => {
         >
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-cinzel font-bold" style={{ color: '#1a1a1a' }}>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-cinzel font-bold" style={{ color: '#143259' }}>
               Respondemos tus dudas clave de ART
             </h2>
           </motion.div>
@@ -83,7 +83,7 @@ const Gallery = () => {
             variants={itemVariants}
             className="text-center max-w-2xl mx-auto"
           >
-            <p className="text-lg leading-relaxed" style={{ color: '#1a1a1a' }}>
+            <p className="text-lg leading-relaxed" style={{ color: '#143259' }}>
               Encuentra respuestas a las preguntas más frecuentes sobre accidentes de trabajo, 
               enfermedades laborales y reclamos ante ART. Nuestros videos te explican paso a paso 
               qué hacer en cada situación.

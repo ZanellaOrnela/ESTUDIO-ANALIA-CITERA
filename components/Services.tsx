@@ -8,32 +8,27 @@ const Services = () => {
     {
       icon: Briefcase,
       title: "Demora o negativa de ART",
-      description: "La ART no te autoriza estudios, traslados o tratamientos. Intervenimos para exigir cobertura, controlar el alta y calcular la incapacidad.",
-      color: "from-blue-500 to-blue-600"
+      description: "La ART no te autoriza estudios, traslados o tratamientos. Intervenimos para exigir cobertura, controlar el alta y calcular la incapacidad."
     },
     {
       icon: FileText,
       title: "Alta apresurada",
-      description: "Te dieron el alta sin estar bien. Pedimos reevaluación, pericias y reclamamos la indemnización que corresponde.",
-      color: "from-green-500 to-green-600"
+      description: "Te dieron el alta sin estar bien. Pedimos reevaluación, pericias y reclamamos la indemnización que corresponde."
     },
     {
       icon: Car,
       title: "Accidente \"in itinere\"",
-      description: "Sufriste un siniestro camino al trabajo. Documentamos, probamos el nexo y reclamamos a la ART y terceros si corresponde.",
-      color: "from-purple-500 to-purple-600"
+      description: "Sufriste un siniestro camino al trabajo. Documentamos, probamos el nexo y reclamamos a la ART y terceros si corresponde."
     },
     {
       icon: Shield,
       title: "Secuelas e incapacidad",
-      description: "Tenés dolor, limitaciones o pérdida de fuerza. Cuantificamos la incapacidad con peritos y maximizamos el monto a cobrar.",
-      color: "from-red-500 to-red-600"
+      description: "Tenés dolor, limitaciones o pérdida de fuerza. Cuantificamos la incapacidad con peritos y maximizamos el monto a cobrar."
     },
     {
       icon: Scale,
       title: "Empleador incumplidor",
-      description: "Falta de registración, diferencias salariales o despido tras el accidente. Accionamos con intimaciones y demanda.",
-      color: "from-orange-500 to-orange-600"
+      description: "Falta de registración, diferencias salariales o despido tras el accidente. Accionamos con intimaciones y demanda."
     }
   ];
 
@@ -54,7 +49,7 @@ const Services = () => {
 
   return (
     <section id="services" className="section-padding" style={{ backgroundColor: '#F2F2F2' }}>
-      <div className="container-custom" style={{ paddingLeft: '0.5rem', paddingRight: '0.5rem' }}>
+      <div className="container-custom" style={{ paddingLeft: '1rem', paddingRight: '1rem' }}>
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -64,10 +59,10 @@ const Services = () => {
         >
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-cinzel font-bold" style={{ color: '#1a1a1a' }}>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-cinzel" style={{ color: '#143259' }}>
               Te defendemos en todos los siniestros de ART
             </h2>
-            <p className="text-lg leading-relaxed font-montserrat font-semibold" style={{ color: '#1a1a1a' }}>
+            <p className="text-lg leading-relaxed font-montserrat font-semibold" style={{ color: '#143259' }}>
               Accidentes y enfermedades laborales
             </p>
           </motion.div>
@@ -75,32 +70,27 @@ const Services = () => {
           {/* Services Grid */}
           <motion.div 
             variants={itemVariants}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4"
           >
             {services.map((service, index) => (
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="flip-card"
+                className="bg-white rounded-2xl p-5 shadow-lg border border-gray-100"
               >
-                <div className="flip-card-inner">
-                  {/* Front */}
-                  <div className="flip-card-front" style={{ background: 'linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%)' }}>
-                    <service.icon className="flip-card-icon" style={{ color: '#BFBFBA' }} />
-                    <h3 className="flip-card-title" style={{ color: '#BFBFBA' }}>
-                      {service.title}
-                    </h3>
-                  </div>
-                  
-                  {/* Back */}
-                  <div className="flip-card-back" style={{ background: 'linear-gradient(135deg, #BFBFBA 0%, #a8a8a8 100%)' }}>
-                    <h3 className="flip-card-title" style={{ color: '#1a1a1a' }}>
-                      {service.title}
-                    </h3>
-                    <p className="flip-card-description" style={{ color: '#1a1a1a' }}>
-                      {service.description}
-                    </p>
-                  </div>
+                {/* Icono */}
+                <div className="w-14 h-14 bg-[#143259] rounded-xl flex items-center justify-center mb-4">
+                  <service.icon className="h-7 w-7 text-white" />
+                </div>
+                
+                {/* Contenido */}
+                <div className="space-y-3">
+                  <h3 className="text-lg font-bold text-[#143259] font-cinzel">
+                    {service.title}
+                  </h3>
+                  <p className="text-[#143259] leading-relaxed font-montserrat font-semibold">
+                    {service.description}
+                  </p>
                 </div>
               </motion.div>
             ))}

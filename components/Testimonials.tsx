@@ -39,7 +39,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section id="testimonials" className="section-padding" style={{ backgroundColor: '#BFBFBA' }}>
+    <section id="testimonials" className="section-padding" style={{ backgroundColor: '#D9C896' }}>
       <div className="container-custom" style={{ paddingLeft: '0.5rem', paddingRight: '0.5rem' }}>
         <motion.div
           variants={containerVariants}
@@ -50,7 +50,7 @@ const Testimonials = () => {
         >
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-cinzel font-bold" style={{ color: '#1a1a1a' }}>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-cinzel" style={{ color: '#143259' }}>
               Historias reales, resultados reales
             </h2>
           </motion.div>
@@ -64,15 +64,15 @@ const Testimonials = () => {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="bg-[#1a1a1a] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 relative"
+                className="bg-[#143259] rounded-xl shadow-lg p-8 relative"
               >
-                <Quote className="h-8 w-8 text-[#BFBFBA] mb-4" />
-                <p className="text-[#BFBFBA] leading-relaxed mb-6 italic font-montserrat font-semibold">
+                <Quote className="h-8 w-8 text-white mb-4" />
+                <p className="text-white leading-relaxed mb-6 italic font-montserrat font-semibold">
                   &ldquo;{testimonial.text}&rdquo;
                 </p>
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="font-semibold text-[#BFBFBA] font-montserrat font-semibold">{testimonial.author}</p>
+                    <p className="font-semibold text-white font-montserrat">{testimonial.author}</p>
                     <div className="flex space-x-1 mt-1">
                       {[...Array(5)].map((_, i) => (
                         <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
@@ -87,13 +87,13 @@ const Testimonials = () => {
           {/* Bottom section */}
           <motion.div 
             variants={itemVariants}
-            className="bg-[#1a1a1a] rounded-2xl p-8 text-center"
-            style={{ color: '#BFBFBA' }}
+            className="bg-[#143259] rounded-2xl p-8 text-center"
+            style={{ color: '#D9C896' }}
           >
             <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Poppins', fontWeight: 700 }}>
               Empezá tu reclamo hoy
             </h3>
-            <p className="text-lg max-w-3xl mx-auto mb-6" style={{ color: '#BFBFBA' }}>
+            <p className="text-lg max-w-3xl mx-auto mb-6" style={{ color: '#D9C896' }}>
               Contanos qué te pasó y recibí una evaluación inicial sin cargo. Te guiamos para no perder plazos ni dinero.
             </p>
             <button
@@ -103,7 +103,7 @@ const Testimonials = () => {
                   element.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
-              className="bg-[#BFBFBA] text-[#1a1a1a] font-semibold py-3 px-8 rounded-3xl hover:bg-opacity-80 transition-colors duration-300"
+              className="bg-[#D9C896] text-[#143259] font-semibold py-3 px-8 rounded-3xl"
             >
               Iniciar mi Consulta
             </button>

@@ -51,9 +51,9 @@ Actualiza la información de contacto en los siguientes archivos:
 
 ### Colores
 Los colores principales se pueden modificar en `tailwind.config.js`:
-- Primary: Azul (#0ea5e9)
-- Secondary: Gris (#64748b)
-- Accent: Amarillo (#eab308)
+- Primary: Azul oscuro (#143259)
+- Secondary: Dorado (#D9C896)
+- Accent: Gris claro (#F2F2F2)
 
 ### Fuentes
 Las fuentes se configuran en `app/layout.tsx`:
@@ -81,6 +81,7 @@ Recomendamos usar Vercel, Netlify o cualquier plataforma compatible con Next.js.
 ## 📄 Licencia
 
 © 2024 Estudio Citera. Todos los derechos reservados.
+
 
 
 

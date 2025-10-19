@@ -28,7 +28,7 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="section-padding" style={{ backgroundColor: '#1a1a1a' }}>
+    <section id="about" className="section-padding" style={{ backgroundColor: '#D9C896' }}>
       <div className="container-custom">
         <motion.div
           variants={containerVariants}
@@ -39,10 +39,10 @@ const About = () => {
         >
           {/* Sobre Nosotros */}
           <motion.div variants={itemVariants} className="text-center max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-cinzel font-bold" style={{ color: '#BFBFBA' }}>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-cinzel font-bold" style={{ color: '#143259' }}>
               Cobrá la indemnización que te corresponde
             </h2>
-            <p className="text-lg leading-relaxed font-montserrat font-semibold" style={{ color: '#BFBFBA' }}>
+            <p className="text-lg leading-relaxed font-montserrat font-semibold" style={{ color: '#143259' }}>
               Somos un Estudio Jurídico, con más de 25 años de experiencia defendiendo tus derechos. 
               Nos especializamos en reclamos por accidentes y enfermedades de trabajo, reclamos laborales en general, 
               como así también, siniestros de tránsito, y todo lo relacionado.

@@ -59,27 +59,27 @@ const Footer = () => {
                     src="/images/ChatGPT Image 18 oct 2025, 09_31_50 p.m..png"
                     alt="Logo Estudio Citera"
                     className="w-full h-full object-cover object-center"
-                    style={{ objectPosition: 'center 50%', filter: 'brightness(0)' }}
+                    style={{ objectPosition: 'center 50%' }}
                   />
                 </div>
               </div>
               
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto mb-6">
-                <div className="flex items-center justify-center sm:justify-start space-x-3">
-                  <MapPin className="h-5 w-5 text-[#1a1a1a] flex-shrink-0" />
-                  <span className="text-[#1a1a1a] text-sm font-medium font-montserrat font-semibold">CABA y Provincia de Buenos Aires</span>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-8">
+                <div className="flex items-center justify-center space-x-3">
+                  <MapPin className="h-5 w-5 text-[#143259] flex-shrink-0" />
+                  <span className="text-[#143259] text-sm font-medium font-montserrat font-semibold">CABA y Provincia de Buenos Aires</span>
                 </div>
-                <div className="flex items-center justify-center sm:justify-start space-x-3">
-                  <Phone className="h-5 w-5 text-[#1a1a1a] flex-shrink-0" />
-                  <span className="text-[#1a1a1a] text-sm font-medium font-montserrat font-semibold">+54 9 11 5318-9897</span>
+                <div className="flex items-center justify-center space-x-3">
+                  <Phone className="h-5 w-5 text-[#143259] flex-shrink-0" />
+                  <span className="text-[#143259] text-sm font-medium font-montserrat font-semibold">+54 9 11 5318-9897</span>
                 </div>
-                <div className="flex items-center justify-center sm:justify-start space-x-3 sm:col-span-2 lg:col-span-1">
-                  <Mail className="h-5 w-5 text-[#1a1a1a] flex-shrink-0" />
-                  <span className="text-[#1a1a1a] text-sm font-medium font-montserrat font-semibold">analiacitera@yahoo.com.ar</span>
+                <div className="flex items-center justify-center space-x-3">
+                  <Mail className="h-5 w-5 text-[#143259] flex-shrink-0" />
+                  <span className="text-[#143259] text-sm font-medium font-montserrat font-semibold">analiacitera@yahoo.com.ar</span>
                 </div>
               </div>
               
-              <div className="text-sm leading-relaxed" style={{ color: '#1a1a1a' }}>
+              <div className="text-center text-sm leading-relaxed" style={{ color: '#143259' }}>
                 <p className="font-medium font-montserrat font-semibold">Especialistas en ART, Laboral y Civil</p>
                 <p className="mt-1 opacity-70 font-montserrat font-semibold">Defendiendo tus derechos desde 1999</p>
               </div>

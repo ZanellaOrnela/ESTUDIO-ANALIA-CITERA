@@ -30,10 +30,10 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="text-left"
           >
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-gray-900 leading-relaxed text-left font-cinzel font-bold">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white leading-relaxed text-left font-cinzel font-bold">
               Estudio Juridico Dra. Citera
             </h1>
-            <h2 className="text-lg sm:text-xl md:text-2xl text-gray-700 text-left mt-4 leading-relaxed font-montserrat font-semibold">
+            <h2 className="text-lg sm:text-xl md:text-2xl text-[#D9C896] text-left mt-4 leading-relaxed font-montserrat font-semibold">
               Abogados especialistas en accidentes y enfermedades de trabajo (ART)
             </h2>
           </motion.div>
@@ -45,7 +45,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-left space-y-6"
           >
-            <p className="text-sm sm:text-base text-gray-600 leading-relaxed font-montserrat font-semibold">
+            <p className="text-sm sm:text-base text-white leading-relaxed font-montserrat font-semibold">
               Hacemos tu reclamo de ART de punta a punta con una atención personalizada, consultas virtuales sin cargo y sin adelanto de honorarios. Te representamos en CABA y Provincia de Buenos Aires.
             </p>
 
@@ -78,7 +78,6 @@ const Hero = () => {
                 className="object-cover grayscale"
                 style={{ objectPosition: '85% center' }}
               />
-              <div className="absolute inset-0 bg-black bg-opacity-40"></div>
             </div>
           </div>
 
@@ -91,7 +90,6 @@ const Hero = () => {
                 fill
                 className="object-cover grayscale"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-40"></div>
             </div>
             <div className="relative h-72 md:h-96 w-full md:w-56 rounded-lg overflow-hidden">
               <Image
@@ -101,7 +99,6 @@ const Hero = () => {
                 className="object-cover grayscale"
                 style={{ objectPosition: '15% center' }}
               />
-              <div className="absolute inset-0 bg-black bg-opacity-40"></div>
             </div>
             <div className="relative h-72 md:h-96 w-full md:w-56 rounded-lg overflow-hidden">
               <Image
@@ -111,7 +108,6 @@ const Hero = () => {
                 className="object-cover grayscale"
                 style={{ objectPosition: '85% center' }}
               />
-              <div className="absolute inset-0 bg-black bg-opacity-40"></div>
             </div>
             <div className="relative h-72 w-full md:w-56 rounded-lg overflow-hidden">
               <Image
@@ -120,7 +116,6 @@ const Hero = () => {
                 fill
                 className="object-cover grayscale"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-40"></div>
             </div>
           </div>
         </motion.div>

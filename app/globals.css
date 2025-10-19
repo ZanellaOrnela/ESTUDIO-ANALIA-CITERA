@@ -25,11 +25,11 @@
   }
   
   .btn-primary:hover {
-    background-color: #0ea5e9;
+    background-color: #143259;
   }
   
   .btn-primary:active {
-    background-color: #0284c7;
+    background-color: #0F2440;
   }
   
   
@@ -38,16 +38,16 @@
   }
   
   .btn-secondary:hover {
-    background-color: #f8fafc;
+    background-color: #F2F2F2;
   }
   
   .btn-secondary:active {
-    background-color: #f1f5f9;
+    background-color: #E8E8E8;
   }
   
   .btn-3d {
     @apply text-white font-bold py-4 px-8 rounded-3xl transition-all duration-300 transform hover:scale-110 relative overflow-hidden;
-    background-color: #0D0D0D;
+    background-color: #143259;
     box-shadow: 
       20px 20px 40px #bebebe,
       -20px -20px 40px #ffffff;
@@ -67,43 +67,46 @@
 
   .btn-3d-navbar {
     @apply text-white font-bold py-4 px-8 rounded-3xl transition-all duration-300 transform hover:scale-110 relative overflow-hidden;
-    background-color: #0D0D0D;
+    background-color: #D9C896;
+    color: #143259;
   }
   
   .btn-3d-navbar:hover {
-    background-color: #1a1a1a;
+    background-color: #C4B082;
+    color: #143259;
   }
   
   .btn-3d-navbar:active {
-    background-color: #000000;
+    background-color: #B09A6E;
+    color: #143259;
   }
 
   .btn-simple {
     @apply text-white font-bold py-2 px-4 rounded-3xl transition-all duration-300 transform hover:scale-105 relative overflow-hidden;
-    background-color: #0D0D0D;
+    background-color: #143259;
   }
   
   .btn-simple:hover {
-    background-color: #1a1a1a;
+    background-color: #0F2440;
   }
   
   .btn-simple:active {
-    background-color: #000000;
+    background-color: #0B1A2E;
   }
 
   .btn-outline {
-    @apply text-gray-900 font-bold py-2 px-4 rounded-3xl border-2 border-gray-900 transition-all duration-300 transform hover:scale-105 relative overflow-hidden;
+    @apply text-white font-bold py-2 px-4 rounded-3xl border-2 border-white transition-all duration-300 transform hover:scale-105 relative overflow-hidden;
     background-color: transparent;
   }
   
   .btn-outline:hover {
-    background-color: #0D0D0D;
-    color: white;
+    background-color: #D9C896;
+    color: #143259;
   }
   
   .btn-outline:active {
-    background-color: #000000;
-    color: white;
+    background-color: #C4B082;
+    color: #143259;
   }
   
   
@@ -121,7 +124,7 @@
   }
   
   .section-bg-primary {
-    @apply bg-[#BFBFBA];
+    @apply bg-[#143259];
   }
   
   .container-custom {
@@ -147,28 +150,10 @@
   }
   
   .card-3d {
-    @apply transform transition-all duration-300 hover:scale-105 relative overflow-hidden;
-    box-shadow: 
-      0 8px 25px rgba(0, 0, 0, 0.15),
-      0 4px 10px rgba(0, 0, 0, 0.1),
-      inset 0 1px 0 rgba(255, 255, 255, 0.3),
-      inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    @apply relative overflow-hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  .card-3d::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.5s;
-  }
-  
-  .card-3d:hover::before {
-    left: 100%;
-  }
   
   /* Efecto 3D espectacular */
   .parent-3d {
@@ -272,11 +257,10 @@
     transform: translate3d(0, 0, 80px);
   }
   
-  /* Flip Cards para Áreas de Práctica */
+  /* Cards estáticas para Áreas de Práctica */
   .flip-card {
     width: 100%;
     height: 250px;
-    perspective: 1000px;
   }
   
   .flip-card-inner {
@@ -284,19 +268,12 @@
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
   }
   
   .flip-card-front, .flip-card-back {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
     border-radius: 8px;
     padding: 20px;
     display: flex;
@@ -306,22 +283,21 @@
   }
   
   .flip-card-front {
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background: #F2F2F2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   .flip-card-back {
-    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    background: #143259;
     color: white;
-    transform: rotateY(180deg);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   .flip-card-icon {
     width: 60px;
     height: 60px;
     margin-bottom: 20px;
-    color: #0ea5e9;
+    color: #143259;
   }
   
   .flip-card-back .flip-card-icon {
@@ -351,7 +327,7 @@
   }
   
   .flip-card-badge {
-    background: #0ea5e9;
+    background: #143259;
     color: white;
     padding: 4px 12px;
     border-radius: 20px;
