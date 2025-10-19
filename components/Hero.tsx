@@ -1,8 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
-import Image from 'next/image';
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -13,114 +11,82 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center section-bg-primary pt-28">
-      {/* Fondo granulado sutil */}
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-        }} />
+    <div className="relative pt-32 pb-8 bg-black xl:pt-40 sm:pb-12 lg:pb-20 xl:pb-24 2xl:pb-32">
+      {/* Video de fondo completo */}
+      <div className="absolute inset-0">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="object-cover w-full h-full"
+        >
+          <source src="/videos/hero-background.mp4" type="video/mp4" />
+        </video>
       </div>
-      
-      <div className="container-custom section-padding relative z-10" style={{ paddingLeft: '1rem', paddingRight: '1rem' }}>
-        <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-8 lg:gap-48 items-center justify-items-center">
-          {/* Columna 1 - Título */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-left"
-          >
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white leading-relaxed text-left font-montserrat font-bold">
-              Estudio Juridico Dra. Citera
-            </h1>
-            <h2 className="text-lg sm:text-xl md:text-2xl text-[#D9C896] text-left mt-4 leading-relaxed font-montserrat font-semibold">
-              Abogados especialistas en accidentes y enfermedades de trabajo (ART)
-            </h2>
-          </motion.div>
 
-          {/* Columna 2 - Subtítulo y Botón */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-left space-y-6"
-          >
-            <p className="text-sm sm:text-base text-white leading-relaxed font-montserrat font-semibold">
+      {/* Polígono de fondo Desktop - derecha */}
+      <div 
+        className="absolute inset-0 z-10 w-[80%] right-0 hidden lg:block"
+        style={{
+          clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)',
+          background: 'linear-gradient(to right, #0F2D49 0%, #0F2D49 30%, #0F2D4980 60%, #0F2D4940 80%, transparent 100%)'
+        }}
+      ></div>
+
+      {/* Polígono de fondo Mobile - arriba a abajo */}
+      <div 
+        className="absolute inset-0 z-10 lg:hidden"
+        style={{
+          background: 'linear-gradient(to bottom, #0F2D49 0%, #0F2D49 30%, #0F2D4980 60%, #0F2D4940 80%, transparent 100%)'
+        }}
+      ></div>
+
+      <div className="relative z-20">
+        <div className="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
+          <div className="w-full lg:w-2/3 xl:w-1/2">
+            <h1 className="font-montserrat text-base font-normal tracking-tight text-white text-opacity-70">
+              Abogados especialistas en accidentes y enfermedades de trabajo (ART)
+            </h1>
+            <p className="mt-6 tracking-tighter text-white">
+              <span className="font-montserrat font-bold text-5xl">Estudio Juridico</span><br />
+              <span className="font-montserrat font-bold text-6xl">Dra. Citera</span>
+            </p>
+            <p className="mt-12 font-montserrat text-base font-semibold leading-7 text-white text-opacity-70">
               Hacemos tu reclamo de ART de punta a punta con una atención personalizada, consultas virtuales sin cargo y sin adelanto de honorarios. Te representamos en CABA y Provincia de Buenos Aires.
             </p>
-
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex items-center mt-5 space-x-3 sm:space-x-4">
               <button
                 onClick={scrollToContact}
-                className="btn-outline text-base flex items-center justify-center space-x-2"
+                className="
+                  inline-flex
+                  items-center
+                  justify-center
+                  px-5
+                  py-2
+                  font-montserrat
+                  text-base
+                  font-semibold
+                  transition-all
+                  duration-200
+                  border-2 border-transparent
+                  rounded-full
+                  sm:leading-8
+                  bg-[#D9C896]
+                  sm:text-lg
+                  text-[#0F2D49]
+                  hover:bg-opacity-90
+                  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#D9C896] focus:ring-offset-secondary
+                "
+                role="button"
               >
-                <span>Consulta Inmediata</span>
-                <ArrowRight className="h-4 w-4" />
+                Consulta Inmediata
               </button>
             </div>
-          </motion.div>
+          </div>
         </div>
-
-        {/* Imágenes responsive */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="flex justify-start mt-8"
-        >
-          {/* Mobile y Tablet: Una sola imagen */}
-          <div className="block lg:hidden w-full">
-            <div className="relative w-full h-80 rounded-lg overflow-hidden">
-              <Image
-                src="/images/hero-image-2-3.jpg"
-                alt="Imagen principal"
-                fill
-                className="object-cover grayscale"
-                style={{ objectPosition: 'center top' }}
-              />
-            </div>
-          </div>
-
-          {/* Desktop: 4 imágenes originales */}
-          <div className="hidden lg:grid grid-cols-4 gap-6 max-w-5xl">
-            <div className="relative h-64 md:h-80 w-full md:w-56 rounded-lg overflow-hidden">
-              <Image
-                src="/images/hero-image-1.jpg"
-                alt="Imagen 1"
-                fill
-                className="object-cover grayscale"
-              />
-            </div>
-            <div className="relative h-72 md:h-96 w-full md:w-56 rounded-lg overflow-hidden">
-              <Image
-                src="/images/hero-image-2-3.jpg"
-                alt="Imagen 2"
-                fill
-                className="object-cover grayscale"
-                style={{ objectPosition: '15% center' }}
-              />
-            </div>
-            <div className="relative h-72 md:h-96 w-full md:w-56 rounded-lg overflow-hidden">
-              <Image
-                src="/images/hero-image-2-3.jpg"
-                alt="Imagen 3"
-                fill
-                className="object-cover grayscale"
-                style={{ objectPosition: '85% center' }}
-              />
-            </div>
-            <div className="relative h-72 w-full md:w-56 rounded-lg overflow-hidden">
-              <Image
-                src="/images/hero-image-4.jpg"
-                alt="Imagen 4"
-                fill
-                className="object-cover grayscale"
-              />
-            </div>
-          </div>
-        </motion.div>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -35,11 +35,7 @@ const Header = () => {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled 
-        ? 'bg-white shadow-lg backdrop-blur-md bg-white/95' 
-        : 'bg-transparent'
-    }`}>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#0F2D49] backdrop-blur-md bg-[#0F2D49]/95 transition-all duration-300">
       <nav className="container-custom">
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
@@ -59,22 +55,14 @@ const Header = () => {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className={`text-xs font-montserrat font-semibold transition-colors duration-200 ${
-                  isScrolled 
-                    ? 'text-[#0F2D49] hover:text-[#D9C896]' 
-                    : 'text-white hover:text-[#D9C896]'
-                }`}
+                className="text-xs font-montserrat font-semibold text-white hover:text-[#D9C896] transition-colors duration-200"
               >
                 {item.name}
               </button>
             ))}
             <button
               onClick={() => scrollToSection('contact')}
-              className={`text-sm px-4 py-2 flex items-center space-x-2 font-montserrat font-semibold rounded-3xl transition-all duration-300 transform hover:scale-105 ${
-                isScrolled 
-                  ? 'bg-[#0F2D49] text-white hover:bg-[#0F2440]' 
-                  : 'bg-[#D9C896] text-[#0F2D49] hover:bg-[#C4B082]'
-              }`}
+              className="text-sm px-4 py-2 flex items-center space-x-2 font-montserrat font-semibold rounded-3xl bg-[#D9C896] text-[#0F2D49] hover:bg-[#C4B082] transition-all duration-300 transform hover:scale-105"
             >
               <span>Contactar</span>
               <ArrowRight className="h-4 w-4" />
@@ -84,11 +72,7 @@ const Header = () => {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className={`md:hidden p-2 rounded-lg transition-colors duration-200 ${
-              isScrolled 
-                ? 'text-[#0F2D49] hover:bg-[#F2F2F2]' 
-                : 'text-white hover:bg-white/20'
-            }`}
+            className="md:hidden p-2 rounded-lg text-white hover:bg-white/20 transition-colors duration-200"
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -96,32 +80,20 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className={`md:hidden border-t transition-colors duration-200 ${
-            isScrolled 
-              ? 'bg-white border-[#F2F2F2]' 
-              : 'bg-[#0F2D49] border-white/20'
-          }`}>
+          <div className="md:hidden border-t bg-[#0F2D49] border-white/20 transition-colors duration-200">
             <div className="px-4 py-4 space-y-4">
               {navItems.map((item) => (
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className={`block w-full text-left font-montserrat font-semibold py-2 transition-colors duration-200 ${
-                    isScrolled 
-                      ? 'text-[#0F2D49] hover:text-[#D9C896]' 
-                      : 'text-white hover:text-[#D9C896]'
-                  }`}
+                  className="block w-full text-left font-montserrat font-semibold py-2 text-white hover:text-[#D9C896] transition-colors duration-200"
                 >
                   {item.name}
                 </button>
               ))}
               <button
                 onClick={() => scrollToSection('contact')}
-                className={`w-full text-sm px-4 py-2 flex items-center justify-center space-x-2 font-montserrat font-semibold rounded-3xl transition-all duration-300 transform hover:scale-105 ${
-                  isScrolled 
-                    ? 'bg-[#0F2D49] text-white hover:bg-[#0F2440]' 
-                    : 'bg-[#D9C896] text-[#0F2D49] hover:bg-[#C4B082]'
-                }`}
+                className="w-full text-sm px-4 py-2 flex items-center justify-center space-x-2 font-montserrat font-semibold rounded-3xl bg-[#D9C896] text-[#0F2D49] hover:bg-[#C4B082] transition-all duration-300 transform hover:scale-105"
               >
                 <span>Contactar</span>
                 <ArrowRight className="h-4 w-4" />

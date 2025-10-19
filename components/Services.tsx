@@ -2,31 +2,37 @@
 
 import { motion } from 'framer-motion';
 import { Briefcase, Car, Shield, FileText, Scale } from 'lucide-react';
+import Image from 'next/image';
 
 const Services = () => {
   const services = [
     {
       icon: Briefcase,
+      image: "/images/demora o negativa de la art.jpg",
       title: "Demora o negativa de ART",
       description: "La ART no te autoriza estudios, traslados o tratamientos. Intervenimos para exigir cobertura, controlar el alta y calcular la incapacidad."
     },
     {
       icon: FileText,
+      image: "/images/alta apresurada.jpg",
       title: "Alta apresurada",
       description: "Te dieron el alta sin estar bien. Pedimos reevaluación, pericias y reclamamos la indemnización que corresponde."
     },
     {
       icon: Car,
+      image: "/images/accidente in itinere.jpg",
       title: "Accidente \"in itinere\"",
       description: "Sufriste un siniestro camino al trabajo. Documentamos, probamos el nexo y reclamamos a la ART y terceros si corresponde."
     },
     {
       icon: Shield,
+      image: "/images/secuelas o incapacidad.jpg",
       title: "Secuelas e incapacidad",
       description: "Tenés dolor, limitaciones o pérdida de fuerza. Cuantificamos la incapacidad con peritos y maximizamos el monto a cobrar."
     },
     {
       icon: Scale,
+      image: "/images/empleador incumplidor.jpg",
       title: "Empleador incumplidor",
       description: "Falta de registración, diferencias salariales o despido tras el accidente. Accionamos con intimaciones y demanda."
     }
@@ -70,21 +76,26 @@ const Services = () => {
           {/* Services Grid */}
           <motion.div 
             variants={itemVariants}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
           >
             {services.map((service, index) => (
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="bg-white rounded-2xl p-4 sm:p-5 shadow-lg border border-gray-100"
+                className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden"
               >
-                {/* Icono */}
-                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-[#0F2D49] rounded-xl flex items-center justify-center mb-4">
-                  <service.icon className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
+                {/* Imagen */}
+                <div className="relative w-full h-32 sm:h-40">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 
                 {/* Contenido */}
-                <div className="space-y-3">
+                <div className="p-4 sm:p-5 space-y-3">
                   <h3 className="text-base sm:text-lg font-bold text-[#0F2D49] font-montserrat">
                     {service.title}
                   </h3>
