@@ -12,17 +12,13 @@ const Hero = () => {
 
   return (
     <div className="relative pt-32 pb-8 bg-black xl:pt-40 sm:pb-12 lg:pb-20 xl:pb-24 2xl:pb-32">
-      {/* Video de fondo completo */}
+      {/* Imagen de fondo */}
       <div className="absolute inset-0">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
+        <img
+          src="/images/wrist-pain-from-typing-in-home-office-hand-injury-due-to-repetitive-strain-on-wrist-remote.jpg"
+          alt="Lesión en muñeca por trabajo repetitivo"
           className="object-cover w-full h-full"
-        >
-          <source src="/videos/hero-background.mp4" type="video/mp4" />
-        </video>
+        />
       </div>
 
       {/* Polígono de fondo Desktop - derecha */}
