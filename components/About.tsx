@@ -1,7 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { GraduationCap, Target, Heart, Users } from 'lucide-react';
+import { ArrowRight, CheckCircle, Phone, Mail, Instagram, Facebook, Linkedin } from 'lucide-react';
+import Image from 'next/image';
 
 const About = () => {
   const containerVariants = {
@@ -19,8 +20,15 @@ const About = () => {
     visible: { opacity: 1, y: 0 }
   };
 
+  const scrollToContact = () => {
+    const element = document.getElementById('contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <section id="about" className="section-padding section-bg-white">
+    <section id="about" className="section-padding" style={{ backgroundColor: '#1a1a1a' }}>
       <div className="container-custom">
         <motion.div
           variants={containerVariants}
@@ -31,93 +39,19 @@ const About = () => {
         >
           {/* Sobre Nosotros */}
           <motion.div variants={itemVariants} className="text-center max-w-4xl mx-auto">
-            <h2 className="section-title">
-              SOBRE NOSOTROS
-            </h2>
-            <h3 className="text-2xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Poppins', fontWeight: 700 }}>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-cinzel font-bold" style={{ color: '#BFBFBA' }}>
               Cobrá la indemnización que te corresponde
-            </h3>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            </h2>
+            <p className="text-lg leading-relaxed font-montserrat font-semibold" style={{ color: '#BFBFBA' }}>
               Somos un Estudio Jurídico, con más de 25 años de experiencia defendiendo tus derechos. 
               Nos especializamos en reclamos por accidentes y enfermedades de trabajo, reclamos laborales en general, 
               como así también, siniestros de tránsito, y todo lo relacionado.
             </p>
           </motion.div>
 
-          {/* Grid de información */}
-          <motion.div 
-            variants={itemVariants}
-            className="grid md:grid-cols-3 gap-8 items-stretch"
-          >
-            {/* Presentación */}
-            <motion.div 
-              variants={itemVariants}
-              className="parent-3d"
-            >
-              <div className="card-3d-spectacular bg-gradient-to-br from-slate-100 to-slate-200">
-                <div className="glass-effect"></div>
-                <div className="content-3d">
-                  <h3 className="text-xl font-bebas-neue text-gray-900 mb-4">Presentación</h3>
-                  <p className="text-gray-600 leading-relaxed text-sm flex-grow">
-                    La Dra. Citera siempre se ha destacado por su capacidad, habiendo egresado con medalla de honor, 
-                    actualizándose permanentemente, cuenta en su haber con dos maestrías, tanto en el Derecho Laboral, 
-                    como Civil, a los efectos de brindarle la mejor y eficiente defensa a sus clientes. 
-                    La Dra. Citera se encarga personalmente de cada tema.
-                  </p>
-                </div>
-                <div className="logo-3d">
-                  <span className="circle-3d circle-3d-3" style={{background: 'rgba(148, 163, 184, 0.4)', display: 'grid', placeContent: 'center'}}>
-                    <GraduationCap className="h-6 w-6 text-slate-600" />
-                  </span>
-                </div>
-              </div>
-            </motion.div>
 
-            {/* Misión */}
-            <motion.div 
-              variants={itemVariants}
-              className="parent-3d"
-            >
-              <div className="card-3d-spectacular bg-gradient-to-br from-sky-100 to-sky-200">
-                <div className="glass-effect"></div>
-                <div className="content-3d">
-                  <h3 className="text-xl font-bebas-neue text-gray-900 mb-4">Misión</h3>
-                  <p className="text-gray-600 leading-relaxed text-sm flex-grow">
-                    Defender con rapidez, claridad y rigor jurídico a cada trabajador y víctima de tránsito, 
-                    maximizando su indemnización, siempre tratando de conseguir el mejor resultado para cada cliente.
-                  </p>
-                </div>
-                <div className="logo-3d">
-                  <span className="circle-3d circle-3d-3" style={{background: 'rgba(56, 189, 248, 0.4)', display: 'grid', placeContent: 'center'}}>
-                    <Target className="h-6 w-6 text-sky-600" />
-                  </span>
-                </div>
-              </div>
-            </motion.div>
 
-            {/* Valores */}
-            <motion.div 
-              variants={itemVariants}
-              className="parent-3d"
-            >
-              <div className="card-3d-spectacular bg-gradient-to-br from-blue-100 to-blue-200">
-                <div className="glass-effect"></div>
-                <div className="content-3d">
-                  <h3 className="text-xl font-bebas-neue text-gray-900 mb-4">Valores Centrales</h3>
-                  <p className="text-gray-600 leading-relaxed text-sm flex-grow">
-                    Empatía y escucha activa desde la primera consulta. Transparencia total sobre pasos, 
-                    plazos y montos. Estrategia legal sólida basada en experiencia, cientos de casos y clientes 
-                    nos respaldan. Comunicación constante y lenguaje claro.
-                  </p>
-                </div>
-                <div className="logo-3d">
-                  <span className="circle-3d circle-3d-3" style={{background: 'rgba(59, 130, 246, 0.4)', display: 'grid', placeContent: 'center'}}>
-                    <Heart className="h-6 w-6 text-blue-600" />
-                  </span>
-                </div>
-              </div>
-            </motion.div>
-          </motion.div>
+
 
         </motion.div>
       </div>

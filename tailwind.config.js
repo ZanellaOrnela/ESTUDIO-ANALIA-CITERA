@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'bebas-neue': ['var(--font-bebas-neue)', 'sans-serif'],
+        'cinzel': ['var(--font-cinzel)', 'serif'],
         'montserrat': ['var(--font-montserrat)', 'sans-serif'],
       },
       colors: {

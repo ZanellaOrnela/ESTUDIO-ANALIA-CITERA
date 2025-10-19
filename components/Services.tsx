@@ -53,8 +53,8 @@ const Services = () => {
   };
 
   return (
-    <section id="services" className="section-padding section-bg-alt">
-      <div className="container-custom">
+    <section id="services" className="section-padding" style={{ backgroundColor: '#F2F2F2' }}>
+      <div className="container-custom" style={{ paddingLeft: '0.5rem', paddingRight: '0.5rem' }}>
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -64,10 +64,10 @@ const Services = () => {
         >
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center">
-            <h2 className="section-title">
-              TE DEFENDEMOS EN TODOS LOS SINIESTROS DE ART
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-cinzel font-bold" style={{ color: '#1a1a1a' }}>
+              Te defendemos en todos los siniestros de ART
             </h2>
-            <p className="section-subtitle">
+            <p className="text-lg leading-relaxed font-montserrat font-semibold" style={{ color: '#1a1a1a' }}>
               Accidentes y enfermedades laborales
             </p>
           </motion.div>
@@ -75,7 +75,7 @@ const Services = () => {
           {/* Services Grid */}
           <motion.div 
             variants={itemVariants}
-            className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"
           >
             {services.map((service, index) => (
               <motion.div
@@ -85,59 +85,27 @@ const Services = () => {
               >
                 <div className="flip-card-inner">
                   {/* Front */}
-                  <div className="flip-card-front">
-                    <service.icon className="flip-card-icon" />
-                    <h3 className="flip-card-title">
+                  <div className="flip-card-front" style={{ background: 'linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%)' }}>
+                    <service.icon className="flip-card-icon" style={{ color: '#BFBFBA' }} />
+                    <h3 className="flip-card-title" style={{ color: '#BFBFBA' }}>
                       {service.title}
                     </h3>
-                    <div className="flip-card-badge">
-                      Área Legal
-                    </div>
                   </div>
                   
                   {/* Back */}
-                  <div className="flip-card-back">
-                    <service.icon className="flip-card-icon" />
-                    <h3 className="flip-card-title">
+                  <div className="flip-card-back" style={{ background: 'linear-gradient(135deg, #BFBFBA 0%, #a8a8a8 100%)' }}>
+                    <h3 className="flip-card-title" style={{ color: '#1a1a1a' }}>
                       {service.title}
                     </h3>
-                    <p className="flip-card-description">
+                    <p className="flip-card-description" style={{ color: '#1a1a1a' }}>
                       {service.description}
                     </p>
-                    <div className="flip-card-badge">
-                      Contactar
-                    </div>
                   </div>
                 </div>
               </motion.div>
             ))}
           </motion.div>
 
-          {/* CTA Section */}
-          <motion.div 
-            variants={itemVariants}
-            className="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-8 text-center text-white"
-          >
-            <Scale className="h-16 w-16 mx-auto mb-6" />
-            <h3 className="text-2xl font-bebas-neue mb-4">
-              ¿Necesitas asesoramiento legal?
-            </h3>
-            <p className="text-lg opacity-90 mb-6 max-w-2xl mx-auto">
-              No dudes en consultarnos. Evaluamos tu caso sin compromiso y te explicamos 
-              todas las opciones legales disponibles.
-            </p>
-            <button
-              onClick={() => {
-                const element = document.getElementById('contact');
-                if (element) {
-                  element.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
-              className="bg-white text-primary-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors duration-300"
-            >
-              Contactar
-            </button>
-          </motion.div>
         </motion.div>
       </div>
     </section>

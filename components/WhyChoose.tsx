@@ -48,8 +48,8 @@ const WhyChoose = () => {
   };
 
   return (
-    <section id="why-choose" className="section-padding section-bg-alt">
-      <div className="container-custom">
+    <section id="why-choose" className="section-padding" style={{ backgroundColor: '#1a1a1a' }}>
+      <div className="container-custom" style={{ paddingLeft: '0.5rem', paddingRight: '0.5rem' }}>
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -59,37 +59,41 @@ const WhyChoose = () => {
         >
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center max-w-4xl mx-auto">
-            <h2 className="section-title">
-              RAZONES PARA ELEGIRNOS
-            </h2>
-            <p className="section-subtitle">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-cinzel font-bold" style={{ color: '#BFBFBA' }}>
               Tu problema, resuelto con estrategia y claridad
-            </p>
+            </h2>
           </motion.div>
 
 
           {/* Reasons con contenido original */}
           <motion.div 
             variants={itemVariants}
-            className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8"
           >
             {reasons.map((reason, index) => (
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 sm:p-8 border border-gray-100"
+                className="relative bg-gradient-to-br from-[#BFBFBA] to-[#a8a8a8] rounded-3xl p-8 text-center hover:from-[#a8a8a8] hover:to-[#BFBFBA] transition-all duration-500 hover:scale-105 hover:shadow-2xl overflow-hidden group"
               >
-                <div className={`inline-flex p-3 sm:p-4 rounded-lg bg-gradient-to-r ${reason.color} mb-4 sm:mb-6`}>
-                  <reason.icon className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
+                {/* Efecto de brillo en hover */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 transition-opacity duration-500 transform -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%]"></div>
+                
+                {/* Icono decorativo */}
+                <div className="w-16 h-16 mx-auto mb-6 bg-[#1a1a1a] rounded-full flex items-center justify-center group-hover:bg-white transition-colors duration-300">
+                  <reason.icon className="h-8 w-8 text-[#BFBFBA] group-hover:text-[#1a1a1a] transition-colors duration-300" />
                 </div>
                 
-                <h3 className="text-lg sm:text-xl font-bebas-neue text-gray-900 mb-2">
+                <h3 className="text-xl font-bold text-[#1a1a1a] mb-4 group-hover:text-white transition-colors duration-300 font-cinzel font-bold">
                   {reason.title}
                 </h3>
                 
-                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                <p className="text-base text-[#1a1a1a] leading-relaxed group-hover:text-white transition-colors duration-300 font-montserrat font-semibold">
                   {reason.subtitle}
                 </p>
+                
+                {/* Borde decorativo */}
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#1a1a1a] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </motion.div>
             ))}
           </motion.div>

@@ -7,19 +7,19 @@ const Testimonials = () => {
   const testimonials = [
     {
       text: "Encontré a la Dra. Citera buscando en Google y fue la mejor decisión. Desde el primer día me atendió ella misma, con honestidad, calidez y profesionalismo. Gracias a su ayuda pude resolver mi reclamo con la ART y hoy mi vida cambió para mejor. Eternamente agradecida.",
-      author: "⭐ Adriana G."
+      author: "Adriana G."
     },
     {
       text: "Excelente atención, muy buena profesional asesorando en todo el caso y acompañando cada paso. Explica con claridad y siempre está disponible. Súper recomendable.",
-      author: "⭐ Alex B."
+      author: "Alex B."
     },
     {
       text: "Recurri dos veces con la Dra. Citera por distintos casos y en ambos obtuvimos excelentes resultados. Es confiable, clara y muy dedicada. Sin dudas la volvería a elegir.",
-      author: "⭐ Iván R."
+      author: "Iván R."
     },
     {
       text: "Muchas felicidades Analia que este años nuevos que comienza la encuentre con salud igual que a su hija y que siempre triunfe en su trabajo que lo caracteriza como segura de sí misma y sobre todo tan honesta y leal cuando toma un caso como fue el mío. Siempre estaré agradecida a Dios y a la VIRGEN que al azar con mi hijo entramos a Google y vi tu nombre Abogada Analia y le dije a mi hijo: ella. Y como no me equivoqué con usted, mil gracias x ser como hay poco como usted, tan leal, tan sincera y sobre todo sincera. Hoy su gran ayuda mi navidad y mi años nuevos y mi vida cambió y mi realidad hoy se llama gracias a Analia Citera ❤❤😘😘",
-      author: "⭐ Whatsapp"
+      author: "Whatsapp"
     }
   ];
 
@@ -39,8 +39,8 @@ const Testimonials = () => {
   };
 
   return (
-    <section id="testimonials" className="section-padding section-bg-alt">
-      <div className="container-custom">
+    <section id="testimonials" className="section-padding" style={{ backgroundColor: '#BFBFBA' }}>
+      <div className="container-custom" style={{ paddingLeft: '0.5rem', paddingRight: '0.5rem' }}>
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -50,12 +50,9 @@ const Testimonials = () => {
         >
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center">
-            <h2 className="section-title">
-              TESTIMONIOS
-            </h2>
-            <p className="section-subtitle">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-cinzel font-bold" style={{ color: '#1a1a1a' }}>
               Historias reales, resultados reales
-            </p>
+            </h2>
           </motion.div>
 
           {/* Testimonials Grid */}
@@ -67,15 +64,15 @@ const Testimonials = () => {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 relative"
+                className="bg-[#1a1a1a] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 relative"
               >
-                <Quote className="h-8 w-8 text-primary-600 mb-4" />
-                <p className="text-gray-700 leading-relaxed mb-6 italic">
+                <Quote className="h-8 w-8 text-[#BFBFBA] mb-4" />
+                <p className="text-[#BFBFBA] leading-relaxed mb-6 italic font-montserrat font-semibold">
                   &ldquo;{testimonial.text}&rdquo;
                 </p>
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="font-semibold text-gray-900">{testimonial.author}</p>
+                    <p className="font-semibold text-[#BFBFBA] font-montserrat font-semibold">{testimonial.author}</p>
                     <div className="flex space-x-1 mt-1">
                       {[...Array(5)].map((_, i) => (
                         <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
@@ -90,12 +87,13 @@ const Testimonials = () => {
           {/* Bottom section */}
           <motion.div 
             variants={itemVariants}
-            className="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-8 text-center text-white"
+            className="bg-[#1a1a1a] rounded-2xl p-8 text-center"
+            style={{ color: '#BFBFBA' }}
           >
-            <h3 className="text-2xl font-bebas-neue mb-4">
+            <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Poppins', fontWeight: 700 }}>
               Empezá tu reclamo hoy
             </h3>
-            <p className="text-lg opacity-90 max-w-3xl mx-auto mb-6">
+            <p className="text-lg max-w-3xl mx-auto mb-6" style={{ color: '#BFBFBA' }}>
               Contanos qué te pasó y recibí una evaluación inicial sin cargo. Te guiamos para no perder plazos ni dinero.
             </p>
             <button
@@ -105,7 +103,7 @@ const Testimonials = () => {
                   element.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
-              className="bg-white text-primary-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors duration-300"
+              className="bg-[#BFBFBA] text-[#1a1a1a] font-semibold py-3 px-8 rounded-3xl hover:bg-opacity-80 transition-colors duration-300"
             >
               Iniciar mi Consulta
             </button>

@@ -5,13 +5,13 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Services from '@/components/Services';
+import AdditionalSections from '@/components/AdditionalSections';
 import WhyChoose from '@/components/WhyChoose';
 import Gallery from '@/components/Gallery';
 import Testimonials from '@/components/Testimonials';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
-import ScrollToTop from '@/components/ScrollToTop';
 
 export default function Home() {
   useEffect(() => {
@@ -40,13 +40,13 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <AdditionalSections />
       <WhyChoose />
       <Gallery />
       <Testimonials />
       <Contact />
       <Footer />
       <WhatsAppButton />
-      <ScrollToTop />
     </main>
   );
 }
