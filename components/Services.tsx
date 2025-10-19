@@ -70,25 +70,25 @@ const Services = () => {
           {/* Services Grid */}
           <motion.div 
             variants={itemVariants}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4"
           >
             {services.map((service, index) => (
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="bg-white rounded-2xl p-5 shadow-lg border border-gray-100"
+                className="bg-white rounded-2xl p-4 sm:p-5 shadow-lg border border-gray-100"
               >
                 {/* Icono */}
-                <div className="w-14 h-14 bg-[#143259] rounded-xl flex items-center justify-center mb-4">
-                  <service.icon className="h-7 w-7 text-white" />
+                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-[#143259] rounded-xl flex items-center justify-center mb-4">
+                  <service.icon className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
                 </div>
                 
                 {/* Contenido */}
                 <div className="space-y-3">
-                  <h3 className="text-lg font-bold text-[#143259] font-cinzel">
+                  <h3 className="text-base sm:text-lg font-bold text-[#143259] font-cinzel">
                     {service.title}
                   </h3>
-                  <p className="text-[#143259] leading-relaxed font-montserrat font-semibold">
+                  <p className="text-sm sm:text-base text-[#143259] leading-relaxed font-montserrat font-semibold">
                     {service.description}
                   </p>
                 </div>
