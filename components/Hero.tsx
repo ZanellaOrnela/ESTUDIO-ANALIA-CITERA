@@ -85,7 +85,7 @@ const Hero = () => {
           <div className="hidden lg:grid grid-cols-4 gap-6 max-w-5xl">
             <div className="relative h-64 md:h-80 w-full md:w-56 rounded-lg overflow-hidden">
               <Image
-                src="https://img.freepik.com/fotos-gratis/vida-morta-com-a-balanca-da-justica_23-2149776013.jpg"
+                src="/images/hero-image-1.jpg"
                 alt="Imagen 1"
                 fill
                 className="object-cover grayscale"
@@ -93,7 +93,7 @@ const Hero = () => {
             </div>
             <div className="relative h-72 md:h-96 w-full md:w-56 rounded-lg overflow-hidden">
               <Image
-                src="https://i.pinimg.com/1200x/58/8e/17/588e1747915c0986323a66dfb3635112.jpg"
+                src="/images/hero-image-2-3.jpg"
                 alt="Imagen 2"
                 fill
                 className="object-cover grayscale"
@@ -102,7 +102,7 @@ const Hero = () => {
             </div>
             <div className="relative h-72 md:h-96 w-full md:w-56 rounded-lg overflow-hidden">
               <Image
-                src="https://i.pinimg.com/1200x/58/8e/17/588e1747915c0986323a66dfb3635112.jpg"
+                src="/images/hero-image-2-3.jpg"
                 alt="Imagen 3"
                 fill
                 className="object-cover grayscale"
@@ -111,7 +111,7 @@ const Hero = () => {
             </div>
             <div className="relative h-72 w-full md:w-56 rounded-lg overflow-hidden">
               <Image
-                src="https://i.pinimg.com/1200x/f6/6c/8d/f66c8d721cf337f5926b0bcc4280e558.jpg"
+                src="/images/hero-image-4.jpg"
                 alt="Imagen 4"
                 fill
                 className="object-cover grayscale"
