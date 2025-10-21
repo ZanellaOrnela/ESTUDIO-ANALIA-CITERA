@@ -16,25 +16,25 @@ const Services = () => {
       icon: FileText,
       image: "https://www.castillocastrillonabogados.es/wp-content/uploads/despido-indirecto-trabajador-1199x800.jpg",
       title: "Alta apresurada",
-      description: "Te dieron el alta sin estar bien. Pedimos reevaluación, pericias y reclamamos la indemnización que corresponde."
+      description: "Te dieron el alta sin estar en condiciones de prestar tareas laborales. Pedimos reevaluación y reclamamos la indemnización que te corresponde"
     },
     {
       icon: Car,
       image: "https://garciaalonso.com.ar/wp-content/uploads/2022/05/accidente-in-itinere.jpg",
       title: "Accidente \"in itinere\"",
-      description: "Sufriste un siniestro camino al trabajo. Documentamos, probamos el nexo y reclamamos a la ART y terceros si corresponde."
+      description: "Sufriste un accidente yendo o volviendo del trabajo. Documentamos, probamos el nexo y reclamamos a la ART y terceros si corresponde."
     },
     {
       icon: Shield,
       image: "https://www.eluniversal.com.mx/resizer/v2/7TTYXIYPOBFYBFQRSBUK4ZI2OM.jpg?auth=08d882254f603e234abe8e0e4c00a6d2f9948d8332443ca717ddbbaf63498d78&smart=true&width=1100&height=666",
-      title: "Secuelas e incapacidad",
-      description: "Tenés dolor, limitaciones o pérdida de fuerza. Cuantificamos la incapacidad y te representamos para maximizar el monto a cobrar."
+      title: "Secuelas e incapacidades",
+      description: "Tenés dolor, limitaciones o pérdida de fuerza. Te representamos para maximizar el monto que te corresponde cobrar."
     },
     {
       icon: Scale,
       image: "https://i0.wp.com/aldiaargentina.microjuris.com/wp-content/uploads/2024/10/jefe-j.jpg?fit=1899%2C1265&ssl=1",
       title: "Empleador incumplidor",
-      description: "Falta de registración, diferencias salariales o despido tras el accidente. Accionamos con intimaciones y demanda."
+      description: "Falta de registración, diferencias salariales o despido. Accionamos con intimaciones y demandas. No dudes en consultarnos para que te asesoremos frente a esta situación y defendamos tus derechos."
     },
     {
       icon: Scale,
@@ -46,7 +46,7 @@ const Services = () => {
       icon: Bus,
       image: "https://img.freepik.com/fotos-premium/mujer-viaja-telefono-inteligente-transporte-autobus-consulte-sitio-web-redes-sociales-o-internet-obtener-informacion-sobre-ciudad-persona-joven-telefono-celular-5g-transporte-publico-ciudad-urbana_590464-84302.jpg",
       title: "Accidentes en transporte público",
-      description: "Sufriste un accidente en colectivo, subte, tren o taxi. Te asesoramos sobre tus derechos y reclamamos la indemnización correspondiente."
+      description: "Sufriste un accidente en transporte público. Te asesoramos sobre tus derechos y analizamos para que obtengas la indemnización de todos los responsables ante el mismo."
     }
   ];
 
@@ -78,11 +78,8 @@ const Services = () => {
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-montserrat" style={{ color: '#0F2D49' }}>
-              Te defendemos en todos los siniestros de ART
+              Te defendemos frente a siniestros y enfermedades de trabajo.
             </h2>
-            <p className="text-lg leading-relaxed font-montserrat font-semibold" style={{ color: '#0F2D49' }}>
-              Accidentes y enfermedades laborales
-            </p>
           </motion.div>
 
           {/* Services Grid */}

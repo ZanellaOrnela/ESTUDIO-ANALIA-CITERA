@@ -108,7 +108,7 @@ const AdditionalSections = () => {
                 </div>
                 <h4 className="text-lg font-bold mb-3 font-montserrat font-bold" style={{ color: '#0F2D49' }}>Paso 2</h4>
                 <p className="text-sm font-montserrat font-semibold" style={{ color: '#0F2D49' }}>
-                  Reunimos estudios y pruebas. Presentamos reclamos ante la ART, compania aseguradora, empleadores y cualquier otro responsable, si es necesario, iniciamos reclamos judiciales.
+                  Reunimos estudios y pruebas. Presentamos reclamos ante la ART, compañía aseguradora, empleadores y cualquier otro responsable, si es necesario, iniciamos reclamos judiciales.
                 </p>
               </div>
               
@@ -118,7 +118,7 @@ const AdditionalSections = () => {
                 </div>
                 <h4 className="text-lg font-bold mb-3 font-montserrat font-bold" style={{ color: '#0F2D49' }}>Paso 3</h4>
                 <p className="text-sm font-montserrat font-semibold" style={{ color: '#0F2D49' }}>
-                  Buscamos que obtengas el mejor resultado posible frente al suceso que te ha acontecido
+                  Buscamos que obtengas el mejor resultado posible frente al suceso que te ha acontecido.
                 </p>
               </div>
             </motion.div>

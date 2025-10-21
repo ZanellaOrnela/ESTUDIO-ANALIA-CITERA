@@ -85,7 +85,7 @@ const Gallery = () => {
           >
             <p className="text-lg leading-relaxed font-montserrat font-semibold" style={{ color: '#0F2D49' }}>
               Encuentra respuestas a las preguntas más frecuentes sobre accidentes de trabajo, 
-              enfermedades laborales y reclamos ante ART. Nuestros videos te explican paso a paso 
+              enfermedades laborales y reclamos ante la ART. Nuestros videos te explican paso a paso 
               qué hacer en cada situación.
             </p>
           </motion.div>

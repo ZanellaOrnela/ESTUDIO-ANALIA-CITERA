@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Scale, Mail, Phone, MapPin, Instagram, Facebook, MessageCircle } from 'lucide-react';
+import { Scale, Mail, Phone, MapPin, Instagram, Facebook, MessageCircle, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   const socialLinks = [
@@ -22,6 +22,12 @@ const Footer = () => {
       username: "Accidentes trabajo ART",
       icon: Facebook,
       url: "https://facebook.com/Accidentes-trabajo-ART"
+    },
+    {
+      platform: "LinkedIn",
+      username: "Analía Citera",
+      icon: Linkedin,
+      url: "https://www.linkedin.com/in/anal%C3%ADa-citera-954647248/"
     }
   ];
 
@@ -81,6 +87,22 @@ const Footer = () => {
               <div className="text-center text-sm leading-relaxed" style={{ color: '#0F2D49' }}>
                 <p className="font-semibold font-montserrat">Especialistas en ART, Laboral y Civil</p>
                 <p className="mt-1 opacity-70 font-montserrat font-semibold">Defendiendo tus derechos desde 1999</p>
+              </div>
+              
+              {/* Redes sociales */}
+              <div className="flex justify-center space-x-4 mt-8">
+                {socialLinks.map((social, index) => (
+                  <a
+                    key={index}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-2 px-4 py-2 bg-[#0F2D49] text-white rounded-full hover:bg-[#0F2440] transition-all duration-200"
+                  >
+                    <social.icon className="h-4 w-4" />
+                    <span className="text-sm font-montserrat font-semibold">{social.platform}</span>
+                  </a>
+                ))}
               </div>
             </div>
           </motion.div>

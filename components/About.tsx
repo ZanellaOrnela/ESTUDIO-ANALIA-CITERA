@@ -45,7 +45,7 @@ const About = () => {
             <p className="text-lg leading-relaxed font-montserrat font-semibold" style={{ color: '#0F2D49' }}>
               Somos un Estudio Jurídico, con más de 25 años de experiencia defendiendo tus derechos. 
               Nos especializamos en reclamos por accidentes y enfermedades de trabajo, reclamos laborales en general, 
-              como así también, siniestros de tránsito, y todo lo relacionado a los mismos.
+              como así también, siniestros de tránsito, y todo lo relacionado con ellos.
             </p>
           </motion.div>
 

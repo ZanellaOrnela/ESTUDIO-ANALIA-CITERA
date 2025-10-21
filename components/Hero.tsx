@@ -1,6 +1,7 @@
 'use client';
 
 import { ArrowRight } from 'lucide-react';
+import Image from 'next/image';
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -12,7 +13,16 @@ const Hero = () => {
 
   return (
     <div className="relative pt-32 pb-8 bg-[#0F2D49] xl:pt-40 sm:pb-12 lg:pb-20 xl:pb-24 2xl:pb-32">
-
+      {/* Imagen de fondo */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/a (1) copy.png"
+          alt="Fondo del Estudio Jurídico"
+          fill
+          className="object-cover opacity-20"
+          priority
+        />
+      </div>
 
       <div className="relative z-20">
         <div className="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
@@ -25,7 +35,7 @@ const Hero = () => {
               <span className="font-montserrat font-bold text-7xl lg:text-8xl">Dra. Citera</span>
             </p>
             <p className="mt-12 font-montserrat text-base font-semibold leading-7 text-white text-opacity-70">
-              Hacemos tu reclamo de ART de punta a punta con una atención personalizada, consultas virtuales sin cargo y sin adelanto de honorarios. Te representamos en CABA y Provincia de Buenos Aires.
+              Hacemos tu reclamo ante la ART, seguros y empleadores, con una atención personalizada,. Consultas virtuales sin cargo y sin adelanto de honorarios. Te representamos en CABA y Provincia de Buenos Aires.
             </p>
              <div className="flex flex-col sm:flex-row items-center justify-center mt-5 space-y-4 sm:space-y-0 sm:space-x-4">
               <button
@@ -57,20 +67,12 @@ const Hero = () => {
               
               <div className="flex items-center space-x-4">
                 <a
-                  href="https://instagram.com/accidentes.trabajo.art"
+                  href="https://www.linkedin.com/in/anal%C3%ADa-citera-954647248/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center space-x-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 hover:bg-white/20 transition-all duration-200"
                 >
-                  <span className="text-white text-sm font-montserrat font-semibold">Instagram</span>
-                </a>
-                <a
-                  href="https://tiktok.com/@accidentes.trabajo.art"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 hover:bg-white/20 transition-all duration-200"
-                >
-                  <span className="text-white text-sm font-montserrat font-semibold">TikTok</span>
+                  <span className="text-white text-sm font-montserrat font-semibold">LinkedIn</span>
                 </a>
               </div>
             </div>
