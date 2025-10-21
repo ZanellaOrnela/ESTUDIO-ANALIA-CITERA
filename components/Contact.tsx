@@ -85,7 +85,7 @@ Datos del formulario:
             {/* Contact Info */}
             <motion.div variants={itemVariants} className="space-y-8">
               <div className="bg-[#D9C896] rounded-xl p-8">
-                <h3 className="text-2xl font-bold mb-6 font-cinzel font-bold" style={{ color: '#0F2D49' }}>
+                <h3 className="text-2xl font-bold mb-6 font-montserrat font-bold" style={{ color: '#0F2D49' }}>
                   Información de Contacto
                 </h3>
                 

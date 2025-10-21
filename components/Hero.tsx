@@ -62,7 +62,7 @@ const Hero = () => {
                   rel="noopener noreferrer"
                   className="inline-flex items-center space-x-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 hover:bg-white/20 transition-all duration-200"
                 >
-                  <span className="text-white text-sm font-montserrat font-semibold">📱 Instagram</span>
+                  <span className="text-white text-sm font-montserrat font-semibold">Instagram</span>
                 </a>
                 <a
                   href="https://tiktok.com/@accidentes.trabajo.art"
@@ -70,16 +70,12 @@ const Hero = () => {
                   rel="noopener noreferrer"
                   className="inline-flex items-center space-x-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 hover:bg-white/20 transition-all duration-200"
                 >
-                  <span className="text-white text-sm font-montserrat font-semibold">🎵 TikTok</span>
+                  <span className="text-white text-sm font-montserrat font-semibold">TikTok</span>
                 </a>
               </div>
             </div>
             
-            <div className="mt-6 text-center">
-              <p className="text-white/80 text-sm font-montserrat">
-                📺 <strong>Contenido exclusivo:</strong> Videos explicativos y casos reales en nuestras redes
-              </p>
-            </div>
+            
           </div>
         </div>
       </div>
