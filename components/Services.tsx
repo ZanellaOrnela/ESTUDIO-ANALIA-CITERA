@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Briefcase, Car, Shield, FileText, Scale } from 'lucide-react';
+import { Briefcase, Car, Shield, FileText, Scale, Bus } from 'lucide-react';
 import Image from 'next/image';
 
 const Services = () => {
@@ -28,13 +28,25 @@ const Services = () => {
       icon: Shield,
       image: "https://www.eluniversal.com.mx/resizer/v2/7TTYXIYPOBFYBFQRSBUK4ZI2OM.jpg?auth=08d882254f603e234abe8e0e4c00a6d2f9948d8332443ca717ddbbaf63498d78&smart=true&width=1100&height=666",
       title: "Secuelas e incapacidad",
-      description: "Tenés dolor, limitaciones o pérdida de fuerza. Cuantificamos la incapacidad con peritos y maximizamos el monto a cobrar."
+      description: "Tenés dolor, limitaciones o pérdida de fuerza. Cuantificamos la incapacidad y te representamos para maximizar el monto a cobrar."
     },
     {
       icon: Scale,
       image: "https://i0.wp.com/aldiaargentina.microjuris.com/wp-content/uploads/2024/10/jefe-j.jpg?fit=1899%2C1265&ssl=1",
       title: "Empleador incumplidor",
       description: "Falta de registración, diferencias salariales o despido tras el accidente. Accionamos con intimaciones y demanda."
+    },
+    {
+      icon: Scale,
+      image: "https://www.dya.es/wp-content/uploads/2022/10/primero-1.jpg",
+      title: "Accidente de tránsito",
+      description: " Accidente de tránsito o accidente de trayecto. Te representamos para maximizar el monto a cobrar."
+    },
+    {
+      icon: Bus,
+      image: "https://img.freepik.com/fotos-premium/mujer-viaja-telefono-inteligente-transporte-autobus-consulte-sitio-web-redes-sociales-o-internet-obtener-informacion-sobre-ciudad-persona-joven-telefono-celular-5g-transporte-publico-ciudad-urbana_590464-84302.jpg",
+      title: "Accidentes en transporte público",
+      description: "Sufriste un accidente en colectivo, subte, tren o taxi. Te asesoramos sobre tus derechos y reclamamos la indemnización correspondiente."
     }
   ];
 
@@ -54,7 +66,7 @@ const Services = () => {
   };
 
   return (
-    <section id="services" className="section-padding" style={{ backgroundColor: '#F2F2F2' }}>
+    <section id="services" className="section-padding pb-16" style={{ backgroundColor: '#F2F2F2' }}>
       <div className="container-custom" style={{ paddingLeft: '1rem', paddingRight: '1rem' }}>
         <motion.div
           variants={containerVariants}
@@ -76,9 +88,11 @@ const Services = () => {
           {/* Services Grid */}
           <motion.div 
             variants={itemVariants}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
           >
-            {services.map((service, index) => (
+            {services.map((service, index) => {
+              console.log(`Rendering service ${index}: ${service.title}`);
+              return (
               <motion.div
                 key={index}
                 variants={itemVariants}
@@ -104,7 +118,8 @@ const Services = () => {
                   </p>
                 </div>
               </motion.div>
-            ))}
+              );
+            })}
           </motion.div>
 
         </motion.div>

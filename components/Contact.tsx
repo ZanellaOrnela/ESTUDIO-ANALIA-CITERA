@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Clock, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, Send, Instagram, Facebook, MessageCircle } from 'lucide-react';
 import { useState } from 'react';
 
 const Contact = () => {
@@ -237,6 +237,114 @@ Datos del formulario:
                 </form>
               </div>
             </motion.div>
+          </div>
+        </motion.div>
+
+        {/* Redes Sociales */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="mt-16"
+        >
+          <div className="text-center mb-8">
+            <h3 className="text-2xl md:text-3xl font-bold mb-4 font-montserrat" style={{ color: '#0F2D49' }}>
+              Síguenos en nuestras redes
+            </h3>
+            <p className="text-base mb-6 font-montserrat" style={{ color: '#0F2D49' }}>
+              Consejos legales, casos reales y actualizaciones del derecho laboral
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            {/* Instagram */}
+            <motion.a
+              href="https://instagram.com/accidentes.trabajo.art"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 h-full">
+                <div className="flex flex-col items-center space-y-4 h-full">
+                  <div className="w-16 h-16 rounded-full flex items-center justify-center" style={{ backgroundColor: '#D9C896' }}>
+                    <Instagram className="h-8 w-8" style={{ color: '#0F2D49' }} />
+                  </div>
+                  <div className="text-center flex-1 flex flex-col justify-center">
+                    <h4 className="text-lg font-bold font-montserrat" style={{ color: '#0F2D49' }}>Instagram</h4>
+                    <p className="text-sm font-montserrat" style={{ color: '#0F2D49' }}>@accidentes.trabajo.art</p>
+                    <p className="text-xs mt-2 font-montserrat opacity-70" style={{ color: '#0F2D49' }}>
+                      Videos explicativos y casos reales
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </motion.a>
+
+            {/* TikTok */}
+            <motion.a
+              href="https://tiktok.com/@accidentes.trabajo.art"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 h-full">
+                <div className="flex flex-col items-center space-y-4 h-full">
+                  <div className="w-16 h-16 rounded-full flex items-center justify-center" style={{ backgroundColor: '#D9C896' }}>
+                    <MessageCircle className="h-8 w-8" style={{ color: '#0F2D49' }} />
+                  </div>
+                  <div className="text-center flex-1 flex flex-col justify-center">
+                    <h4 className="text-lg font-bold font-montserrat" style={{ color: '#0F2D49' }}>TikTok</h4>
+                    <p className="text-sm font-montserrat" style={{ color: '#0F2D49' }}>@accidentes.trabajo.art</p>
+                    <p className="text-xs mt-2 font-montserrat opacity-70" style={{ color: '#0F2D49' }}>
+                      Contenido dinámico y consejos prácticos
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </motion.a>
+
+            {/* Facebook */}
+            <motion.a
+              href="https://facebook.com/Accidentes-trabajo-ART"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 h-full">
+                <div className="flex flex-col items-center space-y-4 h-full">
+                  <div className="w-16 h-16 rounded-full flex items-center justify-center" style={{ backgroundColor: '#D9C896' }}>
+                    <Facebook className="h-8 w-8" style={{ color: '#0F2D49' }} />
+                  </div>
+                  <div className="text-center flex-1 flex flex-col justify-center">
+                    <h4 className="text-lg font-bold font-montserrat" style={{ color: '#0F2D49' }}>Facebook</h4>
+                    <p className="text-sm font-montserrat" style={{ color: '#0F2D49' }}>Accidentes trabajo ART</p>
+                    <p className="text-xs mt-2 font-montserrat opacity-70" style={{ color: '#0F2D49' }}>
+                      Actualizaciones y noticias legales
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </motion.a>
+          </div>
+
+          {/* Caja destacada */}
+          <div className="mt-8 p-6 rounded-2xl" style={{ backgroundColor: '#0F2D49' }}>
+            <div className="text-center">
+              <p className="text-white text-lg font-montserrat font-bold mb-2">
+                Contenido exclusivo en nuestras redes
+              </p>
+              <p className="text-white text-sm font-montserrat opacity-90">
+                Videos explicativos, casos reales, consejos prácticos y actualizaciones del derecho laboral. 
+                Síguenos para no perderte ningún consejo legal.
+              </p>
+            </div>
           </div>
         </motion.div>
       </div>

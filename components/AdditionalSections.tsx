@@ -59,7 +59,7 @@ const AdditionalSections = () => {
                 <CheckCircle className="h-12 w-12 mx-auto mb-4" style={{ color: '#D9C896' }} />
                 <h4 className="text-lg font-bold mb-2 font-montserrat font-bold" style={{ color: '#D9C896' }}>Acompañamiento</h4>
                 <p className="text-sm font-montserrat font-semibold" style={{ color: '#D9C896' }}>
-                  Te guiamos paso a paso: qué papeles juntar, qué decir y qué evitar.
+                  Te guiamos paso a paso frente a este reclamo, ante la ART, tu empleador y terceros si corresponde.
                 </p>
               </div>
               
@@ -67,7 +67,7 @@ const AdditionalSections = () => {
                 <CheckCircle className="h-12 w-12 mx-auto mb-4" style={{ color: '#D9C896' }} />
                 <h4 className="text-lg font-bold mb-2 font-montserrat font-bold" style={{ color: '#D9C896' }}>Costos y tiempos</h4>
                 <p className="text-sm font-montserrat font-semibold" style={{ color: '#D9C896' }}>
-                  Consultas SIN CARGO, sin adelantar honorarios y con actualización frecuente del estado del caso.
+                  Consultas SIN CARGO y sin adelantar honorarios. Estamos siempre a tu disposición.
                 </p>
               </div>
             </motion.div>
@@ -108,7 +108,7 @@ const AdditionalSections = () => {
                 </div>
                 <h4 className="text-lg font-bold mb-3 font-montserrat font-bold" style={{ color: '#0F2D49' }}>Paso 2</h4>
                 <p className="text-sm font-montserrat font-semibold" style={{ color: '#0F2D49' }}>
-                  Reunimos estudios y pruebas. Presentamos reclamos ante ART y, si hace falta, iniciamos acción judicial.
+                  Reunimos estudios y pruebas. Presentamos reclamos ante la ART, compania aseguradora, empleadores y cualquier otro responsable, si es necesario, iniciamos reclamos judiciales.
                 </p>
               </div>
               
@@ -118,7 +118,7 @@ const AdditionalSections = () => {
                 </div>
                 <h4 className="text-lg font-bold mb-3 font-montserrat font-bold" style={{ color: '#0F2D49' }}>Paso 3</h4>
                 <p className="text-sm font-montserrat font-semibold" style={{ color: '#0F2D49' }}>
-                  Negociamos y cobramos. Te informamos cada avance y cerramos con el mejor resultado posible.
+                  Buscamos que obtengas el mejor resultado posible frente al suceso que te ha acontecido
                 </p>
               </div>
             </motion.div>
@@ -136,30 +136,67 @@ const AdditionalSections = () => {
             viewport={{ once: true, amount: 0.3 }}
             className="space-y-8"
           >
-            <motion.div variants={itemVariants} className="max-w-6xl mx-auto">
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
-                {/* Contenido de texto */}
-                <div className="text-center lg:text-left">
-                  <h2 className="text-3xl md:text-4xl font-bold mb-6 relative font-montserrat font-bold" style={{ color: '#0F2D49' }}>
-                    Dra. Citera Analía — Titular del Estudio
-                  </h2>
-                  <p className="text-lg leading-relaxed font-montserrat font-semibold" style={{ color: '#0F2D49' }}>
-                    Dra. Citera Analía, abogada, con 25 años de experiencia, siempre se ha destacado por su capacidad, 
-                    habiendo egresado con medalla de honor, actualizándose permanentemente, cuenta en su haber con dos maestrías, 
-                    tanto en el Derecho Laboral, como Civil, a los efectos de brindarle la mejor y eficiente defensa a sus clientes. 
-                    La atención es personalizada de principio a fin: trata directamente cada tema y te acompaña en todas las instancias.
-                  </p>
+            <motion.div variants={itemVariants} className="max-w-7xl mx-auto">
+              <div className="grid lg:grid-cols-2 gap-16 items-center">
+                
+                {/* Imagen de la Dra. Citera - Izquierda */}
+                <div className="order-1 lg:order-1">
+                  <div className="relative w-full max-w-md mx-auto lg:mx-0">
+                    <div className="relative w-80 h-96 rounded-2xl overflow-hidden shadow-2xl">
+                      <Image
+                        src="/images/analia citera foto.jpg"
+                        alt="Dra. Citera Analía"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    {/* Elemento decorativo */}
+                    <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-[#D9C896] rounded-full opacity-20"></div>
+                  </div>
                 </div>
                 
-                {/* Imagen de la Dra. Citera */}
-                <div className="flex justify-center lg:justify-end">
-                  <div className="relative w-80 h-96 rounded-lg overflow-hidden">
-                    <Image
-                      src="/images/analia citera foto.jpg"
-                      alt="Dra. Citera Analía"
-                      fill
-                      className="object-cover"
-                    />
+                {/* Contenido de texto - Derecha */}
+                <div className="order-2 lg:order-2 text-center lg:text-left space-y-6">
+                  <div className="space-y-4">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-montserrat" style={{ color: '#0F2D49' }}>
+                      Dra. Citera Analía
+                    </h2>
+                    <div className="w-20 h-1 bg-[#D9C896] mx-auto lg:mx-0"></div>
+                    <p className="text-lg font-montserrat font-semibold" style={{ color: '#0F2D49' }}>
+                      Titular del Estudio
+                    </p>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <p className="text-base leading-relaxed font-montserrat" style={{ color: '#0F2D49' }}>
+                      Abogada con <strong>25 años de experiencia</strong>, egresada con medalla de honor. 
+                      Cuenta con dos maestrías en Derecho Laboral y Civil para brindar la mejor defensa a sus clientes.
+                    </p>
+                    
+                    <p className="text-base leading-relaxed font-montserrat" style={{ color: '#0F2D49' }}>
+                      <strong>Atención personalizada</strong> de principio a fin: trata directamente cada tema 
+                      y te acompaña en todas las instancias del proceso legal.
+                    </p>
+                  </div>
+                  
+                  {/* Características destacadas */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                    <div className="flex items-center space-x-3">
+                      <div className="w-2 h-2 bg-[#D9C896] rounded-full"></div>
+                      <span className="text-sm font-montserrat font-semibold" style={{ color: '#0F2D49' }}>Medalla de Honor</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-2 h-2 bg-[#D9C896] rounded-full"></div>
+                      <span className="text-sm font-montserrat font-semibold" style={{ color: '#0F2D49' }}>Doble Maestría</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-2 h-2 bg-[#D9C896] rounded-full"></div>
+                      <span className="text-sm font-montserrat font-semibold" style={{ color: '#0F2D49' }}>25 Años Experiencia</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-2 h-2 bg-[#D9C896] rounded-full"></div>
+                      <span className="text-sm font-montserrat font-semibold" style={{ color: '#0F2D49' }}>Atención Directa</span>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -13,10 +13,11 @@ const WhyChoose = () => {
     },
     {
       icon: GraduationCap,
-      title: "Estrategia que gana",
-      subtitle: "Pericias, evidencia médica y negociación firme para maximizar tu cobro.",
+      title: "Estrategia legal sólida",
+      subtitle: "Análisis experto y una gestión firme para fortalecer tu reclamo.",
       color: "from-green-500 to-green-600"
-    },
+    }
+    ,
     {
       icon: DollarSign,
       title: "Sin adelantos",
