@@ -8,43 +8,43 @@ const Services = () => {
   const services = [
     {
       icon: Briefcase,
-      image: "https://media.licdn.com/dms/image/v2/C4E12AQEAQ89qIBMI7w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1648506371261?e=2147483647&v=beta&t=cL-XzG0mwEvKu8qmHJ2zz1XFdhYxf8cQKM1oLnVH4qk",
+      image: "/images/analia citera foto.jpg", // Imagen local como fallback
       title: "Demora o negativa de ART",
       description: "La ART no te autoriza estudios, traslados o tratamientos. Intervenimos para exigir cobertura, controlar el alta y calcular la incapacidad."
     },
     {
       icon: FileText,
-      image: "https://www.castillocastrillonabogados.es/wp-content/uploads/despido-indirecto-trabajador-1199x800.jpg",
+      image: "/images/analia citera foto.jpg", // Imagen local como fallback
       title: "Alta apresurada",
       description: "Te dieron el alta sin estar en condiciones de prestar tareas laborales. Pedimos reevaluación y reclamamos la indemnización que te corresponde"
     },
     {
       icon: Car,
-      image: "https://garciaalonso.com.ar/wp-content/uploads/2022/05/accidente-in-itinere.jpg",
+      image: "/images/analia citera foto.jpg", // Imagen local como fallback
       title: "Accidente \"in itinere\"",
       description: "Sufriste un accidente yendo o volviendo del trabajo. Documentamos, probamos el nexo y reclamamos a la ART y terceros si corresponde."
     },
     {
       icon: Shield,
-      image: "https://www.eluniversal.com.mx/resizer/v2/7TTYXIYPOBFYBFQRSBUK4ZI2OM.jpg?auth=08d882254f603e234abe8e0e4c00a6d2f9948d8332443ca717ddbbaf63498d78&smart=true&width=1100&height=666",
+      image: "/images/analia citera foto.jpg", // Imagen local como fallback
       title: "Secuelas e incapacidades",
       description: "Tenés dolor, limitaciones o pérdida de fuerza. Te representamos para maximizar el monto que te corresponde cobrar."
     },
     {
       icon: Scale,
-      image: "https://i0.wp.com/aldiaargentina.microjuris.com/wp-content/uploads/2024/10/jefe-j.jpg?fit=1899%2C1265&ssl=1",
+      image: "/images/analia citera foto.jpg", // Imagen local como fallback
       title: "Empleador incumplidor",
       description: "Falta de registración, diferencias salariales o despido. Accionamos con intimaciones y demandas. No dudes en consultarnos para que te asesoremos frente a esta situación y defendamos tus derechos."
     },
     {
       icon: Scale,
-      image: "https://www.dya.es/wp-content/uploads/2022/10/primero-1.jpg",
+      image: "/images/analia citera foto.jpg", // Imagen local como fallback
       title: "Accidente de tránsito",
       description: " Accidente de tránsito o accidente de trayecto. Te representamos para maximizar el monto a cobrar."
     },
     {
       icon: Bus,
-      image: "https://img.freepik.com/fotos-premium/mujer-viaja-telefono-inteligente-transporte-autobus-consulte-sitio-web-redes-sociales-o-internet-obtener-informacion-sobre-ciudad-persona-joven-telefono-celular-5g-transporte-publico-ciudad-urbana_590464-84302.jpg",
+      image: "/images/analia citera foto.jpg", // Imagen local como fallback
       title: "Accidentes en transporte público",
       description: "Sufriste un accidente en transporte público. Te asesoramos sobre tus derechos y analizamos para que obtengas la indemnización de todos los responsables ante el mismo."
     }
@@ -99,7 +99,7 @@ const Services = () => {
                 className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden"
               >
                 {/* Imagen */}
-                <div className="relative w-full h-56 sm:h-64 bg-gray-200 flex items-center justify-center">
+                <div className="relative w-full h-56 sm:h-64 bg-gray-200">
                   <Image
                     src={service.image}
                     alt={service.title}
@@ -108,19 +108,7 @@ const Services = () => {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     style={{ objectFit: 'cover' }}
                     loading="lazy"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.style.display = 'none';
-                      const fallback = document.getElementById(`fallback-${index}`);
-                      if (fallback) {
-                        fallback.style.opacity = '1';
-                      }
-                    }}
                   />
-                  {/* Fallback icon - solo visible si la imagen no carga */}
-                  <div className="absolute inset-0 flex items-center justify-center bg-gray-200 opacity-0 transition-opacity duration-300" id={`fallback-${index}`}>
-                    <service.icon className="h-16 w-16 text-gray-400" />
-                  </div>
                 </div>
                 
                 {/* Contenido */}
