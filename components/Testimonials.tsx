@@ -116,7 +116,7 @@ const Testimonials = () => {
           {/* Bottom section */}
           <motion.div 
             variants={itemVariants}
-            className="bg-[#0F2D49] rounded-2xl p-8 text-center"
+            className="bg-[#0F2D49] rounded-2xl p-8 text-center mt-16"
             style={{ color: '#D9C896' }}
           >
             <h3 className="text-2xl font-bold mb-4 font-montserrat">

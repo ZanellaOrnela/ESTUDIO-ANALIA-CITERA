@@ -139,9 +139,9 @@ const AdditionalSections = () => {
             <motion.div variants={itemVariants} className="max-w-7xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-16 items-center">
                 
-                {/* Imagen de la Dra. Citera - Izquierda */}
-                <div className="order-1 lg:order-1 flex justify-center lg:justify-start">
-                  <div className="relative w-full max-w-sm mx-auto lg:mx-0">
+                {/* Imagen de la Dra. Citera - Centrada */}
+                <div className="order-1 lg:order-1 flex justify-center w-full">
+                  <div className="relative w-full max-w-sm mx-auto flex justify-center">
                     <div className="relative w-72 h-80 sm:w-80 sm:h-96 rounded-2xl overflow-hidden shadow-2xl">
                       <Image
                         src="/images/analia citera foto.jpg"
