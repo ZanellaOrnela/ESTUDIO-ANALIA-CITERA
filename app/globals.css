@@ -532,9 +532,12 @@
   /* Asegurar visibilidad en mobile para Services */
   #services {
     background-color: #F2F2F2 !important;
-    min-height: 800px;
+    min-height: 800px !important;
     display: block !important;
     visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    z-index: 1 !important;
   }
 
   #services .bg-white {
@@ -560,6 +563,9 @@
       min-height: 800px !important;
       display: block !important;
       visibility: visible !important;
+      opacity: 1 !important;
+      position: relative !important;
+      z-index: 1 !important;
     }
     
     #services h2,
@@ -568,17 +574,26 @@
       color: #0F2D49 !important;
       display: block !important;
       visibility: visible !important;
+      opacity: 1 !important;
     }
 
     #services .bg-white {
       background-color: white !important;
       display: block !important;
       visibility: visible !important;
+      opacity: 1 !important;
     }
 
     #services .grid {
       display: grid !important;
       visibility: visible !important;
+      opacity: 1 !important;
+    }
+
+    #services * {
+      display: block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
     }
   }
 }

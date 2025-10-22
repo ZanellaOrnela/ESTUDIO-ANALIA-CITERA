@@ -66,7 +66,7 @@ const Services = () => {
   };
 
   return (
-    <section id="services" className="section-padding pb-16 min-h-[800px] bg-[#F2F2F2]">
+    <section id="services" className="section-padding pb-16 min-h-[800px] bg-[#F2F2F2] block">
       <div className="container-custom" style={{ paddingLeft: '1rem', paddingRight: '1rem' }}>
         <motion.div
           variants={containerVariants}
