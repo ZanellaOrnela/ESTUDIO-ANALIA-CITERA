@@ -21,7 +21,7 @@ const Footer = () => {
       platform: "Facebook",
       username: "Accidentes trabajo ART",
       icon: Facebook,
-      url: "https://facebook.com/Accidentes-trabajo-ART"
+      url: "https://www.facebook.com/share/1FPgZMXT5j/"
     },
     {
       platform: "LinkedIn",
@@ -86,21 +86,20 @@ const Footer = () => {
               
               <div className="text-center text-sm leading-relaxed" style={{ color: '#0F2D49' }}>
                 <p className="font-semibold font-montserrat">Especialistas en ART, Laboral y Civil</p>
-                <p className="mt-1 opacity-70 font-montserrat font-semibold">Defendiendo tus derechos desde 1999</p>
               </div>
               
               {/* Redes sociales */}
-              <div className="flex justify-center space-x-4 mt-8">
+              <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mt-8">
                 {socialLinks.map((social, index) => (
                   <a
                     key={index}
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-2 px-4 py-2 bg-[#0F2D49] text-white rounded-full hover:bg-[#0F2440] transition-all duration-200"
+                    className="flex items-center space-x-1 sm:space-x-2 px-2 sm:px-4 py-2 bg-[#0F2D49] text-white rounded-full hover:bg-[#0F2440] transition-all duration-200 text-xs sm:text-sm"
                   >
-                    <social.icon className="h-4 w-4" />
-                    <span className="text-sm font-montserrat font-semibold">{social.platform}</span>
+                    <social.icon className="h-3 w-3 sm:h-4 sm:w-4" />
+                    <span className="font-montserrat font-semibold">{social.platform}</span>
                   </a>
                 ))}
               </div>

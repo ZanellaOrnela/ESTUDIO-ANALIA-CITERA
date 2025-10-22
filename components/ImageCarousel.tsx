@@ -35,9 +35,9 @@ const ImageCarousel = ({
   };
 
   return (
-    <div className="relative w-full max-w-sm mx-auto">
-      {/* Main carousel container - 9:16 aspect ratio for vertical videos */}
-      <div className="relative aspect-[9/16] overflow-hidden rounded-2xl bg-gray-100 shadow-lg">
+    <div className="relative w-full max-w-xs sm:max-w-sm mx-auto">
+      {/* Main carousel container - responsive aspect ratio */}
+      <div className="relative aspect-[4/5] sm:aspect-[9/16] overflow-hidden rounded-2xl bg-gray-100 shadow-lg">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
@@ -50,11 +50,10 @@ const ImageCarousel = ({
             {media[currentIndex].type === 'video' ? (
               <iframe
                 src={media[currentIndex].src.replace('/view?usp=sharing', '/preview')}
-                className="w-full h-full border-0"
+                className="w-full h-full border-0 object-cover"
                 allow="autoplay; encrypted-media"
                 allowFullScreen
                 title={media[currentIndex].alt}
-                style={{ aspectRatio: '9/16' }}
               />
             ) : (
               <img

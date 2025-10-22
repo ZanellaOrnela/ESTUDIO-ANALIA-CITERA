@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Clock, Send, Instagram, Facebook, MessageCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, Send, Instagram, Facebook, MessageCircle, Linkedin } from 'lucide-react';
 import { useState } from 'react';
 
 const Contact = () => {
@@ -257,7 +257,7 @@ Datos del formulario:
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {/* Instagram */}
             <motion.a
               href="https://instagram.com/accidentes.trabajo.art"
@@ -310,7 +310,7 @@ Datos del formulario:
 
             {/* Facebook */}
             <motion.a
-              href="https://facebook.com/Accidentes-trabajo-ART"
+              href="https://www.facebook.com/share/1FPgZMXT5j/"
               target="_blank"
               rel="noopener noreferrer"
               className="group"
@@ -327,6 +327,31 @@ Datos del formulario:
                     <p className="text-sm font-montserrat" style={{ color: '#0F2D49' }}>Accidentes trabajo ART</p>
                     <p className="text-xs mt-2 font-montserrat opacity-70" style={{ color: '#0F2D49' }}>
                       Actualizaciones y noticias legales
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </motion.a>
+
+            {/* LinkedIn */}
+            <motion.a
+              href="https://www.linkedin.com/in/anal%C3%ADa-citera-954647248/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 h-full">
+                <div className="flex flex-col items-center space-y-4 h-full">
+                  <div className="w-16 h-16 rounded-full flex items-center justify-center" style={{ backgroundColor: '#D9C896' }}>
+                    <Linkedin className="h-8 w-8" style={{ color: '#0F2D49' }} />
+                  </div>
+                  <div className="text-center flex-1 flex flex-col justify-center">
+                    <h4 className="text-lg font-bold font-montserrat" style={{ color: '#0F2D49' }}>LinkedIn</h4>
+                    <p className="text-sm font-montserrat" style={{ color: '#0F2D49' }}>Analía Citera</p>
+                    <p className="text-xs mt-2 font-montserrat opacity-70" style={{ color: '#0F2D49' }}>
+                      Perfil profesional y experiencia
                     </p>
                   </div>
                 </div>

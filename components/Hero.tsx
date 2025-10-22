@@ -31,8 +31,8 @@ const Hero = () => {
               Abogados especialistas en accidentes y enfermedades de trabajo (ART)
             </h1>
             <p className="mt-6 tracking-tighter text-white">
-                <span className="font-montserrat font-bold text-6xl lg:text-7xl">Estudio Jurídico</span><br />
-              <span className="font-montserrat font-bold text-7xl lg:text-8xl">Dra. Citera</span>
+                <span className="font-montserrat font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Estudio Jurídico</span><br />
+              <span className="font-montserrat font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl">Dra. Citera</span>
             </p>
             <p className="mt-12 font-montserrat text-base font-semibold leading-7 text-white text-opacity-70">
               Hacemos tu reclamo ante la ART, seguros y empleadores, con una atención personalizada,. Consultas virtuales sin cargo y sin adelanto de honorarios. Te representamos en CABA y Provincia de Buenos Aires.
@@ -64,17 +64,6 @@ const Hero = () => {
               >
                 Consulta Inmediata
               </button>
-              
-              <div className="flex items-center space-x-4">
-                <a
-                  href="https://www.linkedin.com/in/anal%C3%ADa-citera-954647248/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 hover:bg-white/20 transition-all duration-200"
-                >
-                  <span className="text-white text-sm font-montserrat font-semibold">LinkedIn</span>
-                </a>
-              </div>
             </div>
             
             

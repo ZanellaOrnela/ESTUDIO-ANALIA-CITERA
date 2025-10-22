@@ -78,14 +78,17 @@ const Services = () => {
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-montserrat" style={{ color: '#0F2D49' }}>
-              Te defendemos frente a siniestros y enfermedades de trabajo.
+              Te defendemos frente a siniestros y enfermedades de trabajo
             </h2>
+            <p className="text-lg leading-relaxed font-montserrat font-semibold" style={{ color: '#0F2D49' }}>
+              Accidentes y enfermedades laborales
+            </p>
           </motion.div>
 
           {/* Services Grid */}
           <motion.div 
             variants={itemVariants}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
           >
             {services.map((service, index) => {
               console.log(`Rendering service ${index}: ${service.title}`);
