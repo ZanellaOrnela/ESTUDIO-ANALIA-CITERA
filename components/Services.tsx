@@ -8,43 +8,43 @@ const Services = () => {
   const services = [
     {
       icon: Briefcase,
-      image: "/images/analia citera foto.jpg", // Imagen local como fallback
+      image: "https://media.licdn.com/dms/image/v2/C4E12AQEAQ89qIBMI7w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1648506371261?e=2147483647&v=beta&t=cL-XzG0mwEvKu8qmHJ2zz1XFdhYxf8cQKM1oLnVH4qk",
       title: "Demora o negativa de ART",
       description: "La ART no te autoriza estudios, traslados o tratamientos. Intervenimos para exigir cobertura, controlar el alta y calcular la incapacidad."
     },
     {
       icon: FileText,
-      image: "/images/analia citera foto.jpg", // Imagen local como fallback
+      image: "https://www.castillocastrillonabogados.es/wp-content/uploads/despido-indirecto-trabajador-1199x800.jpg",
       title: "Alta apresurada",
       description: "Te dieron el alta sin estar en condiciones de prestar tareas laborales. Pedimos reevaluación y reclamamos la indemnización que te corresponde"
     },
     {
       icon: Car,
-      image: "/images/analia citera foto.jpg", // Imagen local como fallback
+      image: "https://garciaalonso.com.ar/wp-content/uploads/2022/05/accidente-in-itinere.jpg",
       title: "Accidente \"in itinere\"",
       description: "Sufriste un accidente yendo o volviendo del trabajo. Documentamos, probamos el nexo y reclamamos a la ART y terceros si corresponde."
     },
     {
       icon: Shield,
-      image: "/images/analia citera foto.jpg", // Imagen local como fallback
+      image: "https://www.eluniversal.com.mx/resizer/v2/7TTYXIYPOBFYBFQRSBUK4ZI2OM.jpg?auth=08d882254f603e234abe8e0e4c00a6d2f9948d8332443ca717ddbbaf63498d78&smart=true&width=1100&height=666",
       title: "Secuelas e incapacidades",
       description: "Tenés dolor, limitaciones o pérdida de fuerza. Te representamos para maximizar el monto que te corresponde cobrar."
     },
     {
       icon: Scale,
-      image: "/images/analia citera foto.jpg", // Imagen local como fallback
+      image: "https://i0.wp.com/aldiaargentina.microjuris.com/wp-content/uploads/2024/10/jefe-j.jpg?fit=1899%2C1265&ssl=1",
       title: "Empleador incumplidor",
       description: "Falta de registración, diferencias salariales o despido. Accionamos con intimaciones y demandas. No dudes en consultarnos para que te asesoremos frente a esta situación y defendamos tus derechos."
     },
     {
       icon: Scale,
-      image: "/images/analia citera foto.jpg", // Imagen local como fallback
+      image: "https://www.dya.es/wp-content/uploads/2022/10/primero-1.jpg",
       title: "Accidente de tránsito",
       description: " Accidente de tránsito o accidente de trayecto. Te representamos para maximizar el monto a cobrar."
     },
     {
       icon: Bus,
-      image: "/images/analia citera foto.jpg", // Imagen local como fallback
+      image: "https://img.freepik.com/fotos-premium/mujer-viaja-telefono-inteligente-transporte-autobus-consulte-sitio-web-redes-sociales-o-internet-obtener-informacion-sobre-ciudad-persona-joven-telefono-celular-5g-transporte-publico-ciudad-urbana_590464-84302.jpg",
       title: "Accidentes en transporte público",
       description: "Sufriste un accidente en transporte público. Te asesoramos sobre tus derechos y analizamos para que obtengas la indemnización de todos los responsables ante el mismo."
     }
