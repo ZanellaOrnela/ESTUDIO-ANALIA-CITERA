@@ -49,14 +49,14 @@ const WhyChoose = () => {
   };
 
   return (
-    <section id="why-choose" className="section-padding" style={{ backgroundColor: '#0F2D49' }}>
+    <section id="why-choose" className="section-padding min-h-[500px]" style={{ backgroundColor: '#0F2D49' }}>
       <div className="container-custom" style={{ paddingLeft: '0.5rem', paddingRight: '0.5rem' }}>
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="space-y-20"
+          className="py-8"
         >
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center max-w-4xl mx-auto">

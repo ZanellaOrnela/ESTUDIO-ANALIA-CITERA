@@ -54,18 +54,18 @@ const Gallery = () => {
   };
 
   return (
-    <section id="gallery" className="section-padding" style={{ backgroundColor: '#F2F2F2' }}>
+    <section id="gallery" className="section-padding min-h-[600px]" style={{ backgroundColor: '#F2F2F2' }}>
       <div className="container-custom" style={{ paddingLeft: '0.5rem', paddingRight: '0.5rem' }}>
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="space-y-12"
+          className="py-8"
         >
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-montserrat font-bold" style={{ color: '#0F2D49' }}>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-montserrat" style={{ color: '#0F2D49' }}>
               Respondemos tus dudas clave de ART
             </h2>
           </motion.div>

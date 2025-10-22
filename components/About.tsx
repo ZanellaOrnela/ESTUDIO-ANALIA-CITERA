@@ -28,18 +28,18 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="section-padding" style={{ backgroundColor: '#D9C896' }}>
+    <section id="about" className="section-padding min-h-[400px] flex items-center" style={{ backgroundColor: '#D9C896' }}>
       <div className="container-custom">
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="space-y-16"
+          className="py-8"
         >
           {/* Sobre Nosotros */}
           <motion.div variants={itemVariants} className="text-center max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-montserrat font-bold" style={{ color: '#0F2D49' }}>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-montserrat" style={{ color: '#0F2D49' }}>
               Cobrá la indemnización que te corresponde
             </h2>
             <p className="text-lg leading-relaxed font-montserrat font-semibold" style={{ color: '#0F2D49' }}>

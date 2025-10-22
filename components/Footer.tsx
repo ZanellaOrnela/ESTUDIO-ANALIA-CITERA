@@ -40,7 +40,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative" style={{ backgroundColor: '#F2F2F2' }}>
+    <footer className="relative min-h-[400px] overflow-hidden" style={{ backgroundColor: '#F2F2F2' }}>
       
       <div className="container-custom relative z-10" style={{ paddingLeft: '0.5rem', paddingRight: '0.5rem' }}>
         <motion.div

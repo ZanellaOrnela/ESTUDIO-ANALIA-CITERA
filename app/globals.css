@@ -4,14 +4,30 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    box-sizing: border-box;
+  }
+
   html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    height: 100%;
+    overflow-y: auto;
   }
   
   body {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-y: auto;
+  }
+
+  #__next {
+    height: 100%;
     overflow-x: hidden;
   }
   
@@ -119,6 +135,8 @@
   
   .section-padding {
     @apply py-24 px-4 sm:px-6 lg:px-8;
+    overflow-y: visible;
+    max-height: none;
   }
   
   .section-bg-alt {
@@ -136,6 +154,7 @@
   .container-custom {
     @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
     overflow-x: hidden;
+    overflow-y: visible;
   }
   
   .text-gradient {
@@ -350,5 +369,163 @@
   
   .flip-card-back .flip-card-badge {
     background: rgba(255, 255, 255, 0.2);
+  }
+
+  /* Prevenir scroll vertical interno en secciones */
+  section {
+    overflow-y: visible;
+    max-height: none;
+  }
+
+  /* Asegurar que los contenedores no tengan scroll vertical */
+  .space-y-16 > * + * {
+    margin-top: 4rem;
+  }
+
+  .space-y-12 > * + * {
+    margin-top: 3rem;
+  }
+
+  .space-y-8 > * + * {
+    margin-top: 2rem;
+  }
+
+  .space-y-6 > * + * {
+    margin-top: 1.5rem;
+  }
+
+  .space-y-4 > * + * {
+    margin-top: 1rem;
+  }
+
+  .space-y-3 > * + * {
+    margin-top: 0.75rem;
+  }
+
+  /* Prevenir scroll temporal durante la carga */
+  .prevent-scroll-flash {
+    overflow: hidden;
+  }
+
+  /* Asegurar que las imágenes no causen reflow */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Prevenir layout shift en componentes con animaciones */
+  .motion-container {
+    will-change: transform;
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+  /* Optimizar carga de fuentes */
+  .font-loading {
+    font-display: swap;
+  }
+
+  /* Prevenir scroll durante animaciones de entrada */
+  .animate-in {
+    animation-fill-mode: both;
+  }
+
+  /* Prevenir scroll flash en secciones */
+  section {
+    contain: layout;
+  }
+
+  /* Optimizar renderizado de componentes */
+  .motion-container {
+    will-change: transform;
+  }
+
+  /* Prevenir reflow en imágenes */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Asegurar que el main no cause scroll */
+  main {
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* Prevenir scroll temporal en secciones específicas */
+  .section-padding {
+    contain: layout;
+    will-change: auto;
+  }
+
+  /* Optimizar carga de imágenes externas */
+  img[src*="http"] {
+    loading: lazy;
+    contain: layout;
+  }
+
+  /* Prevenir reflow en grids */
+  .grid {
+    contain: layout;
+  }
+
+  /* Optimizar iframes */
+  iframe {
+    contain: layout;
+  }
+
+  /* Prevenir scroll interno en secciones */
+  section {
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Asegurar que las secciones no tengan scroll interno */
+  .section-padding {
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Prevenir scroll en contenedores de motion */
+  .motion-container {
+    overflow: hidden;
+  }
+
+  /* Prevenir scroll interno en motion.div */
+  .motion-div {
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Asegurar que los contenedores de animación no tengan scroll */
+  [data-framer-motion] {
+    overflow: hidden;
+  }
+
+  /* Prevenir scroll en grids y flex containers */
+  .grid, .flex {
+    contain: layout;
+  }
+
+  /* Prevenir scroll específico en Contact y Footer */
+  #contact {
+    overflow: hidden;
+    position: relative;
+  }
+
+  footer {
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Prevenir scroll en formularios */
+  form {
+    overflow: hidden;
+  }
+
+  /* Prevenir scroll en contenedores de información */
+  .contact-info {
+    overflow: hidden;
   }
 }

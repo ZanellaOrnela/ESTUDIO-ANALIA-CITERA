@@ -23,17 +23,17 @@ const AdditionalSections = () => {
   return (
     <>
       {/* Transformamos tu reclamo en resultados concretos */}
-      <section className="section-padding" style={{ backgroundColor: '#0F2D49' }}>
+      <section className="section-padding min-h-[400px]" style={{ backgroundColor: '#0F2D49' }}>
         <div className="container-custom" style={{ paddingLeft: '0.5rem', paddingRight: '0.5rem' }}>
           <motion.div
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="space-y-16"
+            className="py-8"
           >
             <motion.div variants={itemVariants} className="text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-montserrat font-bold" style={{ color: '#D9C896' }}>
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-montserrat" style={{ color: '#D9C896' }}>
                 Transformamos tu reclamo en resultados concretos
               </h2>
             </motion.div>
@@ -41,7 +41,7 @@ const AdditionalSections = () => {
             <motion.div variants={itemVariants} className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="text-center">
                 <CheckCircle className="h-12 w-12 mx-auto mb-4" style={{ color: '#D9C896' }} />
-                <h4 className="text-lg font-bold mb-2 font-montserrat font-bold" style={{ color: '#D9C896' }}>Indemnización</h4>
+                <h4 className="text-lg font-bold mb-2 font-montserrat" style={{ color: '#D9C896' }}>Indemnización</h4>
                 <p className="text-sm font-montserrat font-semibold" style={{ color: '#D9C896' }}>
                   Buscamos el mayor monto posible según tu incapacidad, salarios y tablas vigentes.
                 </p>
@@ -49,7 +49,7 @@ const AdditionalSections = () => {
               
               <div className="text-center">
                 <CheckCircle className="h-12 w-12 mx-auto mb-4" style={{ color: '#D9C896' }} />
-                <h4 className="text-lg font-bold mb-2 font-montserrat font-bold" style={{ color: '#D9C896' }}>Cobertura médica</h4>
+                <h4 className="text-lg font-bold mb-2 font-montserrat" style={{ color: '#D9C896' }}>Cobertura médica</h4>
                 <p className="text-sm font-montserrat font-semibold" style={{ color: '#D9C896' }}>
                   Tratamientos, rehabilitación, medicación y traslados a cargo de la ART.
                 </p>
@@ -57,7 +57,7 @@ const AdditionalSections = () => {
               
               <div className="text-center">
                 <CheckCircle className="h-12 w-12 mx-auto mb-4" style={{ color: '#D9C896' }} />
-                <h4 className="text-lg font-bold mb-2 font-montserrat font-bold" style={{ color: '#D9C896' }}>Acompañamiento</h4>
+                <h4 className="text-lg font-bold mb-2 font-montserrat" style={{ color: '#D9C896' }}>Acompañamiento</h4>
                 <p className="text-sm font-montserrat font-semibold" style={{ color: '#D9C896' }}>
                   Te guiamos paso a paso frente a este reclamo, ante la ART, tu empleador y terceros si corresponde.
                 </p>
@@ -65,7 +65,7 @@ const AdditionalSections = () => {
               
               <div className="text-center">
                 <CheckCircle className="h-12 w-12 mx-auto mb-4" style={{ color: '#D9C896' }} />
-                <h4 className="text-lg font-bold mb-2 font-montserrat font-bold" style={{ color: '#D9C896' }}>Costos y tiempos</h4>
+                <h4 className="text-lg font-bold mb-2 font-montserrat" style={{ color: '#D9C896' }}>Costos y tiempos</h4>
                 <p className="text-sm font-montserrat font-semibold" style={{ color: '#D9C896' }}>
                   Consultas SIN CARGO y sin adelantar honorarios. Estamos siempre a tu disposición.
                 </p>
@@ -76,17 +76,17 @@ const AdditionalSections = () => {
       </section>
 
       {/* Cómo funciona */}
-      <section className="section-padding" style={{ backgroundColor: '#D9C896' }}>
+      <section className="section-padding min-h-[500px]" style={{ backgroundColor: '#D9C896' }}>
         <div className="container-custom" style={{ paddingLeft: '0.5rem', paddingRight: '0.5rem' }}>
           <motion.div
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="space-y-16"
+            className="py-8"
           >
             <motion.div variants={itemVariants} className="text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 relative font-montserrat font-bold" style={{ color: '#0F2D49' }}>
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 relative font-montserrat" style={{ color: '#0F2D49' }}>
                 Proceso simple en 3 pasos
               </h2>
             </motion.div>
@@ -96,7 +96,7 @@ const AdditionalSections = () => {
                 <div className="bg-[#0F2D49] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold" style={{ color: '#D9C896' }}>1</span>
                 </div>
-                <h4 className="text-lg font-bold mb-3 font-montserrat font-bold" style={{ color: '#0F2D49' }}>Paso 1</h4>
+                <h4 className="text-lg font-bold mb-3 font-montserrat" style={{ color: '#0F2D49' }}>Paso 1</h4>
                 <p className="text-sm font-montserrat font-semibold" style={{ color: '#0F2D49' }}>
                   Contanos qué te pasó (videollamada o WhatsApp). Revisamos viabilidad y próximos pasos, sin costo.
                 </p>
@@ -106,7 +106,7 @@ const AdditionalSections = () => {
                 <div className="bg-[#0F2D49] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold" style={{ color: '#D9C896' }}>2</span>
                 </div>
-                <h4 className="text-lg font-bold mb-3 font-montserrat font-bold" style={{ color: '#0F2D49' }}>Paso 2</h4>
+                <h4 className="text-lg font-bold mb-3 font-montserrat" style={{ color: '#0F2D49' }}>Paso 2</h4>
                 <p className="text-sm font-montserrat font-semibold" style={{ color: '#0F2D49' }}>
                   Reunimos estudios y pruebas. Presentamos reclamos ante la ART, compañía aseguradora, empleadores y cualquier otro responsable, si es necesario, iniciamos reclamos judiciales.
                 </p>
@@ -116,7 +116,7 @@ const AdditionalSections = () => {
                 <div className="bg-[#0F2D49] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold" style={{ color: '#D9C896' }}>3</span>
                 </div>
-                <h4 className="text-lg font-bold mb-3 font-montserrat font-bold" style={{ color: '#0F2D49' }}>Paso 3</h4>
+                <h4 className="text-lg font-bold mb-3 font-montserrat" style={{ color: '#0F2D49' }}>Paso 3</h4>
                 <p className="text-sm font-montserrat font-semibold" style={{ color: '#0F2D49' }}>
                   Buscamos que obtengas el mejor resultado posible frente al suceso que te ha acontecido.
                 </p>
@@ -127,31 +127,32 @@ const AdditionalSections = () => {
       </section>
 
       {/* Presentación Dra. Citera */}
-      <section className="section-padding" style={{ backgroundColor: '#F2F2F2' }}>
+      <section className="section-padding min-h-[600px]" style={{ backgroundColor: '#F2F2F2' }}>
         <div className="container-custom" style={{ paddingLeft: '0.5rem', paddingRight: '0.5rem' }}>
           <motion.div
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="space-y-8"
+            className="py-8"
           >
             <motion.div variants={itemVariants} className="max-w-7xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-16 items-center">
                 
                 {/* Imagen de la Dra. Citera - Izquierda */}
-                <div className="order-1 lg:order-1">
-                  <div className="relative w-full max-w-md mx-auto lg:mx-0">
-                    <div className="relative w-80 h-96 rounded-2xl overflow-hidden shadow-2xl">
+                <div className="order-1 lg:order-1 flex justify-center lg:justify-start">
+                  <div className="relative w-full max-w-sm mx-auto lg:mx-0">
+                    <div className="relative w-72 h-80 sm:w-80 sm:h-96 rounded-2xl overflow-hidden shadow-2xl">
                       <Image
                         src="/images/analia citera foto.jpg"
                         alt="Dra. Citera Analía"
                         fill
                         className="object-cover"
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                        style={{ objectFit: 'cover' }}
+                        loading="lazy"
                       />
                     </div>
-                    {/* Elemento decorativo */}
-                    <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-[#D9C896] rounded-full opacity-20"></div>
                   </div>
                 </div>
                 

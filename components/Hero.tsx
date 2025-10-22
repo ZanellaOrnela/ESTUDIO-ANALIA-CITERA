@@ -12,7 +12,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative pt-32 pb-8 bg-[#0F2D49] xl:pt-40 sm:pb-12 lg:pb-20 xl:pb-24 2xl:pb-32">
+    <div className="relative pt-32 pb-8 bg-[#0F2D49] xl:pt-40 sm:pb-12 lg:pb-20 xl:pb-24 2xl:pb-32 min-h-[600px] lg:min-h-[700px]">
       {/* Imagen de fondo */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -21,6 +21,8 @@ const Hero = () => {
           fill
           className="object-cover opacity-20"
           priority
+          sizes="100vw"
+          style={{ objectFit: 'cover' }}
         />
       </div>
 

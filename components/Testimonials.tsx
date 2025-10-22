@@ -42,14 +42,14 @@ const Testimonials = () => {
   };
 
   return (
-    <section id="testimonials" className="section-padding" style={{ backgroundColor: '#D9C896' }}>
+    <section id="testimonials" className="section-padding min-h-[600px]" style={{ backgroundColor: '#D9C896' }}>
       <div className="container-custom" style={{ paddingLeft: '0.5rem', paddingRight: '0.5rem' }}>
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="space-y-16"
+          className="py-8"
         >
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center">

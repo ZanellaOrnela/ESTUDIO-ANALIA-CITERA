@@ -12,8 +12,15 @@ const Header = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    // Delay para evitar conflictos durante la carga inicial
+    const timer = setTimeout(() => {
+      window.addEventListener('scroll', handleScroll);
+    }, 100);
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   const scrollToSection = (sectionId: string) => {

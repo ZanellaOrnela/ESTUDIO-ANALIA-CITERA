@@ -65,35 +65,35 @@ Datos del formulario:
   };
 
   return (
-    <section id="contact" className="section-padding" style={{ backgroundColor: '#0F2D49' }}>
+    <section id="contact" className="section-padding min-h-[800px]" style={{ backgroundColor: '#0F2D49' }}>
       <div className="container-custom" style={{ paddingLeft: '0.5rem', paddingRight: '0.5rem' }}>
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="space-y-16"
+          className="py-8"
         >
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-montserrat font-bold" style={{ color: '#D9C896' }}>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 relative font-montserrat" style={{ color: '#D9C896' }}>
               Estamos online y respondemos rápido
             </h2>
           </motion.div>
 
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Info */}
-            <motion.div variants={itemVariants} className="space-y-8">
+            <motion.div variants={itemVariants} className="py-4">
               <div className="bg-[#D9C896] rounded-xl p-8">
                 <h3 className="text-2xl font-bold mb-6 font-montserrat font-bold" style={{ color: '#0F2D49' }}>
                   Información de Contacto
                 </h3>
                 
-                <div className="space-y-6">
+                <div className="py-4">
                   <div className="flex items-start space-x-4">
                     <MapPin className="h-6 w-6 text-[#0F2D49] mt-1" />
                     <div>
-                      <h4 className="font-semibold text-[#0F2D49] font-montserrat font-bold">Ubicación y Horario</h4>
+                      <h4 className="font-semibold text-[#0F2D49] font-montserrat">Ubicación y Horario</h4>
                       <p className="text-[#0F2D49] font-montserrat font-semibold">
                         Atención virtual. Defendemos tanto en CABA, como en la provincia de Buenos Aires. 
                         Horario de contacto: lunes a viernes de 9 a 17 h.
@@ -104,7 +104,7 @@ Datos del formulario:
                   <div className="flex items-start space-x-4">
                     <Mail className="h-6 w-6 text-[#0F2D49] mt-1" />
                     <div>
-                      <h4 className="font-semibold text-[#0F2D49] font-montserrat font-bold">Email</h4>
+                      <h4 className="font-semibold text-[#0F2D49] font-montserrat">Email</h4>
                       <p className="text-[#0F2D49] font-montserrat font-semibold">analiacitera@yahoo.com.ar</p>
                     </div>
                   </div>
@@ -138,7 +138,7 @@ Datos del formulario:
                 
                 <form 
                   onSubmit={handleSubmit}
-                  className="space-y-6"
+                  className="py-4"
                 >
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>

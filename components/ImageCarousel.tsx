@@ -37,7 +37,7 @@ const ImageCarousel = ({
   return (
     <div className="relative w-full max-w-xs sm:max-w-sm mx-auto">
       {/* Main carousel container - responsive aspect ratio */}
-      <div className="relative aspect-[4/5] sm:aspect-[9/16] overflow-hidden rounded-2xl bg-gray-100 shadow-lg">
+      <div className="relative aspect-[4/5] sm:aspect-[9/16] overflow-hidden rounded-2xl bg-gray-100 shadow-lg min-h-[400px] sm:min-h-[500px]">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
@@ -54,12 +54,16 @@ const ImageCarousel = ({
                 allow="autoplay; encrypted-media"
                 allowFullScreen
                 title={media[currentIndex].alt}
+                loading="lazy"
+                style={{ objectFit: 'cover' }}
               />
             ) : (
               <img
                 src={media[currentIndex].src}
                 alt={media[currentIndex].alt}
                 className="w-full h-full object-cover"
+                loading="lazy"
+                style={{ objectFit: 'cover' }}
               />
             )}
             {media[currentIndex].caption && (

@@ -66,14 +66,14 @@ const Services = () => {
   };
 
   return (
-    <section id="services" className="section-padding pb-16" style={{ backgroundColor: '#F2F2F2' }}>
+    <section id="services" className="section-padding pb-16 min-h-[800px]" style={{ backgroundColor: '#F2F2F2' }}>
       <div className="container-custom" style={{ paddingLeft: '1rem', paddingRight: '1rem' }}>
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="space-y-16"
+          className="py-8"
         >
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center">
@@ -105,6 +105,9 @@ const Services = () => {
                     alt={service.title}
                     fill
                     className="object-cover"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    style={{ objectFit: 'cover' }}
+                    loading="lazy"
                   />
                 </div>
                 

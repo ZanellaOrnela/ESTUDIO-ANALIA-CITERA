@@ -31,7 +31,10 @@ export default function Home() {
     };
 
     document.addEventListener('click', handleSmoothScroll);
-    return () => document.removeEventListener('click', handleSmoothScroll);
+    
+    return () => {
+      document.removeEventListener('click', handleSmoothScroll);
+    };
   }, []);
 
   return (

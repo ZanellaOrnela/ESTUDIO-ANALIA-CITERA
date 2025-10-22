@@ -54,6 +54,24 @@ export default function RootLayout({
         <link rel="icon" href="/images/WhatsApp Image 2025-10-06 at 16.22.05_28e5fbe4.jpg" type="image/jpeg" />
         <link rel="shortcut icon" href="/images/WhatsApp Image 2025-10-06 at 16.22.05_28e5fbe4.jpg" type="image/jpeg" />
         <link rel="apple-touch-icon" href="/images/WhatsApp Image 2025-10-06 at 16.22.05_28e5fbe4.jpg" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              // Prevenir scroll flash durante la carga
+              (function() {
+                document.body.style.overflow = 'hidden';
+                
+                function restoreScroll() {
+                  document.body.style.overflow = '';
+                }
+                
+                window.addEventListener('load', function() {
+                  setTimeout(restoreScroll, 50);
+                });
+              })();
+            `,
+          }}
+        />
       </head>
       <body className="font-montserrat antialiased">
         {children}

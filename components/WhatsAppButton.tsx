@@ -14,19 +14,20 @@ const WhatsAppButton = () => {
 
   return (
     <motion.button
-      initial={{ scale: 0 }}
-      animate={{ scale: 1 }}
+      initial={{ scale: 0, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
       transition={{ 
         type: "spring", 
         stiffness: 260, 
         damping: 20,
-        delay: 1 
+        delay: 1.5 
       }}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
       onClick={handleClick}
-      className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 group"
+      className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 group motion-container"
       aria-label="Contactar por WhatsApp"
+      style={{ willChange: 'transform' }}
     >
       <MessageCircle className="h-6 w-6" />
       
