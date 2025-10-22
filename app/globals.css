@@ -533,18 +533,52 @@
   #services {
     background-color: #F2F2F2 !important;
     min-height: 800px;
+    display: block !important;
+    visibility: visible !important;
   }
 
   #services .bg-white {
     background-color: white !important;
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  #services .grid {
+    display: grid !important;
+    visibility: visible !important;
+  }
+
+  #services .motion-div {
+    display: block !important;
+    visibility: visible !important;
   }
 
   /* Mejorar visibilidad de texto en mobile */
   @media (max-width: 640px) {
+    #services {
+      background-color: #F2F2F2 !important;
+      min-height: 800px !important;
+      display: block !important;
+      visibility: visible !important;
+    }
+    
     #services h2,
     #services h3,
     #services p {
       color: #0F2D49 !important;
+      display: block !important;
+      visibility: visible !important;
+    }
+
+    #services .bg-white {
+      background-color: white !important;
+      display: block !important;
+      visibility: visible !important;
+    }
+
+    #services .grid {
+      display: grid !important;
+      visibility: visible !important;
     }
   }
 }

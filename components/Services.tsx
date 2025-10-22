@@ -99,7 +99,7 @@ const Services = () => {
                 className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden"
               >
                 {/* Imagen */}
-                <div className="relative w-full h-56 sm:h-64 bg-gray-200">
+                <div className="relative w-full h-56 sm:h-64 bg-gray-200 flex items-center justify-center">
                   <Image
                     src={service.image}
                     alt={service.title}
@@ -111,8 +111,16 @@ const Services = () => {
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       target.style.display = 'none';
+                      const fallback = document.getElementById(`fallback-${index}`);
+                      if (fallback) {
+                        fallback.style.opacity = '1';
+                      }
                     }}
                   />
+                  {/* Fallback icon - solo visible si la imagen no carga */}
+                  <div className="absolute inset-0 flex items-center justify-center bg-gray-200 opacity-0 transition-opacity duration-300" id={`fallback-${index}`}>
+                    <service.icon className="h-16 w-16 text-gray-400" />
+                  </div>
                 </div>
                 
                 {/* Contenido */}
