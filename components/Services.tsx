@@ -66,7 +66,7 @@ const Services = () => {
   };
 
   return (
-    <section id="services" className="section-padding pb-16 min-h-[800px]" style={{ backgroundColor: '#F2F2F2' }}>
+    <section id="services" className="section-padding pb-16 min-h-[800px] bg-[#F2F2F2]">
       <div className="container-custom" style={{ paddingLeft: '1rem', paddingRight: '1rem' }}>
         <motion.div
           variants={containerVariants}
@@ -99,7 +99,7 @@ const Services = () => {
                 className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden"
               >
                 {/* Imagen */}
-                <div className="relative w-full h-56 sm:h-64">
+                <div className="relative w-full h-56 sm:h-64 bg-gray-200">
                   <Image
                     src={service.image}
                     alt={service.title}
@@ -108,6 +108,10 @@ const Services = () => {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     style={{ objectFit: 'cover' }}
                     loading="lazy"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                    }}
                   />
                 </div>
                 

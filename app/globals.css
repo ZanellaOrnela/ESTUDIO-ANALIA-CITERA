@@ -528,4 +528,23 @@
   .contact-info {
     overflow: hidden;
   }
+
+  /* Asegurar visibilidad en mobile para Services */
+  #services {
+    background-color: #F2F2F2 !important;
+    min-height: 800px;
+  }
+
+  #services .bg-white {
+    background-color: white !important;
+  }
+
+  /* Mejorar visibilidad de texto en mobile */
+  @media (max-width: 640px) {
+    #services h2,
+    #services h3,
+    #services p {
+      color: #0F2D49 !important;
+    }
+  }
 }
