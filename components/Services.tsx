@@ -40,13 +40,19 @@ const Services = () => {
       icon: Scale,
       image: "https://www.dya.es/wp-content/uploads/2022/10/primero-1.jpg",
       title: "Accidente de tránsito",
-      description: " Accidente de tránsito o accidente de trayecto. Te representamos para maximizar el monto a cobrar."
+      description: " Accidente de tránsito o yendo o volviendo del trabajo. Te representamos para maximizar el monto a cobrar."
     },
     {
       icon: Bus,
       image: "https://img.freepik.com/fotos-premium/mujer-viaja-telefono-inteligente-transporte-autobus-consulte-sitio-web-redes-sociales-o-internet-obtener-informacion-sobre-ciudad-persona-joven-telefono-celular-5g-transporte-publico-ciudad-urbana_590464-84302.jpg",
       title: "Accidentes en transporte público",
       description: "Sufriste un accidente en transporte público. Te asesoramos sobre tus derechos y analizamos para que obtengas la indemnización de todos los responsables ante el mismo."
+    },
+    {
+      icon: Scale,
+      image: "https://www.rcrperu.com/wp-content/uploads/2019/02/robo-776x437.jpg",
+      title: "Hecho Ilícito",
+      description: "Fuiste víctima de un hecho ilícito. Te defendemos y reclamamos la reparación integral del daño sufrido, tanto material como moral."
     }
   ];
 
@@ -66,8 +72,8 @@ const Services = () => {
   };
 
   return (
-    <section id="services" className="section-padding pb-16 min-h-[800px] bg-[#F2F2F2] block">
-      <div className="container-custom" style={{ paddingLeft: '1rem', paddingRight: '1rem' }}>
+    <section id="services" className="section-padding pb-20 min-h-[800px] bg-[#F2F2F2] block">
+      <div className="container-custom" style={{ paddingLeft: '1rem', paddingRight: '1rem', paddingBottom: '2rem' }}>
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -96,10 +102,10 @@ const Services = () => {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden"
+                className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden flex flex-col"
               >
                 {/* Imagen */}
-                <div className="relative w-full h-56 sm:h-64 bg-gray-200">
+                <div className="relative w-full h-56 sm:h-64 bg-gray-200 flex-shrink-0">
                   <Image
                     src={service.image}
                     alt={service.title}
@@ -112,7 +118,7 @@ const Services = () => {
                 </div>
                 
                 {/* Contenido */}
-                <div className="p-4 sm:p-5 space-y-3">
+                <div className="p-4 sm:p-5 space-y-3 flex-grow">
                   <h3 className="text-base sm:text-lg font-bold text-[#0F2D49] font-montserrat">
                     {service.title}
                   </h3>

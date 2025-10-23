@@ -477,13 +477,13 @@
 
   /* Prevenir scroll interno en secciones */
   section {
-    overflow: hidden;
+    overflow: visible;
     position: relative;
   }
 
   /* Asegurar que las secciones no tengan scroll interno */
   .section-padding {
-    overflow: hidden;
+    overflow: visible;
     position: relative;
   }
 

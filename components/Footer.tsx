@@ -40,15 +40,14 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative min-h-[400px] overflow-hidden" style={{ backgroundColor: '#F2F2F2' }}>
+    <footer className="relative" style={{ backgroundColor: '#F2F2F2' }}>
       
-      <div className="container-custom relative z-10" style={{ paddingLeft: '0.5rem', paddingRight: '0.5rem' }}>
+      <div className="container-custom relative z-10 py-12" style={{ paddingLeft: '0.5rem', paddingRight: '0.5rem' }}>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="py-8"
         >
           {/* Información de contacto */}
           <motion.div

@@ -65,14 +65,13 @@ Datos del formulario:
   };
 
   return (
-    <section id="contact" className="section-padding min-h-[800px]" style={{ backgroundColor: '#0F2D49' }}>
+    <section id="contact" className="py-16" style={{ backgroundColor: '#0F2D49' }}>
       <div className="container-custom" style={{ paddingLeft: '0.5rem', paddingRight: '0.5rem' }}>
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="py-8"
         >
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center">
@@ -83,13 +82,13 @@ Datos del formulario:
 
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Info */}
-            <motion.div variants={itemVariants} className="py-4">
+            <motion.div variants={itemVariants}>
               <div className="bg-[#D9C896] rounded-xl p-8">
-                <h3 className="text-2xl font-bold mb-6 font-montserrat font-bold" style={{ color: '#0F2D49' }}>
+                <h3 className="text-2xl font-bold mb-6 font-montserrat" style={{ color: '#0F2D49' }}>
                   Información de Contacto
                 </h3>
                 
-                <div className="py-4">
+                <div className="space-y-6">
                   <div className="flex items-start space-x-4">
                     <MapPin className="h-6 w-6 text-[#0F2D49] mt-1" />
                     <div>
@@ -112,7 +111,7 @@ Datos del formulario:
                   <div className="flex items-start space-x-4">
                     <Phone className="h-6 w-6 text-[#0F2D49] mt-1" />
                     <div>
-                      <h4 className="font-semibold text-[#0F2D49] font-montserrat font-bold">Teléfono</h4>
+                      <h4 className="font-bold text-[#0F2D49] font-montserrat">Teléfono</h4>
                       <p className="text-[#0F2D49] font-montserrat font-semibold">+54 9 11 5318-9897</p>
                     </div>
                   </div>
@@ -120,7 +119,7 @@ Datos del formulario:
                   <div className="flex items-start space-x-4">
                     <Clock className="h-6 w-6 text-[#0F2D49] mt-1" />
                     <div>
-                      <h4 className="font-semibold text-[#0F2D49] font-montserrat font-bold">Horario de Atención</h4>
+                      <h4 className="font-bold text-[#0F2D49] font-montserrat">Horario de Atención</h4>
                       <p className="text-[#0F2D49] font-montserrat font-semibold">Lunes a Viernes: 9:00 - 17:00</p>
                     </div>
                   </div>
@@ -132,17 +131,17 @@ Datos del formulario:
             {/* Contact Form */}
             <motion.div variants={itemVariants}>
               <div className="bg-[#D9C896] border border-gray-300 rounded-xl shadow-lg p-8">
-                <h3 className="text-2xl font-bold mb-6 font-montserrat font-bold" style={{ color: '#0F2D49' }}>
+                <h3 className="text-2xl font-bold mb-6 font-montserrat" style={{ color: '#0F2D49' }}>
                   Contactar
                 </h3>
                 
                 <form 
                   onSubmit={handleSubmit}
-                  className="py-4"
+                  className="space-y-6"
                 >
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-[#0F2D49] mb-2 font-montserrat font-semibold">
+                      <label htmlFor="name" className="block text-sm font-semibold text-[#0F2D49] mb-2 font-montserrat">
                         Nombre Completo *
                       </label>
                       <input

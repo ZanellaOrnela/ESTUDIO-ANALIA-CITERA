@@ -171,7 +171,7 @@ const AdditionalSections = () => {
                   <div className="space-y-4">
                     <p className="text-base leading-relaxed font-montserrat" style={{ color: '#0F2D49' }}>
                       Abogada con <strong>25 años de experiencia</strong>, egresada con medalla de honor. 
-                      Cuenta con dos maestrías en Derecho Laboral y Civil para brindar la mejor defensa a sus clientes.
+                      Cuenta con dos maestrías: una en Derecho Laboral y otra en Derecho Civil, para brindar la mejor defensa a sus clientes.
                     </p>
                     
                     <p className="text-base leading-relaxed font-montserrat" style={{ color: '#0F2D49' }}>
