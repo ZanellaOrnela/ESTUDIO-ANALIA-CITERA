@@ -51,8 +51,8 @@ const Services = () => {
     {
       icon: Scale,
       image: "https://www.rcrperu.com/wp-content/uploads/2019/02/robo-776x437.jpg",
-      title: "Hecho Ilícito",
-      description: "Fuiste víctima de un hecho ilícito. Te defendemos y reclamamos la reparación integral del daño sufrido, tanto material como moral."
+      title: "¿Fuiste víctima de algún hecho de inseguridad?",
+      description: "¿Sufriste algún robo, lesión, agresión o daño yendo o viniendo del trabajo? No dudes en consultarnos."
     }
   ];
 

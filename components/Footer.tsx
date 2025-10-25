@@ -88,14 +88,14 @@ const Footer = () => {
               </div>
               
               {/* Redes sociales */}
-              <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mt-8">
+              <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-2 sm:gap-4 mt-8">
                 {socialLinks.map((social, index) => (
                   <a
                     key={index}
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-1 sm:space-x-2 px-2 sm:px-4 py-2 bg-[#0F2D49] text-white rounded-full hover:bg-[#0F2440] transition-all duration-200 text-xs sm:text-sm"
+                    className="flex items-center space-x-1 sm:space-x-2 px-2 sm:px-4 py-2 bg-[#0F2D49] text-white rounded-full hover:bg-[#0F2440] transition-all duration-200 text-xs sm:text-sm w-full sm:w-auto justify-center"
                   >
                     <social.icon className="h-3 w-3 sm:h-4 sm:w-4" />
                     <span className="font-montserrat font-semibold">{social.platform}</span>
