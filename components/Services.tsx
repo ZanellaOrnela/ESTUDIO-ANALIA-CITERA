@@ -52,7 +52,7 @@ const Services = () => {
       icon: Scale,
       image: "https://www.rcrperu.com/wp-content/uploads/2019/02/robo-776x437.jpg",
       title: "¿Fuiste víctima de algún hecho de inseguridad?",
-      description: "¿Sufriste algún robo, lesión, agresión o daño yendo o viniendo del trabajo? No dudes en consultarnos."
+      description: "¿Fuiste víctima de un hecho ilícito trabajando o mientras ibas o volvías del trabajo? Podés reclamar a la ART por lo que te haya pasado. No dudes en consultarnos: estamos para asesorarte."
     }
   ];
 
