@@ -170,7 +170,7 @@ const AdditionalSections = () => {
                   
                   <div className="space-y-4">
                     <p className="text-base leading-relaxed font-montserrat" style={{ color: '#0F2D49' }}>
-                      Abogada con <strong>25 años de experiencia</strong>, egresada con medalla de honor. 
+                      Abogada con <strong>más de 25 años de experiencia</strong>, egresada con medalla de honor. 
                       Cuenta con dos maestrías: una en Derecho Laboral y otra en Derecho Civil, para brindar la mejor defensa a sus clientes.
                     </p>
                     
@@ -192,7 +192,7 @@ const AdditionalSections = () => {
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-[#D9C896] rounded-full"></div>
-                      <span className="text-sm font-montserrat font-semibold" style={{ color: '#0F2D49' }}>25 Años Experiencia</span>
+                      <span className="text-sm font-montserrat font-semibold" style={{ color: '#0F2D49' }}>Más de 25 Años Experiencia</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-[#D9C896] rounded-full"></div>

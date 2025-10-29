@@ -37,7 +37,7 @@ const Hero = () => {
               <span className="font-montserrat font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl">Dra. Citera</span>
             </p>
             <p className="mt-12 font-montserrat text-base font-semibold leading-7 text-white text-opacity-70">
-              Hacemos tu reclamo ante la ART, seguros y empleadores, con una atención personalizada,. Consultas virtuales sin cargo y sin adelanto de honorarios. Te representamos en CABA y Provincia de Buenos Aires.
+              Hacemos tu reclamo ante la ART, seguros y empleadores, con una atención personalizada. Consultas virtuales sin cargo y sin adelanto de honorarios. Te representamos en CABA y Provincia de Buenos Aires.
             </p>
              <div className="flex flex-col sm:flex-row items-center justify-center mt-5 space-y-4 sm:space-y-0 sm:space-x-4">
               <button

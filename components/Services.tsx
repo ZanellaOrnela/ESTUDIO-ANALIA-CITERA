@@ -34,7 +34,7 @@ const Services = () => {
       icon: Scale,
       image: "https://i0.wp.com/aldiaargentina.microjuris.com/wp-content/uploads/2024/10/jefe-j.jpg?fit=1899%2C1265&ssl=1",
       title: "Empleador incumplidor",
-      description: "Falta de registración, diferencias salariales o despido. Accionamos con intimaciones y demandas. No dudes en consultarnos para que te asesoremos frente a esta situación y defendamos tus derechos."
+      description: "Falta de registración, diferencias salariales o despido. Accionamos con intimaciones y demandas. No dudes en consultarnos para que te asesoremos frente a estas situaciones y defendamos tus derechos."
     },
     {
       icon: Scale,
