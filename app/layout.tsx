@@ -72,6 +72,7 @@ export default function RootLayout({
             `,
           }}
         />
+        <meta name="google-site-verification" content="KCG8ubeHCZHgD87qWAn9BHHzQc1MEaHY3BmPlaGsiYQ" />
       </head>
       <body className="font-montserrat antialiased">
         {children}
